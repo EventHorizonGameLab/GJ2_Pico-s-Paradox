@@ -52,6 +52,11 @@ public class PlayerController : MonoBehaviour
 
     private bool DirectionIsAvailable(Vector3 newInputVector)
     {
+        if (Mathf.Abs(newInputVector.x) > 0 && Mathf.Abs(newInputVector.z) > 0)
+        {
+            return false;
+        }
+
         Vector3 xCheck = targetMovePoint.position + new Vector3(newInputVector.x, 0, 0);
         Vector3 zCheck = targetMovePoint.position + new Vector3(0, 0, newInputVector.z);
 
