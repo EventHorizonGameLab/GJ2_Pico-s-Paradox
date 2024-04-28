@@ -608,8 +608,8 @@ Transform:
   m_GameObject: {fileID: 1799887468}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 41715056}
@@ -678,6 +678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9936835c956e4ad4b87b80ef8033d3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMovePoint: {fileID: 1767861052}
   idleSprites:
   - {fileID: -529802170, guid: 1c5c814b283a39b42adb2148c9c4868e, type: 3}
   - {fileID: -1602609148, guid: 1c5c814b283a39b42adb2148c9c4868e, type: 3}

@@ -6,6 +6,7 @@ public class PlayerAnimation : MonoBehaviour
 {
     Animator anim;
     SpriteRenderer spriteRenderer;
+    [SerializeField] Transform targetMovePoint;
     [SerializeField] Sprite[] idleSprites;
     private Dictionary<Vector3, Sprite> directionToIdle;
     Vector3 lastDirection;
@@ -37,7 +38,7 @@ public class PlayerAnimation : MonoBehaviour
 
     void HandleSpriteAnimations(Vector3 direction)
     {
-        if (direction != Vector3.zero)
+        if (direction != Vector3.zero )
         {
             anim.SetFloat("X", direction.x);
             anim.SetFloat("Z", direction.z);
@@ -47,10 +48,12 @@ public class PlayerAnimation : MonoBehaviour
         {
             if (lastDirection != Vector3.zero)
             {
-                spriteRenderer.sprite = directionToIdle[lastDirection];
+                if (transform.position == targetMovePoint.position)
+                {
+                    spriteRenderer.sprite = directionToIdle[lastDirection];
+                    anim.enabled = false;
+                }
             }
-            anim.SetFloat("X", 0);
-            anim.SetFloat("Z", 0);
         }
     }
 
@@ -65,7 +68,7 @@ public class PlayerAnimation : MonoBehaviour
         else
         {
             HandleSpriteAnimations(Vector3.zero);
-            anim.enabled = false;
+            
         }
     }
 
