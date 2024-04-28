@@ -23,6 +23,12 @@ public class PlayerAnimation : MonoBehaviour
         InitializeDirectionToSpriteMap();
     }
 
+    private void Start()
+    {
+        anim.enabled = false;
+        spriteRenderer.sprite = idleSprites[0];
+    }
+
     private void InitializeDirectionToSpriteMap()
     {
         directionToIdle = new Dictionary<Vector3, Sprite>
