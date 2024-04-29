@@ -28,8 +28,11 @@ public class Forniture : MonoBehaviour, IHoldable
         }
         else
         {
-            transform.parent = null;
-            HoldPoint.OnHoldingAnObject?.Invoke(false);
+            if (GameManager.PlayerIsOnGrid)
+            {
+                transform.parent = null;
+                HoldPoint.OnHoldingAnObject?.Invoke(false);
+            }
         }
     }
 

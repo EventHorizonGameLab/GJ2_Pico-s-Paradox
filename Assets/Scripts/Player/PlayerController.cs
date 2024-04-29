@@ -31,11 +31,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        GameManager.PlayerIsOnGrid = (Vector3.Distance(transform.position, targetMovePoint.position) == 0);
+
         movementVector = InputManager.Movement;
 
         transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, playerSpeed * Time.deltaTime);
 
-        if(Vector3.Distance(transform.position, targetMovePoint.position) ==  0 )
+        if(GameManager.PlayerIsOnGrid)
         {
             if(DirectionIsAvailable(movementVector))
             {
