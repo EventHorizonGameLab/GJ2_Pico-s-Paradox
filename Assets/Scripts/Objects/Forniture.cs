@@ -24,10 +24,13 @@ public class Forniture : MonoBehaviour, IHoldable
         if(isInteractable && InputManager.HoldButtonPressed > 0) 
         {
             transform.parent = obj.transform;
-            
+            HoldPoint.OnHoldingAnObject?.Invoke(true);
         }
         else
+        {
             transform.parent = null;
+            HoldPoint.OnHoldingAnObject?.Invoke(false);
+        }
     }
 
 
