@@ -1,32 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SceneManagement;
+using System;
+
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent (typeof(BoxCollider))]
+[RequireComponent(typeof(BoxCollider))]
 public class PlayerController : MonoBehaviour
 {
+    //Event
+    public static Action<Vector3> OnBlockingAxis;
+
     [Header("Player Parameters")]
     [SerializeField] float playerSpeed;
     [Header("DO NOT TOUCH")]
     [SerializeField] Transform targetMovePoint;
     [SerializeField] LayerMask obstacle;
     Vector3 movementVector;
+    //For holding objects
+    bool blockX;
+    bool blockZ;
 
     private void OnEnable()
     {
-        
+
     }
 
     private void OnDisable()
     {
-        
+
     }
 
     private void Start()
     {
         targetMovePoint.parent = null;
+        blockX = false;
+        blockZ = false;
     }
 
     private void Update()
@@ -35,11 +42,14 @@ public class PlayerController : MonoBehaviour
 
         movementVector = InputManager.Movement;
 
+        if (blockX) movementVector.x = 0;
+        if (blockZ) movementVector.z = 0;
+
         transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, playerSpeed * Time.deltaTime);
 
-        if(GameManager.PlayerIsOnGrid)
+        if (GameManager.PlayerIsOnGrid)
         {
-            if(DirectionIsAvailable(movementVector))
+            if (DirectionIsAvailable(movementVector))
             {
                 Vector3 newPosition = targetMovePoint.position + movementVector;
 
@@ -50,10 +60,13 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+
     }
 
     private bool DirectionIsAvailable(Vector3 newInputVector)
     {
+        if (blockX && Mathf.Abs(newInputVector.x) > 0) return true;
+        if (blockZ && Mathf.Abs(newInputVector.z) > 0) return true;
         if (Mathf.Abs(newInputVector.x) > 0 && Mathf.Abs(newInputVector.z) > 0)
         {
             return false;
@@ -67,6 +80,22 @@ public class PlayerController : MonoBehaviour
 
         return !xBlocked || !zBlocked;
     }
+
+    public void CheckAxisToHoldingOnject(Vector3 direction)
+    {
+        if (GameManager.IsHoldingAnObject)
+        {
+            if (direction.x != 0) { blockZ = true; }
+            else if (direction.z != 0) { blockX = true; }
+        }
+        else
+        {
+            blockX = false;
+            blockZ = false;
+        }
+        
+    }
+
 
 
 }

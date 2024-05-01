@@ -9,7 +9,7 @@ public class Furniture : MonoBehaviour, IHoldable
 {
     
     
-    [SerializeField] bool isInteractable;
+    [SerializeField] bool isInteractable; // Per debug
     
     
 
@@ -24,6 +24,7 @@ public class Furniture : MonoBehaviour, IHoldable
         if(isInteractable && InputManager.HoldButtonPressed > 0) 
         {
             transform.parent = obj.transform;
+            gameObject.layer = 0;
             GameManager.OnPlayerHoldingObject?.Invoke(true);
         }
         else
@@ -31,6 +32,7 @@ public class Furniture : MonoBehaviour, IHoldable
             if (GameManager.PlayerIsOnGrid)
             {
                 transform.parent = null;
+                gameObject.layer = 7;
                 GameManager.OnPlayerHoldingObject?.Invoke(false);
             }
         }

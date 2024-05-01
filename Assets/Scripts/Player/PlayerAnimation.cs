@@ -7,8 +7,8 @@ public class PlayerAnimation : MonoBehaviour
     Animator anim;
     SpriteRenderer spriteRenderer;
     private Dictionary<Vector3, Sprite> directionToIdle;
-    Vector3 lastDirection;
-    Vector3 idleOrientation;
+    Vector3 lastDirection; // Per calcolare se il player si è mosso
+    Vector3 idleOrientation; // Indicherà quale sprite di idle utilizzare
     //Ref
     [SerializeField] Transform targetMovePoint;
     [SerializeField] Transform holdPoint;
@@ -116,8 +116,8 @@ public class PlayerAnimation : MonoBehaviour
         if(actualHoldPoint.localPosition.z == 0.5) { idleOrientation = Vector3.forward; }
         else if (actualHoldPoint.localPosition.z == -0.5) { idleOrientation = Vector3.back;}
 
-        Debug.Log(idleOrientation);
         return idleOrientation;
     }
+        
 
 }

@@ -1,20 +1,32 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 public class HoldPoint : MonoBehaviour , IHolder
 {
-    
+
 
     //Ref
-    [SerializeField] Transform playerTransform;
+    [SerializeField] PlayerController Player;
 
 
     private void Update()
     {
-        if (GameManager.IsHoldingAnObject) // Mantiene l'holdpoint sull'oggetto, impedendogli di muoversi
+        if (GameManager.IsHoldingAnObject) // Blocca l'holdpoint e blocca l'asse di tenuta
+        {
+            Player.CheckAxisToHoldingOnject(transform.localPosition);
             return;
+            
+        }
+        else
+        {
+            Player.CheckAxisToHoldingOnject(Vector3.zero);
+        }
+        
+       
+            
         if (InputManager.IsMoving(out Vector3 direction))
         {
             Vector3 offset = new(0.5f, 0.5f, 0.5f);
