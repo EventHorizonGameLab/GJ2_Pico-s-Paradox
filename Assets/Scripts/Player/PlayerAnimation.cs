@@ -6,10 +6,13 @@ public class PlayerAnimation : MonoBehaviour
 {
     Animator anim;
     SpriteRenderer spriteRenderer;
-    [SerializeField] Transform targetMovePoint;
-    [SerializeField] Sprite[] idleSprites;
     private Dictionary<Vector3, Sprite> directionToIdle;
     Vector3 lastDirection;
+    Vector3 idleOrientation;
+    //Ref
+    [SerializeField] Transform targetMovePoint;
+    [SerializeField] Transform holdPoint;
+    [SerializeField] Sprite[] idleSprites;
 
     enum SpriteIndex
     {
@@ -44,21 +47,48 @@ public class PlayerAnimation : MonoBehaviour
 
     void HandleSpriteAnimations(Vector3 direction)
     {
+        
+
         if (direction != Vector3.zero && GameManager.PlayerIsOnGrid)
         {
+            if(GameManager.IsHoldingAnObject)
+            {
+                float dot = Vector3.Dot(transform.position, holdPoint.position);
+                if (dot == 0.5f)
+                {
+                    anim.SetFloat("X", direction.x);
+                    anim.SetFloat("Z", 0);
+                }
+                else if (dot == 1 || dot == -1)
+                {
+                    anim.SetFloat("X", 0);
+                    anim.SetFloat("Z", direction.z);
+                }
+                lastDirection = direction;
+                return;
+            }
+
+           
             anim.SetFloat("X", direction.x);
             anim.SetFloat("Z", direction.z);
 
         }
         else
         {
-            if (lastDirection != Vector3.zero)
+            if (lastDirection != Vector3.zero )
             {
-                if (transform.position == targetMovePoint.position)
+                if (transform.position == targetMovePoint.position && !GameManager.IsHoldingAnObject)
                 {
-                    spriteRenderer.sprite = directionToIdle[lastDirection];
+                    spriteRenderer.sprite = directionToIdle[CalculateIdle(holdPoint)];
                     anim.enabled = false;
                 }
+                else if(transform.position == targetMovePoint.position && GameManager.IsHoldingAnObject)
+                {
+                    spriteRenderer.sprite = directionToIdle[CalculateIdle(holdPoint)];
+                    anim.enabled = false;
+                }
+
+
             }
         }
     }
@@ -70,12 +100,24 @@ public class PlayerAnimation : MonoBehaviour
             lastDirection = direction;
             HandleSpriteAnimations(direction);
             anim.enabled = true;
+            
         }
         else
         {
             HandleSpriteAnimations(Vector3.zero);
             
         }
+    }
+
+    Vector3 CalculateIdle( Transform actualHoldPoint)
+    {
+        if(actualHoldPoint.localPosition.x == 0.5) { idleOrientation = Vector3.right; }
+        else if(actualHoldPoint.localPosition.x == -0.5) { idleOrientation = Vector3.left; }
+        if(actualHoldPoint.localPosition.z == 0.5) { idleOrientation = Vector3.forward; }
+        else if (actualHoldPoint.localPosition.z == -0.5) { idleOrientation = Vector3.back;}
+
+        Debug.Log(idleOrientation);
+        return idleOrientation;
     }
 
 }

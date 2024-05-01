@@ -8,14 +8,14 @@ using UnityEngine.InputSystem;
 public class Furniture : MonoBehaviour, IHoldable
 {
     
-    [SerializeField] bool isHolded;
+    
     [SerializeField] bool isInteractable;
     
     
 
     private void OnEnable()
     {
-        isHolded = false;
+        
     }
         
     public void InteractWithHoldable(Collider obj)
@@ -24,14 +24,14 @@ public class Furniture : MonoBehaviour, IHoldable
         if(isInteractable && InputManager.HoldButtonPressed > 0) 
         {
             transform.parent = obj.transform;
-            HoldPoint.OnHoldingAnObject?.Invoke(true);
+            GameManager.OnPlayerHoldingObject?.Invoke(true);
         }
         else
         {
             if (GameManager.PlayerIsOnGrid)
             {
                 transform.parent = null;
-                HoldPoint.OnHoldingAnObject?.Invoke(false);
+                GameManager.OnPlayerHoldingObject?.Invoke(false);
             }
         }
     }

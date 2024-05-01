@@ -188,7 +188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5d85ed148384c48bb6f309b824a171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isHolded: 0
   isInteractable: 0
 --- !u!54 &551412090
 Rigidbody:
@@ -651,6 +650,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954875618}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1279823787 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5458997698075822416, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
+  m_PrefabInstance: {fileID: 6255583724362137835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1391257096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391257098}
+  - component: {fileID: 1391257097}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1391257097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391257096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c969153348336ac4482c74330e2a8da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1391257098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391257096}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1618475259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,13 +1354,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5940233708569418696, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
+      propertyPath: holdPoint
+      value: 
+      objectReference: {fileID: 1279823787}
     - target: {fileID: 8488633431823342804, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
       propertyPath: m_Name
       value: PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 8488633431823342804, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8661327333976651239, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1368,3 +1416,4 @@ SceneRoots:
   - {fileID: 297525278}
   - {fileID: 551412094}
   - {fileID: 1618475261}
+  - {fileID: 1391257098}

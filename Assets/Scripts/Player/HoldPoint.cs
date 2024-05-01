@@ -5,23 +5,15 @@ using UnityEngine;
 
 public class HoldPoint : MonoBehaviour , IHolder
 {
-    //Event
-    public static Action<bool> OnHoldingAnObject;
+    
 
     //Ref
     [SerializeField] Transform playerTransform;
 
-    //Var
-    bool isHoldingObject;
-
-    private void OnEnable()
-    {
-        OnHoldingAnObject += (bool value) => isHoldingObject = value;
-    }
 
     private void Update()
     {
-        if (isHoldingObject)
+        if (GameManager.IsHoldingAnObject) // Mantiene l'holdpoint sull'oggetto, impedendogli di muoversi
             return;
         if (InputManager.IsMoving(out Vector3 direction))
         {
