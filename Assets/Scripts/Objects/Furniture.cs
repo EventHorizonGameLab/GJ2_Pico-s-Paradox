@@ -5,11 +5,11 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(BoxCollider))]
-public class Forniture : MonoBehaviour, IHoldable
+public class Furniture : MonoBehaviour, IHoldable
 {
     
-    public bool isHolded;
-    public bool isInteractable;
+    [SerializeField] bool isHolded;
+    [SerializeField] bool isInteractable;
     
     
 
