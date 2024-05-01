@@ -44,7 +44,7 @@ public class PlayerAnimation : MonoBehaviour
 
     void HandleSpriteAnimations(Vector3 direction)
     {
-        if (direction != Vector3.zero )
+        if (direction != Vector3.zero && GameManager.PlayerIsOnGrid)
         {
             anim.SetFloat("X", direction.x);
             anim.SetFloat("Z", direction.z);
