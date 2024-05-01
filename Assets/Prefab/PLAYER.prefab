@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetMovePoint: {fileID: 3299792495046345685}
+  holdPoint: {fileID: 5458997698075822416}
   idleSprites:
   - {fileID: -529802170, guid: 1c5c814b283a39b42adb2148c9c4868e, type: 3}
   - {fileID: -1602609148, guid: 1c5c814b283a39b42adb2148c9c4868e, type: 3}
@@ -283,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f4efd1ba135dc4b8dae1c9c1e20ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 8661327333976651239}
+  Player: {fileID: 1307100368244284494}
 --- !u!1 &8488633431823342804
 GameObject:
   m_ObjectHideFlags: 0
