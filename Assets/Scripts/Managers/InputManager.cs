@@ -30,7 +30,20 @@ public static class InputManager
     {
         return InteractButtonIsPressed > 0;
     }
-   
     
-    
+    public static void SwitchToUI()
+    {
+        ActionMap.Player.Disable();
+    }
+
+    public static void SwitchToPlayer()
+    {
+        ActionMap.Player.Enable();
+    }
+
+    public static void Initialize()
+    {
+        ActionMap = new ActionMap();
+        ActionMap.Enable();
+    }
 }

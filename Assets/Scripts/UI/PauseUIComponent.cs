@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseUIComponent : MonoBehaviour
 {
@@ -25,15 +26,21 @@ public class PauseUIComponent : MonoBehaviour
         if (isPause)
         {
             GameManager.TimeScale(0);
-            InputManager.ActionMap.Player.Disable();
+            InputManager.SwitchToUI();
         }
 
         else
         {
             GameManager.TimeScale(1);
-            InputManager.ActionMap.Player.Enable();
+            InputManager.SwitchToPlayer();
         }
 
         pausePanel.gameObject.SetActive(isPause);
     }
+
+    public void OnReturnToMain()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }
