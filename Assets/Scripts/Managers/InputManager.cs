@@ -31,10 +31,6 @@ public static class InputManager
         return InteractButtonIsPressed > 0;
     }
    
-
-    public static void Initialize()
-    {
-        ActionMap = new ActionMap();
-        ActionMap.Enable();
-    }
+    
+    
 }
