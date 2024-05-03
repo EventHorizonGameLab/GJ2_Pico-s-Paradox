@@ -1394,6 +1394,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1307100368244284494, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
+      propertyPath: holdingSpeed
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307100368244284494, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
+      propertyPath: basePlayerSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307100368244284494, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
       propertyPath: holdable.m_Bits
       value: 64
       objectReference: {fileID: 0}

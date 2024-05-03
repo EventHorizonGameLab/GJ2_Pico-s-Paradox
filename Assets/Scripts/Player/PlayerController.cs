@@ -1,5 +1,5 @@
 using System;
-
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask obstacle;
     [SerializeField] LayerMask holdable;
     Vector3 movementVector;
+    Vector3 lastTarget;
     //For holding objects
     bool blockX;
     bool blockZ;
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
         if (blockX) movementVector.x = 0;
         if (blockZ) movementVector.z = 0;
         
-            transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, basePlayerSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, speed * Time.deltaTime);
         
           
         
@@ -58,7 +59,7 @@ public class PlayerController : MonoBehaviour
         {
             if (DirectionIsAvailable(movementVector))
             {
-                Vector3 newPosition = targetMovePoint.position + movementVector;
+                Vector3 newPosition = targetMovePoint.position + movementVector; lastTarget = targetMovePoint.position;
 
                 if (!GameManager.isHoldingAnObject && Physics.OverlapSphere(newPosition, 0.3f, obstacle | holdable).Length == 0)
                 {
@@ -122,7 +123,15 @@ public class PlayerController : MonoBehaviour
 
     void BlockMovepoint()
     {
-        targetMovePoint.position = transform.position;
+        StartCoroutine(Delay());
+    }
+
+    IEnumerator Delay()
+    {
+        float time = 0;
+        float targetTime = 0.3f;
+        while (time < targetTime) { targetMovePoint.position = lastTarget; targetTime -= Time.deltaTime; }
+        yield return null;
     }
 
     
