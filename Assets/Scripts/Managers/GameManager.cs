@@ -6,13 +6,14 @@ public class GameManager : MonoBehaviour
 {
     
     //Var
-    public static bool PlayerIsOnGrid;
-    public static bool IsHoldingAnObject;
+    public static bool playerIsOnTargertPoint;
+    public static bool isHoldingAnObject;
+    public static bool playerIsOnGrid;
 
     private void Awake()
     {
-        IsHoldingAnObject = false;
-        PlayerIsOnGrid = true;
+        isHoldingAnObject = false;
+        playerIsOnTargertPoint = true;
         
     }
 

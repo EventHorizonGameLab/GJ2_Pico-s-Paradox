@@ -5,50 +5,23 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(BoxCollider))]
-public class Furniture : MonoBehaviour, IHoldable
+public class Furniture : MonoBehaviour
 {
-    
-    
+
+
     [SerializeField] bool isInteractable; // Serializzato per debug
     [SerializeField] bool playerIsHolding; // Serializzato per debug
+    [SerializeField] bool isHolded; // Serializzato per debug
+
+    Vector3 correctPosition;
+    Transform playerHolder;
 
 
-    private Vector3 correctPosition;
-    private bool wasHoldingLastFrame; // Traccia lo stato del frame precedente
 
-    private void Update()
-    {
-        bool currentlyHolding = InputManager.HoldButtonPressed > 0;
-        if (currentlyHolding != playerIsHolding)
-        {
-            playerIsHolding = currentlyHolding;
-            HandleHoldingChange(playerIsHolding);
-        }
-        GameManager.IsHoldingAnObject = playerIsHolding;
-        if (!playerIsHolding)
-        {
-            ImmediateReleaseObject();
-        }
-        wasHoldingLastFrame = playerIsHolding;
-    }
+    
 
-    private void HandleHoldingChange(bool isHolding)
-    {
-        if (!isHolding && wasHoldingLastFrame)
-        {
-            // Cambio di layer avviene non appena il giocatore rilascia l'oggetto
-            gameObject.layer = 7;
-        }
-    }
 
-    public void InteractWithHoldable(Collider obj)
-    {
-        if (obj == null || !isInteractable || !playerIsHolding || !GameManager.PlayerIsOnGrid)
-            return;
 
-        transform.parent = obj.transform;
-        gameObject.layer = 0;
-    }
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -62,9 +35,28 @@ public class Furniture : MonoBehaviour, IHoldable
     {
         if (collision.TryGetComponent<IHolder>(out _))
         {
-            InteractWithHoldable(collision);
+            if (InputManager.HoldButtonPressed != 0)
+            {
+                isHolded = true;
+                playerHolder = collision.gameObject.transform;
+            }
+            else if (!FurnitureIsOnGrid())
+            {
+                isHolded = true;
+            }
+            else
+            {
+                isHolded = false;
+                playerHolder = null;
+            }
         }
     }
+                
+                
+
+
+
+
 
     private void OnTriggerExit(Collider collision)
     {
@@ -74,15 +66,40 @@ public class Furniture : MonoBehaviour, IHoldable
         }
     }
 
-    private void ImmediateReleaseObject()
+    private void Update()
     {
-        // Reimposta il parent a null e corregge la posizione sull'albero più vicino
-        transform.parent = null;
-        correctPosition = new Vector3(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z));
-        transform.position = correctPosition;
+        playerIsHolding = InputManager.HoldButtonPressed != 0;
+        GameManager.isHoldingAnObject = isHolded;
+        
+        HoldingLogic();
     }
 
 
+
+    
+
+   
+
+    bool FurnitureIsOnGrid()
+    {
+        float modX = Mathf.Abs(transform.position.x % 1);
+        float modZ = Mathf.Abs(transform.position.z % 1);
+
+        
+        bool isOnGrid = (modX == 0) && (modZ == 0);
+
+        Debug.Log($"Checking grid position - X: {transform.position.x} ModX: {modX}, Z: {transform.position.z} ModZ: {modZ}, IsOnGrid: {isOnGrid}");
+        return isOnGrid;
+    }
+
+    void HoldingLogic()
+    {
+        if (isHolded && playerHolder != null)
+        {
+            transform.position = new Vector3(playerHolder.position.x, transform.position.y, playerHolder.position.z);
+        }
+    }
+    
 }
    
 

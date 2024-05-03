@@ -49,9 +49,9 @@ public class PlayerAnimation : MonoBehaviour
     {
         
 
-        if (direction != Vector3.zero && GameManager.PlayerIsOnGrid)
+        if (direction != Vector3.zero && GameManager.playerIsOnTargertPoint)
         {
-            if(GameManager.IsHoldingAnObject)
+            if(GameManager.isHoldingAnObject)
             {
                 float dot = Vector3.Dot(transform.position, holdPoint.position);
                 if (dot == 0.5f)
@@ -77,12 +77,12 @@ public class PlayerAnimation : MonoBehaviour
         {
             if (lastDirection != Vector3.zero )
             {
-                if (transform.position == targetMovePoint.position && !GameManager.IsHoldingAnObject)
+                if (transform.position == targetMovePoint.position && !GameManager.isHoldingAnObject)
                 {
                     spriteRenderer.sprite = directionToIdle[CalculateIdle(holdPoint)];
                     anim.enabled = false;
                 }
-                else if(transform.position == targetMovePoint.position && GameManager.IsHoldingAnObject)
+                else if(transform.position == targetMovePoint.position && GameManager.isHoldingAnObject)
                 {
                     spriteRenderer.sprite = directionToIdle[CalculateIdle(holdPoint)];
                     anim.enabled = false;
@@ -111,10 +111,10 @@ public class PlayerAnimation : MonoBehaviour
 
     Vector3 CalculateIdle( Transform actualHoldPoint)
     {
-        if(actualHoldPoint.localPosition.x == 0.5) { idleOrientation = Vector3.right; }
-        else if(actualHoldPoint.localPosition.x == -0.5) { idleOrientation = Vector3.left; }
-        if(actualHoldPoint.localPosition.z == 0.5) { idleOrientation = Vector3.forward; }
-        else if (actualHoldPoint.localPosition.z == -0.5) { idleOrientation = Vector3.back;}
+        if(actualHoldPoint.localPosition.x == 1) { idleOrientation = Vector3.right; }
+        else if(actualHoldPoint.localPosition.x == -1) { idleOrientation = Vector3.left; }
+        if(actualHoldPoint.localPosition.z == 1) { idleOrientation = Vector3.forward; }
+        else if (actualHoldPoint.localPosition.z == -1) { idleOrientation = Vector3.back;}
 
         return idleOrientation;
     }

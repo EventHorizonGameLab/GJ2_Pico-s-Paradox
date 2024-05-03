@@ -14,7 +14,7 @@ public class HoldPoint : MonoBehaviour , IHolder
 
     private void Update()
     {
-        if (GameManager.IsHoldingAnObject && GameManager.PlayerIsOnGrid) // Blocca l'holdpoint e blocca l'asse di tenuta
+        if (GameManager.isHoldingAnObject && GameManager.playerIsOnTargertPoint) // Blocca l'holdpoint e blocca l'asse di tenuta
         {
             Player.CheckAxisToHoldingObject(transform.localPosition);
             return;
@@ -27,9 +27,9 @@ public class HoldPoint : MonoBehaviour , IHolder
         
        
             
-        if (InputManager.IsMoving(out Vector3 direction) && GameManager.PlayerIsOnGrid)
+        if (InputManager.IsMoving(out Vector3 direction) && GameManager.playerIsOnTargertPoint)
         {
-            Vector3 offset = new(0.5f, 0.5f, 0.5f);
+            Vector3 offset = new(1, 0.5f, 1);
 
             if (direction.x > 0)
             {

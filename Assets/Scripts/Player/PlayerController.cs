@@ -14,20 +14,13 @@ public class PlayerController : MonoBehaviour
     [Header("DO NOT TOUCH")]
     [SerializeField] Transform targetMovePoint;
     [SerializeField] LayerMask obstacle;
+    [SerializeField] LayerMask holdable;
     Vector3 movementVector;
     //For holding objects
     bool blockX;
     bool blockZ;
 
-    private void OnEnable()
-    {
-
-    }
-
-    private void OnDisable()
-    {
-
-    }
+    
 
     private void Start()
     {
@@ -38,27 +31,40 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        GameManager.PlayerIsOnGrid = (Vector3.Distance(transform.position, targetMovePoint.position) == 0);
+        float modX = Mathf.Abs(transform.position.x % 1);
+        float modZ = Mathf.Abs(transform.position.z % 1);
 
+        GameManager.playerIsOnTargertPoint = (Vector3.Distance(transform.position, targetMovePoint.position) == 0);
+        GameManager.playerIsOnGrid = (modX == 0) && (modZ == 0);
+        
         movementVector = InputManager.Movement;
 
         if (blockX) movementVector.x = 0;
         if (blockZ) movementVector.z = 0;
-        if(!Physics.Raycast(transform.position,movementVector,0.5f,obstacle))
+        
             transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, playerSpeed * Time.deltaTime);
-        else
-        {
-            transform.position = new(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z));
-            targetMovePoint.position = transform.position;
-        }
+        
+          
+        
 
-        if (GameManager.PlayerIsOnGrid)
+        if (GameManager.playerIsOnTargertPoint)
         {
             if (DirectionIsAvailable(movementVector))
             {
                 Vector3 newPosition = targetMovePoint.position + movementVector;
 
-                if (Physics.OverlapSphere(newPosition, 0.4f, obstacle).Length == 0)
+                if (!GameManager.isHoldingAnObject && Physics.OverlapSphere(newPosition, 0.3f, obstacle | holdable).Length == 0)
+                {
+                    if(Physics.Raycast(transform.position,movementVector,0.5f,holdable))
+                    {
+                        transform.position = new(Mathf.Round(transform.position.x),transform.position.y, Mathf.Round(transform.position.z));
+                        targetMovePoint.position = transform.position;
+                    }
+                    else
+                        targetMovePoint.position = newPosition;
+
+                }
+                else if(GameManager.isHoldingAnObject && Physics.OverlapSphere(newPosition, 0.3f, obstacle ).Length == 0)
                 {
                     targetMovePoint.position = newPosition;
                 }
@@ -88,7 +94,7 @@ public class PlayerController : MonoBehaviour
 
     public void CheckAxisToHoldingObject(Vector3 direction)
     {
-        if (GameManager.IsHoldingAnObject)
+        if (GameManager.isHoldingAnObject)
         {
             if (direction.x != 0) { blockZ = true; }
             else if (direction.z != 0) { blockX = true; }
@@ -101,9 +107,15 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(targetMovePoint.position, 0.3f);
+    }
 
-    
+
+
+
 
 
 
