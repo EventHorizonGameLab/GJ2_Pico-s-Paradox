@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Scenes/Elo Tests Scenes/Men\xF9.unity"
+    guid: 6c6c8d1404a81334a9f4be863ed84f78
   m_configObjects: {}

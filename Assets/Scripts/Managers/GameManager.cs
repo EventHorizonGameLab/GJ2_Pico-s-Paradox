@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     {
         IsHoldingAnObject = false;
         PlayerIsOnGrid = true;
+        InputManager.Initialize();
     }
 
     private void OnEnable()
@@ -29,5 +30,10 @@ public class GameManager : MonoBehaviour
     void ChangeHoldBool(bool value)
     {
         IsHoldingAnObject = value;
+    }
+
+    public static void TimeScale(float scale)
+    {
+        Time.timeScale = scale;
     }
 }

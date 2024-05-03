@@ -134,6 +134,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "AlwaysOn",
+            "id": "4f59b62d-164a-42f5-9a49-1808e2d0ae81",
+            "actions": [
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "d8fe312b-f980-49e0-92cf-05aebba890cd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b61197cf-fa40-432d-97ab-d5d910b2261a",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
