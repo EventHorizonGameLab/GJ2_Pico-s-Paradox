@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     {
         IsHoldingAnObject = false;
         PlayerIsOnGrid = true;
+        InputManager.Initialize();
     }
 
     private void OnEnable()
