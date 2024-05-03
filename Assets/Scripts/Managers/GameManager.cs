@@ -31,4 +31,9 @@ public class GameManager : MonoBehaviour
     {
         IsHoldingAnObject = value;
     }
+
+    public static void TimeScale(float scale)
+    {
+        Time.timeScale = scale;
+    }
 }

@@ -158,7 +158,7 @@ public partial class @ActionMap: IInputActionCollection2, IDisposable
             ]
         },
         {
-            ""name"": ""UI"",
+            ""name"": ""AlwaysOn"",
             ""id"": ""4f59b62d-164a-42f5-9a49-1808e2d0ae81"",
             ""actions"": [
                 {
@@ -193,9 +193,9 @@ public partial class @ActionMap: IInputActionCollection2, IDisposable
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Hold = m_Player.FindAction("Hold", throwIfNotFound: true);
-        // UI
-        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_Pause = m_UI.FindAction("Pause", throwIfNotFound: true);
+        // AlwaysOn
+        m_AlwaysOn = asset.FindActionMap("AlwaysOn", throwIfNotFound: true);
+        m_AlwaysOn_Pause = m_AlwaysOn.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -316,58 +316,58 @@ public partial class @ActionMap: IInputActionCollection2, IDisposable
     }
     public PlayerActions @Player => new PlayerActions(this);
 
-    // UI
-    private readonly InputActionMap m_UI;
-    private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
-    private readonly InputAction m_UI_Pause;
-    public struct UIActions
+    // AlwaysOn
+    private readonly InputActionMap m_AlwaysOn;
+    private List<IAlwaysOnActions> m_AlwaysOnActionsCallbackInterfaces = new List<IAlwaysOnActions>();
+    private readonly InputAction m_AlwaysOn_Pause;
+    public struct AlwaysOnActions
     {
         private @ActionMap m_Wrapper;
-        public UIActions(@ActionMap wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Pause => m_Wrapper.m_UI_Pause;
-        public InputActionMap Get() { return m_Wrapper.m_UI; }
+        public AlwaysOnActions(@ActionMap wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Pause => m_Wrapper.m_AlwaysOn_Pause;
+        public InputActionMap Get() { return m_Wrapper.m_AlwaysOn; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
-        public void AddCallbacks(IUIActions instance)
+        public static implicit operator InputActionMap(AlwaysOnActions set) { return set.Get(); }
+        public void AddCallbacks(IAlwaysOnActions instance)
         {
-            if (instance == null || m_Wrapper.m_UIActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_UIActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_AlwaysOnActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_AlwaysOnActionsCallbackInterfaces.Add(instance);
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
         }
 
-        private void UnregisterCallbacks(IUIActions instance)
+        private void UnregisterCallbacks(IAlwaysOnActions instance)
         {
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
         }
 
-        public void RemoveCallbacks(IUIActions instance)
+        public void RemoveCallbacks(IAlwaysOnActions instance)
         {
-            if (m_Wrapper.m_UIActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_AlwaysOnActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IUIActions instance)
+        public void SetCallbacks(IAlwaysOnActions instance)
         {
-            foreach (var item in m_Wrapper.m_UIActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_AlwaysOnActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_UIActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_AlwaysOnActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public UIActions @UI => new UIActions(this);
+    public AlwaysOnActions @AlwaysOn => new AlwaysOnActions(this);
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnHold(InputAction.CallbackContext context);
     }
-    public interface IUIActions
+    public interface IAlwaysOnActions
     {
         void OnPause(InputAction.CallbackContext context);
     }

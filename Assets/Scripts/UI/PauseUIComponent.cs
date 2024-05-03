@@ -9,29 +9,29 @@ public class PauseUIComponent : MonoBehaviour
     bool isPause;
     private void OnEnable()
     {
-        InputManager.OnPause += ActivatePause;
+        InputManager.ActionMap.AlwaysOn.Pause.performed += ActivatePause;
     }
+
+
     private void OnDisable()
     {
-        InputManager.OnPause -= ActivatePause;
+        InputManager.ActionMap.AlwaysOn.Pause.performed -= ActivatePause;
     }
-    private void ActivatePause()
+    private void ActivatePause(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
         Debug.Log(isPause);
         isPause = !isPause;
 
         if (isPause)
         {
-            Time.timeScale = 0f;
-            InputManager.PlayerInputsEnableDisabled(false);
-            InputManager.UIInputsEnableDisabled(true);
+            GameManager.TimeScale(0);
+            InputManager.ActionMap.Player.Disable();
         }
 
         else
         {
-            Time.timeScale = 1f;
-            InputManager.PlayerInputsEnableDisabled(true);
-            InputManager.UIInputsEnableDisabled(false);
+            GameManager.TimeScale(1);
+            InputManager.ActionMap.Player.Enable();
         }
 
         pausePanel.gameObject.SetActive(isPause);
