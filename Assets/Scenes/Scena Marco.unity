@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 551412091}
   - component: {fileID: 551412090}
   - component: {fileID: 551412089}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Forniture_test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,6 +218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteractable: 0
   playerIsHolding: 0
+  isHolded: 0
+  tryingToHold: 0
 --- !u!54 &551412090
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1390,6 +1392,10 @@ PrefabInstance:
     - target: {fileID: 1307100368244284494, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
       propertyPath: playerSpeed
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307100368244284494, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
+      propertyPath: holdable.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 5853735550729916550, guid: 42876ee72074051448970c6a05b55b7c, type: 3}
       propertyPath: Player

@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour
     public static Action<Vector3> OnBlockingAxis;
 
     [Header("Player Parameters")]
-    [SerializeField] float playerSpeed;
+    [SerializeField] float basePlayerSpeed;
+    [SerializeField] float holdingSpeed;
+    float speed;
     [Header("DO NOT TOUCH")]
     [SerializeField] Transform targetMovePoint;
     [SerializeField] LayerMask obstacle;
@@ -20,13 +22,17 @@ public class PlayerController : MonoBehaviour
     bool blockX;
     bool blockZ;
 
-    
+    private void OnEnable()
+    {
+        GameManager.TemporaryOffInputs += BlockMovepoint;
+    }
 
     private void Start()
     {
         targetMovePoint.parent = null;
         blockX = false;
         blockZ = false;
+        speed = basePlayerSpeed;
     }
 
     private void Update()
@@ -36,13 +42,14 @@ public class PlayerController : MonoBehaviour
 
         GameManager.playerIsOnTargertPoint = (Vector3.Distance(transform.position, targetMovePoint.position) == 0);
         GameManager.playerIsOnGrid = (modX == 0) && (modZ == 0);
+        if(GameManager.isHoldingAnObject) { speed = holdingSpeed; } else { speed = basePlayerSpeed; }
         
         movementVector = InputManager.Movement;
 
         if (blockX) movementVector.x = 0;
         if (blockZ) movementVector.z = 0;
         
-            transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, playerSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, basePlayerSpeed * Time.deltaTime);
         
           
         
@@ -112,6 +119,13 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(targetMovePoint.position, 0.3f);
     }
+
+    void BlockMovepoint()
+    {
+        targetMovePoint.position = transform.position;
+    }
+
+    
 
 
 

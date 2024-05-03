@@ -15,10 +15,24 @@ public class Furniture : MonoBehaviour
 
     Vector3 correctPosition;
     Transform playerHolder;
+    [SerializeField] bool tryingToHold;
+    Vector3 lastPosition;
 
 
+    private void OnEnable()
+    {
+        InputManager.ActionMap.Player.Hold.performed += HoldingBool;
+    }
 
-    
+    private void OnDisable()
+    {
+        InputManager.ActionMap.Player.Hold.performed -= HoldingBool;
+    }
+
+    private void Start()
+    {
+        lastPosition = transform.position;
+    }
 
 
 
@@ -35,11 +49,15 @@ public class Furniture : MonoBehaviour
     {
         if (collision.TryGetComponent<IHolder>(out _))
         {
-            if (InputManager.HoldButtonPressed != 0)
+
+
+            if (tryingToHold)
             {
                 isHolded = true;
                 playerHolder = collision.gameObject.transform;
             }
+            
+            
             else if (!FurnitureIsOnGrid())
             {
                 isHolded = true;
@@ -98,6 +116,12 @@ public class Furniture : MonoBehaviour
         {
             transform.position = new Vector3(playerHolder.position.x, transform.position.y, playerHolder.position.z);
         }
+    }
+
+    void HoldingBool(InputAction.CallbackContext context)
+    {
+        if(isInteractable) { tryingToHold = !tryingToHold; }
+        if(tryingToHold == false && transform.position != lastPosition) { GameManager.TemporaryOffInputs?.Invoke(); }
     }
     
 }
