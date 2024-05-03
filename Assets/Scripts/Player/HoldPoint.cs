@@ -16,13 +16,13 @@ public class HoldPoint : MonoBehaviour , IHolder
     {
         if (GameManager.IsHoldingAnObject && GameManager.PlayerIsOnGrid) // Blocca l'holdpoint e blocca l'asse di tenuta
         {
-            Player.CheckAxisToHoldingOnject(transform.localPosition);
+            Player.CheckAxisToHoldingObject(transform.localPosition);
             return;
             
         }
         else
         {
-            Player.CheckAxisToHoldingOnject(Vector3.zero);
+            Player.CheckAxisToHoldingObject(Vector3.zero);
         }
         
        

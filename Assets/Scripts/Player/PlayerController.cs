@@ -44,8 +44,13 @@ public class PlayerController : MonoBehaviour
 
         if (blockX) movementVector.x = 0;
         if (blockZ) movementVector.z = 0;
-
-        transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, playerSpeed * Time.deltaTime);
+        if(!Physics.Raycast(transform.position,movementVector,0.5f,obstacle))
+            transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, playerSpeed * Time.deltaTime);
+        else
+        {
+            transform.position = new(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z));
+            targetMovePoint.position = transform.position;
+        }
 
         if (GameManager.PlayerIsOnGrid)
         {
@@ -81,7 +86,7 @@ public class PlayerController : MonoBehaviour
         return !xBlocked || !zBlocked;
     }
 
-    public void CheckAxisToHoldingOnject(Vector3 direction)
+    public void CheckAxisToHoldingObject(Vector3 direction)
     {
         if (GameManager.IsHoldingAnObject)
         {
