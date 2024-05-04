@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class PauseUIComponent : MonoBehaviour
 {
-    [SerializeField] RectTransform pausePanel;
+    [SerializeField] GameObject pausePanel;
     bool isPause;
+    [SerializeField] GameObject showControlPanel;
     private void OnEnable()
     {
         InputManager.ActionMap.AlwaysOn.Pause.performed += ActivatePause;
@@ -35,7 +36,7 @@ public class PauseUIComponent : MonoBehaviour
             InputManager.SwitchToPlayer();
         }
 
-        pausePanel.gameObject.SetActive(isPause);
+        pausePanel.SetActive(isPause);
     }
 
     public void OnReturnToMain()
@@ -43,4 +44,8 @@ public class PauseUIComponent : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void OnCLoseShowControl()
+    {
+        showControlPanel.SetActive(false);
+    }
 }
