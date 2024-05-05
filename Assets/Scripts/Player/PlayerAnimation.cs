@@ -111,10 +111,10 @@ public class PlayerAnimation : MonoBehaviour
 
     Vector3 CalculateIdle( Transform actualHoldPoint)
     {
-        if(actualHoldPoint.localPosition.x == 1) { idleOrientation = Vector3.right; }
-        else if(actualHoldPoint.localPosition.x == -1) { idleOrientation = Vector3.left; }
-        if(actualHoldPoint.localPosition.z == 1) { idleOrientation = Vector3.forward; }
-        else if (actualHoldPoint.localPosition.z == -1) { idleOrientation = Vector3.back;}
+        if(actualHoldPoint.localPosition.x == 0.5) { idleOrientation = Vector3.right; }
+        else if(actualHoldPoint.localPosition.x == -0.5) { idleOrientation = Vector3.left; }
+        if(actualHoldPoint.localPosition.z == 0.5) { idleOrientation = Vector3.forward; }
+        else if (actualHoldPoint.localPosition.z == -0.5) { idleOrientation = Vector3.back;}
 
         return idleOrientation;
     }

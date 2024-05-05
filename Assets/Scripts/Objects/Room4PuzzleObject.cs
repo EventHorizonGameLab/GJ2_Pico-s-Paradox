@@ -9,6 +9,7 @@ public class Room4PuzzleObject : MonoBehaviour, IInteractable
     
 
     [SerializeField] InteractionPuzzle puzzleController;
+    [SerializeField] GameObject icon;
     public bool isInteractable;
 
     private void OnEnable()
@@ -24,6 +25,7 @@ public class Room4PuzzleObject : MonoBehaviour, IInteractable
     private void Start()
     {
         isInteractable = true;
+        icon.SetActive(false);
     }
     public void Interact()
     {
@@ -33,10 +35,16 @@ public class Room4PuzzleObject : MonoBehaviour, IInteractable
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.TryGetComponent<IHolder>(out _) && InputManager.IsTryingToInteract() && isInteractable)
+        if (other.TryGetComponent<IInteractor>(out _) && isInteractable) { icon.SetActive(true); } else { icon.SetActive(false); }
+        if (other.TryGetComponent<IInteractor>(out _) && InputManager.IsTryingToInteract() && isInteractable)
         {
             Interact();
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.TryGetComponent<IInteractor>(out _)) { icon.SetActive(false); }
     }
 
     void ResetPuzzle()

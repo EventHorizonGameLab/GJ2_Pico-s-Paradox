@@ -10,8 +10,8 @@ public class Furniture : MonoBehaviour
 
 
     [SerializeField] bool isInteractable; // Serializzato per debug
-    
     [SerializeField] bool isHolded; // Serializzato per debug
+    [SerializeField] GameObject icon;
 
     
     Transform playerHolder;
@@ -39,7 +39,7 @@ public class Furniture : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.TryGetComponent<IHolder>(out _))
+        if (collision.TryGetComponent<IInteractor>(out _))
         {
             isInteractable = true;
         }
@@ -47,7 +47,7 @@ public class Furniture : MonoBehaviour
 
     private void OnTriggerStay(Collider collision)
     {
-        if (collision.TryGetComponent<IHolder>(out _))
+        if (collision.TryGetComponent<IInteractor>(out _))
         {
 
 
@@ -80,7 +80,7 @@ public class Furniture : MonoBehaviour
 
     private void OnTriggerExit(Collider collision)
     {
-        if (collision.TryGetComponent<IHolder>(out _))
+        if (collision.TryGetComponent<IInteractor>(out _))
         {
             isInteractable = false;
         }
@@ -90,7 +90,7 @@ public class Furniture : MonoBehaviour
     {
         
         GameManager.isHoldingAnObject = isHolded;
-        
+        icon.SetActive(isInteractable);
         HoldingLogic();
     }
 

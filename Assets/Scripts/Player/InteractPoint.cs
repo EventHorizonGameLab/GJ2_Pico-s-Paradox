@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
 
-public class HoldPoint : MonoBehaviour , IHolder
+public class InteractPoint : MonoBehaviour , IInteractor
 {
 
 
@@ -29,7 +29,7 @@ public class HoldPoint : MonoBehaviour , IHolder
             
         if (InputManager.IsMoving(out Vector3 direction) && GameManager.playerIsOnTargertPoint)
         {
-            Vector3 offset = new(1, 0.5f, 1);
+            Vector3 offset = new(0.5f, 0.5f, 0.5f);
 
             if (direction.x > 0)
             {

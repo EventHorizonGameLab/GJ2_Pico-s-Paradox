@@ -26,7 +26,7 @@ public class PagesNotesComponent : MonoBehaviour, IInteractable
 
     //private void OnTriggerEnter(Collider other)
     //{
-    //    if (other.TryGetComponent<IHolder>(out var uwu))
+    //    if (other.TryGetComponent<IInteractor>(out var uwu))
     //    {
     //        if (InputManager.ActionMap.Player.Interact.WasPerformedThisFrame())
     //        {
@@ -38,7 +38,7 @@ public class PagesNotesComponent : MonoBehaviour, IInteractable
     //private void OnTriggerStay(Collider other)
     //{
 
-    //    if (other.TryGetComponent<IHolder>(out var uwu))
+    //    if (other.TryGetComponent<IInteractor>(out var uwu))
     //    {
     //        if (InputManager.ActionMap.Player.Interact.WasPerformedThisFrame())
     //        {
