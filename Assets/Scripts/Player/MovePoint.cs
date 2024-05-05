@@ -19,6 +19,6 @@ public class MovePoint : MonoBehaviour
 
     private void Update()
     {
-        StayOnGrid();
+        //StayOnGrid();
     }
 }

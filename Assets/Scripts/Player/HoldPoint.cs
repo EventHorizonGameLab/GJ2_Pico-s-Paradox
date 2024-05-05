@@ -9,7 +9,7 @@ public class HoldPoint : MonoBehaviour , IHolder
 
 
     //Ref
-    [SerializeField] PlayerController Player;
+    [SerializeField] PlayerControllerV2 Player;
 
 
     private void Update()

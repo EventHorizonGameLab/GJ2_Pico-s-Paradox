@@ -10,7 +10,7 @@ public class Furniture : MonoBehaviour
 
 
     [SerializeField] bool isInteractable; // Serializzato per debug
-    [SerializeField] bool playerIsHolding; // Serializzato per debug
+    
     [SerializeField] bool isHolded; // Serializzato per debug
 
     Vector3 correctPosition;
@@ -54,18 +54,20 @@ public class Furniture : MonoBehaviour
             if (tryingToHold)
             {
                 isHolded = true;
-                playerHolder = collision.gameObject.transform;
+                transform.parent = collision.transform;
+                GameManager.isHoldingAnObject = true;
             }
             
             
-            else if (!FurnitureIsOnGrid())
-            {
-                isHolded = true;
-            }
+            //else if (!FurnitureIsOnGrid())
+            //{
+            //    isHolded = true;
+            //}
             else
             {
                 isHolded = false;
-                playerHolder = null;
+                transform.parent = null;
+                GameManager.isHoldingAnObject = false;
             }
         }
     }
@@ -86,7 +88,7 @@ public class Furniture : MonoBehaviour
 
     private void Update()
     {
-        playerIsHolding = InputManager.HoldButtonPressed != 0;
+        
         GameManager.isHoldingAnObject = isHolded;
         
         HoldingLogic();

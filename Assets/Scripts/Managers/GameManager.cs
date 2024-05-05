@@ -9,13 +9,15 @@ public class GameManager : MonoBehaviour
     public static bool playerIsOnTargertPoint;
     public static bool isHoldingAnObject;
     public static bool playerIsOnGrid;
+    public static bool isColliding;
 
     private void Awake()
     {
         isHoldingAnObject = false;
         playerIsOnTargertPoint = true;
-        
     }
+        
+        
 
     private void OnEnable()
     {
