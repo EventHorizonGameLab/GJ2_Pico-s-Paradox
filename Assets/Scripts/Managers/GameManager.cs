@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static Action TemporaryOffInputs;
+    public static Action OnTemporaryOffInputs;
     //Var
     public static bool playerIsOnTargertPoint;
     public static bool isHoldingAnObject;
@@ -21,12 +21,12 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        TemporaryOffInputs += JustReleasedObject;
+        OnTemporaryOffInputs += JustReleasedObject;
     }
 
     private void OnDisable()
     {
-        TemporaryOffInputs += JustReleasedObject;
+        OnTemporaryOffInputs += JustReleasedObject;
     }
 
 

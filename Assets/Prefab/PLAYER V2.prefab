@@ -145,18 +145,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePlayerSpeed: 3
   holdingSpeed: 1.8
+  distancePerStep: 0.2
   targetMovePoint: {fileID: 1092241944077563161}
   obstacle:
     serializedVersion: 2
     m_Bits: 128
-  holdable:
-    serializedVersion: 2
-    m_Bits: 64
   player:
     serializedVersion: 2
     m_Bits: 256
-  rayHitObj: 0
-  rayLenght: 0.55
 --- !u!114 &1811201452099670090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,8 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b88f74cbf4e7b74d8d124936cf391b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetMovePoint: {fileID: 0}
-  player:
+  layerToIgnore:
     serializedVersion: 2
     m_Bits: 832
 --- !u!1 &4492805154306409934

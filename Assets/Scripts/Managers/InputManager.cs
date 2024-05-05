@@ -26,7 +26,7 @@ public static class InputManager
         return direction != Vector3.zero;
     }
 
-    public static bool IsTryingToInteract() // Funzione per controllare se il player interagisce
+    public static bool IsTryingToInteract() // Funzione per controllare se il layerToIgnore interagisce
     {
         return InteractButtonIsPressed > 0;
     }

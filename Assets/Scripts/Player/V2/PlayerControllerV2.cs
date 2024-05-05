@@ -6,22 +6,21 @@ using UnityEngine.InputSystem;
 
 public class PlayerControllerV2 : MonoBehaviour
 {
-    
-
     [Header("Player Parameters")]
     [SerializeField] float basePlayerSpeed;
     [SerializeField] float holdingSpeed;
+    [SerializeField] float distancePerStep;
     float speed;
     [Header("DO NOT TOUCH")]
     [SerializeField] Transform targetMovePoint;
     [SerializeField] LayerMask obstacle;
-    [SerializeField] LayerMask holdable;
     [SerializeField] LayerMask player;
-    [SerializeField] bool rayHitObj;
+    
     Vector3 movementVector;
-    public float rayLenght;
+    
     Rigidbody rb;
-
+    
+    
 
     //For holding objects
     bool blockX;
@@ -48,22 +47,14 @@ public class PlayerControllerV2 : MonoBehaviour
 
     private void Update()
     {
-        float modX = Mathf.Abs(transform.position.x % 1);
-        float modZ = Mathf.Abs(transform.position.z % 1);
+        GameManager.playerIsOnTargertPoint = Vector3.Distance(transform.position, targetMovePoint.position) == 0;
+        
+        if (GameManager.isHoldingAnObject) { speed = holdingSpeed;  } else { speed = basePlayerSpeed; }
 
-        GameManager.playerIsOnTargertPoint = (Vector3.Distance(transform.position, targetMovePoint.position) == 0);
-        GameManager.playerIsOnGrid = (modX == 0) && (modZ == 0);
-        if (GameManager.isHoldingAnObject) { speed = holdingSpeed; rayLenght = 0; } else { speed = basePlayerSpeed; rayLenght = 0.51f; }
-
-        movementVector = InputManager.Movement * 0.1f;
+        movementVector = InputManager.Movement * distancePerStep;
 
         if (blockX) movementVector.x = 0;
         if (blockZ) movementVector.z = 0;
-
-
-
-
-
         if (GameManager.playerIsOnTargertPoint)
         {
             
@@ -77,12 +68,6 @@ public class PlayerControllerV2 : MonoBehaviour
         
         transform.position = Vector3.MoveTowards(transform.position, targetMovePoint.position, speed * Time.deltaTime);
     }
-
-
-
-
-
-
     private bool DirectionIsAvailable(Vector3 newInputVector)
     {
         if (blockX && Mathf.Abs(newInputVector.x) > 0) return true;
@@ -93,15 +78,6 @@ public class PlayerControllerV2 : MonoBehaviour
         }
         return true;
     }
-
-        //Vector3 xCheck = targetMovePoint.position + new Vector3(newInputVector.x, 0, 0);
-        //Vector3 zCheck = targetMovePoint.position + new Vector3(0, 0, newInputVector.z);
-
-        //bool xBlocked = Mathf.Abs(movementVector.x) > 0 && Physics.OverlapSphere(xCheck, 0.3f, obstacle).Length > 0;
-        //bool zBlocked = Mathf.Abs(movementVector.z) > 0 && Physics.OverlapSphere(zCheck, 0.3f, obstacle).Length > 0;
-
-        //return !xBlocked || !zBlocked;
-
     public void CheckAxisToHoldingObject(Vector3 direction)
     {
         if (GameManager.isHoldingAnObject)
@@ -116,6 +92,29 @@ public class PlayerControllerV2 : MonoBehaviour
         }
 
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(targetMovePoint.position, 0.3f);
+    }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
 
     
 
@@ -124,10 +123,5 @@ public class PlayerControllerV2 : MonoBehaviour
             
         
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(targetMovePoint.position, 0.3f);
      
-    }
 }

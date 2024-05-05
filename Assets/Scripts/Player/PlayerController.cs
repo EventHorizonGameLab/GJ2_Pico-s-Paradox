@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        GameManager.TemporaryOffInputs += BlockMovepoint;
+        GameManager.OnTemporaryOffInputs += BlockMovepoint;
     }
 
     private void Start()

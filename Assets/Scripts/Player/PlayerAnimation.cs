@@ -7,7 +7,7 @@ public class PlayerAnimation : MonoBehaviour
     Animator anim;
     SpriteRenderer spriteRenderer;
     private Dictionary<Vector3, Sprite> directionToIdle;
-    Vector3 lastDirection; // Per calcolare se il player si è mosso
+    Vector3 lastDirection; // Per calcolare se il layerToIgnore si è mosso
     Vector3 idleOrientation; // Indicherà quale sprite di idle utilizzare
     //Ref
     [SerializeField] Transform targetMovePoint;

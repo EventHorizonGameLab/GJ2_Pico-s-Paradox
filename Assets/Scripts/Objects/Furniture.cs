@@ -13,7 +13,7 @@ public class Furniture : MonoBehaviour
     
     [SerializeField] bool isHolded; // Serializzato per debug
 
-    Vector3 correctPosition;
+    
     Transform playerHolder;
     [SerializeField] bool tryingToHold;
     Vector3 lastPosition;
@@ -123,7 +123,7 @@ public class Furniture : MonoBehaviour
     void HoldingBool(InputAction.CallbackContext context)
     {
         if(isInteractable) { tryingToHold = !tryingToHold; }
-        if(tryingToHold == false && transform.position != lastPosition) { GameManager.TemporaryOffInputs?.Invoke(); }
+        if(tryingToHold == false && transform.position != lastPosition) { GameManager.OnTemporaryOffInputs?.Invoke(); }
     }
     
 }
