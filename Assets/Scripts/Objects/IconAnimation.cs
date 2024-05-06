@@ -11,6 +11,7 @@ public class IconAnimation : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
+        transform.localScale = Vector3.one * 4;
     }
 
     void Update()
