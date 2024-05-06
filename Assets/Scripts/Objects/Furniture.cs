@@ -17,7 +17,12 @@ public class Furniture : MonoBehaviour
     Transform playerHolder;
     [SerializeField] bool tryingToHold;
     Vector3 lastPosition;
+    Rigidbody rb;
 
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void OnEnable()
     {
@@ -32,6 +37,7 @@ public class Furniture : MonoBehaviour
     private void Start()
     {
         lastPosition = transform.position;
+        rb.constraints = RigidbodyConstraints.FreezeAll;
     }
 
 
