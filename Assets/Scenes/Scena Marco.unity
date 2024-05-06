@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteractable: 0
   isHolded: 0
-  icon: {fileID: 0}
+  icon: {fileID: 747821837414361163, guid: 56356ac2b03a75040ab89405d919e45c, type: 3}
   tryingToHold: 0
 --- !u!54 &551412090
 Rigidbody:
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleController: {fileID: 1618475260}
-  icon: {fileID: 0}
+  icon: {fileID: 747821837414361163, guid: 56356ac2b03a75040ab89405d919e45c, type: 3}
   isInteractable: 0
 --- !u!65 &839975539
 BoxCollider:
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleController: {fileID: 1618475260}
-  icon: {fileID: 0}
+  icon: {fileID: 747821837414361163, guid: 56356ac2b03a75040ab89405d919e45c, type: 3}
   isInteractable: 0
 --- !u!65 &1649620985
 BoxCollider:
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleController: {fileID: 1618475260}
-  icon: {fileID: 0}
+  icon: {fileID: 747821837414361163, guid: 56356ac2b03a75040ab89405d919e45c, type: 3}
   isInteractable: 0
 --- !u!65 &1845399319
 BoxCollider:
@@ -969,7 +969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleController: {fileID: 1618475260}
-  icon: {fileID: 0}
+  icon: {fileID: 747821837414361163, guid: 56356ac2b03a75040ab89405d919e45c, type: 3}
   isInteractable: 0
 --- !u!65 &1883726027
 BoxCollider:
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleController: {fileID: 1618475260}
-  icon: {fileID: 0}
+  icon: {fileID: 747821837414361163, guid: 56356ac2b03a75040ab89405d919e45c, type: 3}
   isInteractable: 0
 --- !u!65 &2040233428
 BoxCollider:
