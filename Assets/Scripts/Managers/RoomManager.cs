@@ -6,7 +6,7 @@ using UnityEngine;
 public class RoomManager : MonoBehaviour
 {
     //Events
-    public static Action OnChangingRoom;
+    //public static Action<int,Transform> OnChangingRoom;
 
     //var
     [Header("Spawn Points")]
@@ -18,8 +18,10 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private Transform thirdRoomReturn;
     [SerializeField] private Transform fifthRoomEnter;
     [SerializeField] private Transform fourthRoomReturn;
-
-    Dictionary<int, Transform> mapLogic;
+    [Header("MovePoint")]
+    [SerializeField] private Transform movePoint;
+    
+    Dictionary<int, Transform> SpawnPoints;
 
     enum WichRoomToGo
     {
@@ -31,9 +33,14 @@ public class RoomManager : MonoBehaviour
         InitializeMapLogic();
     }
 
+    private void OnEnable()
+    {
+        //OnChangingRoom += Teleport;
+    }
+
     void InitializeMapLogic()
     {
-        mapLogic = new Dictionary<int, Transform>()
+        SpawnPoints = new Dictionary<int, Transform>()
         {
             { (int)WichRoomToGo.TWOtoONE, firstRoomReturn },
             { (int)WichRoomToGo.ONEtoTWO, secondRoomEnter },
@@ -46,10 +53,18 @@ public class RoomManager : MonoBehaviour
         };
     }
 
-    void ChangeRoom(int index)
+    protected void Teleport(int index, Transform objToTeleport)
     {
+        if(SpawnPoints.ContainsKey(index))
+        {
+            Vector3 targetPosition = SpawnPoints[index].position;
+            movePoint.position = targetPosition;
+            objToTeleport.position = targetPosition;
+        }
 
     }
+
+        
     
 
 

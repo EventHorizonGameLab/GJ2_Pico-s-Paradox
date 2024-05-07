@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerControllerV2 : MonoBehaviour
+public class PlayerControllerV2 : MonoBehaviour, ITeleportable
 {
     [Header("Player Parameters")]
     [SerializeField] float basePlayerSpeed;
