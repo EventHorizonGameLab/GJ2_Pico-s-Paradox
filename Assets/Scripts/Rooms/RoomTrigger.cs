@@ -6,6 +6,8 @@ using UnityEngine;
 public class RoomTrigger : MonoBehaviour
 {
     Vector3 targetPos;
+    GameObject player;
+    [SerializeField] float transitionTime;
 
     private void Awake()
     {
@@ -16,8 +18,16 @@ public class RoomTrigger : MonoBehaviour
     {
         if(other.TryGetComponent<ITeleportable>(out _))
         {
-            other.transform.position = targetPos;
-            MovePoint.OnChanginRoom(targetPos);
+            player = other.gameObject;
+            FadeCanvas.OnChangingRoom?.Invoke(transitionTime);
+            StartCoroutine(Delay(transitionTime/4));
         }
+    }
+
+    IEnumerator Delay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        player.transform.position = targetPos;
+        MovePoint.OnChanginRoom(targetPos);
     }
 }
