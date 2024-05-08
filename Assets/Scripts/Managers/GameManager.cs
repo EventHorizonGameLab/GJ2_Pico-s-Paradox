@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static Action OnTemporaryOffInputs;
+    public static Action<float> OnTemporaryOffInputs;
     //Var
     public static bool playerIsOnTargertPoint;
     public static bool isHoldingAnObject;
@@ -21,12 +21,14 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        OnTemporaryOffInputs += JustReleasedObject;
+        OnTemporaryOffInputs += ReEenableInputsOnDelay;
+        RoomTrigger.OnChangingRoom += ReEenableInputsOnDelay;
     }
 
     private void OnDisable()
     {
-        OnTemporaryOffInputs += JustReleasedObject;
+        OnTemporaryOffInputs -= ReEenableInputsOnDelay;
+        RoomTrigger.OnChangingRoom -= ReEenableInputsOnDelay;
     }
 
 
@@ -38,15 +40,15 @@ public class GameManager : MonoBehaviour
     }
 
 
-    void JustReleasedObject()
+    void ReEenableInputsOnDelay(float time)
     {
-        StartCoroutine(OnOffInputDelay());
+        StartCoroutine(OnOffInputDelay(time));
     }
 
-    IEnumerator OnOffInputDelay()
+    IEnumerator OnOffInputDelay(float time)
     {
         InputManager.ActionMap.Player.Disable();
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(time);
         InputManager.ActionMap.Player.Enable();
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class RoomTrigger : MonoBehaviour
 {
+    public delegate void RoomManager(float time);
+    public static event RoomManager OnChangingRoom;
     Vector3 targetPos;
     GameObject player;
     [SerializeField] float transitionTime;
@@ -19,7 +21,7 @@ public class RoomTrigger : MonoBehaviour
         if(other.TryGetComponent<ITeleportable>(out _))
         {
             player = other.gameObject;
-            FadeCanvas.OnChangingRoom?.Invoke(transitionTime);
+            OnChangingRoom(transitionTime);
             StartCoroutine(Delay(transitionTime/4));
         }
     }

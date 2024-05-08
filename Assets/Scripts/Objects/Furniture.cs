@@ -129,7 +129,7 @@ public class Furniture : MonoBehaviour
     void HoldingBool(InputAction.CallbackContext context)
     {
         if(isInteractable) { tryingToHold = !tryingToHold; }
-        if(tryingToHold == false && transform.position != lastPosition) { GameManager.OnTemporaryOffInputs?.Invoke(); }
+        if(tryingToHold == false && transform.position != lastPosition) { GameManager.OnTemporaryOffInputs?.Invoke(0.2f); }
     }
     
 }

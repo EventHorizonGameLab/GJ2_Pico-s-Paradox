@@ -28,8 +28,8 @@ public class PlayerRayCaster : MonoBehaviour
     }
     bool CollisionCheck(Vector3 direction)
     {
-        Vector3 leftRayOrigin = transform.position - Vector3.Cross(direction, Vector3.up) * 0.5f + Vector3.up * 0.5f;
-        Vector3 rightRayOrigin = transform.position + Vector3.Cross(direction, Vector3.up) * 0.5f + Vector3.up * 0.5f;
+        Vector3 leftRayOrigin = transform.position - Vector3.Cross(direction, Vector3.up) * 0.45f + Vector3.up * 0.5f;
+        Vector3 rightRayOrigin = transform.position + Vector3.Cross(direction, Vector3.up) * 0.45f + Vector3.up * 0.5f;
 
         bool hitCenter = Physics.Raycast(transform.position + Vector3.up * 0.5f, direction, rayLenght, ~layerToIgnore);
         bool hitLeft = Physics.Raycast(leftRayOrigin, direction, rayLenght, ~layerToIgnore);
@@ -43,15 +43,16 @@ public class PlayerRayCaster : MonoBehaviour
     {
         Gizmos.color = Color.magenta;
 
-        Vector3 direction = InputManager.Movement.normalized;
-        Vector3 leftRayOrigin = transform.position - Vector3.Cross(direction, Vector3.up) * 0.5f + Vector3.up * 0.5f;
-        Vector3 rightRayOrigin = transform.position + Vector3.Cross(direction, Vector3.up) * 0.5f + Vector3.up * 0.5f;
+        Vector3 direction = InputManager.Movement;
+        Vector3 leftRayOrigin = transform.position - Vector3.Cross(direction, Vector3.up) * 0.45f + Vector3.up * 0.5f;
+        Vector3 rightRayOrigin = transform.position + Vector3.Cross(direction, Vector3.up) * 0.45f + Vector3.up * 0.5f;
 
         Gizmos.DrawRay(leftRayOrigin, direction * 0.5f);
         Gizmos.DrawRay(rightRayOrigin, direction * 0.5f);
+        Gizmos.DrawRay(transform.position + Vector3.up * 0.5f, direction * 0.5f);
+        Gizmos.DrawWireSphere(transform.position + Vector3.up * 0.5f, 0.1f);
         Gizmos.DrawWireSphere(leftRayOrigin, 0.1f);
         Gizmos.DrawWireSphere(rightRayOrigin, 0.1f);
-        Gizmos.DrawRay(leftRayOrigin, Vector3.right * 0.5f);
     }
             
             
