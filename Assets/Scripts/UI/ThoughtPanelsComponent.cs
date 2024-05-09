@@ -45,10 +45,10 @@ public class ThoughtPanelsComponent : MonoBehaviour
             return;
         }
 
-
+        
         if (dialogues[dialogueCounter].lineCounter < dialogues[dialogueCounter].lines.Length)
         {
-
+            Debug.Log("last line = " + lastLineCounter + "\nline counter = " + lineCounter);
             if (lineCounter != lastLineCounter)
             {
                 InputManager.ActionMap.Player.Movement.Disable();
