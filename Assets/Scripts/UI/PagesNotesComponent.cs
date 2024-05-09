@@ -2,60 +2,73 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PagesNotesComponent : MonoBehaviour, IInteractable
+public class PagesNotesComponent : MonoBehaviour
 {
-    [SerializeField] GameObject pagePanel;
-    bool isReading = true;
-    GameObject lastPagePanel;
+    Image pagePanel; //immagine dell'oggetto in scena
+    bool isReading;
+    [SerializeField ]GameObject lastPagePanel;
     bool isInteracting;
-    public void Interact()
+    [SerializeField] Image newPage; //immagine che sostituisce quella in scena
+
+    private void Awake()
     {
-        if (isReading)
+        pagePanel = lastPagePanel.GetComponent<Image>();
+    }
+    private void OnEnable()
+    {
+        InputManager.ActionMap.Player.Interact.started += OnInteraction;
+    }
+
+
+    private void OnDisable()
+    {
+        InputManager.ActionMap.Player.Interact.started -= OnInteraction;
+    }
+    private void OnInteraction(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        Debug.Log("hi interacting = " + isInteracting);
+        if (isInteracting == false)
         {
-            MovementDisabled();
-            lastPagePanel = Instantiate(pagePanel);
+            return;
         }
+
+        if (isReading == false)
+        {
+            Debug.Log("gogogoogog " + isReading);
+            isReading = true;
+            InputManager.ActionMap.Player.Movement.Disable();
+            pagePanel.sprite = newPage.sprite;
+            pagePanel.color = newPage.color;
+            lastPagePanel.transform.parent.gameObject.SetActive(true);
+            //pagePanel.rectTransform.parent.gameObject.SetActive(true);
+        }
+
         else
         {
-            MovementEnabled();
-            Destroy(lastPagePanel);
+            Debug.Log("no " + isReading);
+            isReading = false;
+            InputManager.ActionMap.Player.Movement.Enable();
+            lastPagePanel.transform.parent.gameObject.SetActive(false);
         }
-        isReading = !isReading;
     }
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.TryGetComponent<IInteractor>(out var uwu))
-    //    {
-    //        if (InputManager.ActionMap.Player.Interact.WasPerformedThisFrame())
-    //        {
-    //            Interact();
-    //        }
-    //    }
-    //}
-
-    //private void OnTriggerStay(Collider other)
-    //{
-
-    //    if (other.TryGetComponent<IInteractor>(out var uwu))
-    //    {
-    //        if (InputManager.ActionMap.Player.Interact.WasPerformedThisFrame())
-    //        {
-    //            Debug.Log("uwu");
-    //            Interact();
-    //        }
-    //    }
-    //}
-
-    private void MovementDisabled()
+    private void OnTriggerEnter(Collider other)
     {
-        InputManager.ActionMap.Player.Movement.Disable();
+        if (other.TryGetComponent<IInteractor>(out _))
+        {
+            isInteracting = true;
+        }
+        //else
+        //{
+        //    isInteracting = false;
+        //}
     }
-
-    private void MovementEnabled()
+    private void OnTriggerExit(Collider other)
     {
-        InputManager.ActionMap.Player.Movement.Enable();
+        if (other.TryGetComponent<IInteractor>(out _))
+        {
+            isInteracting = false;
+        }
     }
-
 }
