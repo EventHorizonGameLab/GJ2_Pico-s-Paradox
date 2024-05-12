@@ -68,10 +68,7 @@ public class FadeCanvas : MonoBehaviour
             color.a = alpha;
             blackPanel.color = color;
         }
-        else
-        {
-            Debug.LogError("blackPanel is not assigned!");
-        }
+       
     }
 
 }
