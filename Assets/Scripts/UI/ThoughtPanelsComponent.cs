@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class ThoughtPanelsComponent : MonoBehaviour
 {
@@ -16,26 +17,55 @@ public class ThoughtPanelsComponent : MonoBehaviour
     Image image;
     int dialogueCounter;
     int lastLineCounter = 999;
-    int lineCounter => dialogues[dialogueCounter].lineCounter;
+    int lineCounter {get => dialogues[dialogueCounter].lineCounter; set => dialogues[dialogueCounter].lineCounter = value;}
     Lines currentLine => dialogues[dialogueCounter].lines[lineCounter];
 
     public Dialogue[] dialogues;
 
+    [SerializeField] bool isTriggered;
+
+    RoomTrigger roomTrigger;
+
+    private void Awake()
+    {
+        roomTrigger = gameObject.GetComponent<RoomTrigger>();
+        
+    }
     private void Start()
     {
         text = textObject.GetComponent<TextMeshProUGUI>();
         image = imageObjectChanger.GetComponent<Image>();
-        Debug.Log(text.text);
     }
     private void OnEnable()
     {
-        InputManager.ActionMap.Player.Interact.started += OnInteraction;
+        if (isTriggered == false)
+        {
+            InputManager.ActionMap.Player.Interact.started += OnInteraction;
+        }
+        else
+        {
+            roomTrigger.OnDialogue += ShowDialogue;
+            InputManager.ActionMap.Player.Interact.started += HideDialogue;
+        }
     }
 
+    private void HideDialogue(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        dialogueCanvas.SetActive(false);
+        InputManager.ActionMap.Player.Enable();
+    }
 
     private void OnDisable()
     {
-        InputManager.ActionMap.Player.Interact.started -= OnInteraction;
+        if (isTriggered == false)
+        {
+            InputManager.ActionMap.Player.Interact.started -= OnInteraction;
+        }
+        else
+        {
+            roomTrigger.OnDialogue -= ShowDialogue;
+            InputManager.ActionMap.Player.Interact.started -= HideDialogue;
+        }
     }
 
     private void OnInteraction(UnityEngine.InputSystem.InputAction.CallbackContext context)
@@ -44,44 +74,70 @@ public class ThoughtPanelsComponent : MonoBehaviour
         {
             return;
         }
-
-        
+        ShowDialogue();
+    }
+    private void ShowDialogue()
+    {
+        Debug.LogWarning("showdialogue");
         if (dialogues[dialogueCounter].lineCounter < dialogues[dialogueCounter].lines.Length)
         {
+            
             Debug.Log("last line = " + lastLineCounter + "\nline counter = " + lineCounter);
             if (lineCounter != lastLineCounter)
             {
+                Debug.LogWarning("second if");
                 InputManager.ActionMap.Player.Movement.Disable();
                 text.text = currentLine.text;
                 image.sprite = currentLine.Ted.sprite;
                 image.color = currentLine.Ted.color;
                 lastLineCounter = lineCounter;
                 dialogueCanvas.SetActive(true);
+                
             }
             else
             {
-                dialogues[dialogueCounter].lineCounter++;
-                OnInteraction(context);
+                Debug.Log("TUO PADRE");
+                lineCounter++;
+                ShowDialogue();
             }
         }
         else if (dialogueCounter < dialogues.Length)
         {
-            InputManager.ActionMap.Player.Movement.Enable();
+            InputManager.ActionMap.Player.Enable();
+            lineCounter = 0;
+            Debug.Log(dialogues[dialogueCounter].lineCounter + "\n" + lineCounter);
             dialogueCounter++;
             dialogueCanvas.SetActive(false);
             lastLineCounter = 999;
+
+            if (dialogueCounter >= dialogues.Length)
+            {
+                if (isTriggered == false)
+                {
+                    Debug.Log("TUA MAMMA");
+
+                    InputManager.ActionMap.Player.Enable();
+                    dialogueCounter = 0;
+                    lastLineCounter = 999;
+                    dialogueCanvas.SetActive(false);
+                }
+                else
+                {
+                    Debug.Log("TUA MAMMA 2.0");
+                    InputManager.ActionMap.Player.Enable();
+                    dialogueCanvas.SetActive(false);
+                }
+            }
         }
-        else
-        {
-            InputManager.ActionMap.Player.Movement.Enable();
-            dialogueCounter = 0;
-            lastLineCounter = 999;
-            dialogueCanvas.SetActive(false);
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (isTriggered)
+        {
+            return;
+        }
         if (other.TryGetComponent<IInteractor>(out _))
         {
             isInteracting = true;
@@ -89,6 +145,10 @@ public class ThoughtPanelsComponent : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        if (isTriggered)
+        {
+            return;
+        }
         if (other.TryGetComponent<IInteractor>(out _))
         {
             isInteracting = false;
