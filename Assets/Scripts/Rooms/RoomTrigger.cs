@@ -10,6 +10,8 @@ public class RoomTrigger : MonoBehaviour
     Vector3 targetPos;
     GameObject player;
     [SerializeField] float transitionTime;
+    public delegate void Dialogue();
+    public event Dialogue OnDialogue;
 
     private void Awake()
     {
@@ -31,5 +33,6 @@ public class RoomTrigger : MonoBehaviour
         yield return new WaitForSeconds(delay);
         player.transform.position = targetPos;
         MovePoint.OnChanginRoom(targetPos);
+        OnDialogue?.Invoke();
     }
 }

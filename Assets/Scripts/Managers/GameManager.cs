@@ -22,13 +22,13 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         OnTemporaryOffInputs += ReEenableInputsOnDelay;
-        RoomTrigger.OnChangingRoom += ReEenableInputsOnDelay;
+        //RoomTrigger.OnChangingRoom += ReEenableInputsOnDelay;
     }
 
     private void OnDisable()
     {
         OnTemporaryOffInputs -= ReEenableInputsOnDelay;
-        RoomTrigger.OnChangingRoom -= ReEenableInputsOnDelay;
+        //RoomTrigger.OnChangingRoom -= ReEenableInputsOnDelay;
     }
 
 
