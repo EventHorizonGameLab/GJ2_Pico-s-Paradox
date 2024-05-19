@@ -8,7 +8,7 @@ public class PagesNotesComponent : MonoBehaviour
 {
     Image pagePanel; //immagine dell'oggetto in scena
     bool isReading;
-    [SerializeField ]GameObject lastPagePanel;
+    [SerializeField] GameObject lastPagePanel;
     bool isInteracting;
     [SerializeField] Image newPage; //immagine che sostituisce quella in scena
 
@@ -28,7 +28,7 @@ public class PagesNotesComponent : MonoBehaviour
     }
     private void OnInteraction(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
-        Debug.Log("hi interacting = " + isInteracting);
+        //Debug.Log("hi interacting = " + isInteracting);
         if (isInteracting == false)
         {
             return;
@@ -36,7 +36,7 @@ public class PagesNotesComponent : MonoBehaviour
 
         if (isReading == false)
         {
-            Debug.Log("gogogoogog " + isReading);
+            //Debug.Log("gogogoogog " + isReading);
             isReading = true;
             InputManager.ActionMap.Player.Movement.Disable();
             pagePanel.sprite = newPage.sprite;
