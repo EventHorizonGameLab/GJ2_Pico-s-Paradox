@@ -11,7 +11,8 @@ public class PagesNotesComponent : MonoBehaviour
     [SerializeField] GameObject lastPagePanel;
     bool isInteracting;
     [SerializeField] Image newPage; //immagine che sostituisce quella in scena
-
+    [SerializeField] bool isLast;
+    public static Action lastPageBubble;
     private void Awake()
     {
         pagePanel = lastPagePanel.GetComponent<Image>();
@@ -33,7 +34,7 @@ public class PagesNotesComponent : MonoBehaviour
         {
             return;
         }
-
+        
         if (isReading == false)
         {
             //Debug.Log("gogogoogog " + isReading);
@@ -47,6 +48,11 @@ public class PagesNotesComponent : MonoBehaviour
 
         else
         {
+            if (isLast)
+            {
+                lastPageBubble?.Invoke();
+            }
+
             Debug.Log("no " + isReading);
             isReading = false;
             InputManager.ActionMap.Player.Movement.Enable();

@@ -1,10 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
+
 
 public class ThoughtPanelsComponent : MonoBehaviour
 {
@@ -17,7 +15,7 @@ public class ThoughtPanelsComponent : MonoBehaviour
     Image image;
     int dialogueCounter;
     int lastLineCounter = 999;
-    int lineCounter {get => dialogues[dialogueCounter].lineCounter; set => dialogues[dialogueCounter].lineCounter = value;}
+    int lineCounter { get => dialogues[dialogueCounter].lineCounter; set => dialogues[dialogueCounter].lineCounter = value; }
     Lines currentLine => dialogues[dialogueCounter].lines[lineCounter];
 
     public Dialogue[] dialogues;
@@ -26,10 +24,14 @@ public class ThoughtPanelsComponent : MonoBehaviour
 
     RoomTrigger roomTrigger;
 
+    [SerializeField] bool isLastBubble;
+
+    bool isFirstTime = true;
+
     private void Awake()
     {
         roomTrigger = gameObject.GetComponent<RoomTrigger>();
-        
+
     }
     private void Start()
     {
@@ -47,6 +49,16 @@ public class ThoughtPanelsComponent : MonoBehaviour
             roomTrigger.OnDialogue += ShowDialogue;
             InputManager.ActionMap.Player.Interact.started += HideDialogue;
         }
+
+        if (isLastBubble)
+        {
+            PagesNotesComponent.lastPageBubble += ShowLastMessage;
+        }
+    }
+
+    private void ShowLastMessage()
+    {
+        ShowDialogue();
     }
 
     private void HideDialogue(UnityEngine.InputSystem.InputAction.CallbackContext context)
@@ -68,20 +80,33 @@ public class ThoughtPanelsComponent : MonoBehaviour
         }
     }
 
+    void HideLastBubble()
+    {
+        InputManager.ActionMap.Player.Enable();
+        dialogueCanvas.SetActive(false); 
+        Room5.gustavo?.Invoke();
+    }
+
     private void OnInteraction(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
         if (isInteracting == false)
         {
             return;
         }
+
+        if (isLastBubble && isFirstTime)
+        {
+            isFirstTime = false;
+            return;
+        }
         ShowDialogue();
     }
     private void ShowDialogue()
     {
-        Debug.LogWarning("showdialogue");
+        //Debug.LogWarning("showdialogue");
         if (dialogues[dialogueCounter].lineCounter < dialogues[dialogueCounter].lines.Length)
         {
-            
+
             Debug.Log("last line = " + lastLineCounter + "\nline counter = " + lineCounter);
             if (lineCounter != lastLineCounter)
             {
@@ -92,11 +117,11 @@ public class ThoughtPanelsComponent : MonoBehaviour
                 image.color = currentLine.Ted.color;
                 lastLineCounter = lineCounter;
                 dialogueCanvas.SetActive(true);
-                
+
             }
             else
             {
-                Debug.Log("TUO PADRE");
+                //Debug.Log("TUO PADRE");
                 lineCounter++;
                 ShowDialogue();
             }
@@ -105,16 +130,21 @@ public class ThoughtPanelsComponent : MonoBehaviour
         {
             InputManager.ActionMap.Player.Enable();
             lineCounter = 0;
-            Debug.Log(dialogues[dialogueCounter].lineCounter + "\n" + lineCounter);
+            //Debug.Log(dialogues[dialogueCounter].lineCounter + "\n" + lineCounter);
             dialogueCounter++;
             dialogueCanvas.SetActive(false);
             lastLineCounter = 999;
 
             if (dialogueCounter >= dialogues.Length)
             {
-                if (isTriggered == false)
+                if (isLastBubble)
                 {
-                    Debug.Log("TUA MAMMA");
+                    HideLastBubble();
+                }
+
+                else if (isTriggered == false)
+                {
+                    //Debug.Log("TUA MAMMA");
 
                     InputManager.ActionMap.Player.Enable();
                     dialogueCounter = 0;
@@ -123,13 +153,12 @@ public class ThoughtPanelsComponent : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("TUA MAMMA 2.0");
+                    //Debug.Log("TUA MAMMA 2.0");
                     InputManager.ActionMap.Player.Enable();
                     dialogueCanvas.SetActive(false);
                 }
             }
         }
-        
     }
 
     private void OnTriggerEnter(Collider other)
