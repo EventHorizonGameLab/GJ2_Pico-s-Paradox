@@ -5,13 +5,13 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(BoxCollider))]
-public class Furniture : MonoBehaviour
+public class Furniture : MonoBehaviour, IInteractable
 {
 
-
+    [SerializeField] AudioData audioData;
     [SerializeField] bool isInteractable; // Serializzato per debug
     [SerializeField] bool isHolded; // Serializzato per debug
-    [SerializeField] GameObject icon;
+    AudioClip clip;
 
     
     Transform playerHolder;
@@ -22,6 +22,7 @@ public class Furniture : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        clip = audioData.sfx_ObjectMoving;
     }
 
     private void OnEnable()
@@ -94,11 +95,12 @@ public class Furniture : MonoBehaviour
 
     private void Update()
     {
-        
         GameManager.isHoldingAnObject = isHolded;
-        icon.SetActive(isInteractable);
         HoldingLogic();
+        PlaySound();
     }
+        
+        
 
 
 
@@ -131,7 +133,17 @@ public class Furniture : MonoBehaviour
         if(isInteractable) { tryingToHold = !tryingToHold; }
         if(tryingToHold == false && transform.position != lastPosition) { GameManager.OnTemporaryOffInputs?.Invoke(0.2f); }
     }
-    
+
+    public void Interact()
+    {
+        
+    }
+
+    void PlaySound()
+    {
+        if (!GameManager.isHoldingAnObject) return;
+        else if (GameManager.isHoldingAnObject && InputManager.IsMoving(out _)) AudioManager.instance.PlayInLoop(clip);
+    }
 }
    
 

@@ -15,6 +15,8 @@ public class PlayerControllerV2 : MonoBehaviour, ITeleportable
     [SerializeField] Transform targetMovePoint;
     [SerializeField] LayerMask obstacle;
     [SerializeField] LayerMask player;
+    [SerializeField] GameObject interactIcon;
+    [SerializeField] GameObject dialogueIcon;
     
     Vector3 movementVector;
     
