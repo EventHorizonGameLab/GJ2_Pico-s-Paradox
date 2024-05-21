@@ -9,8 +9,15 @@ public class Room4PuzzleObject : MonoBehaviour, IInteractable
     
 
     [SerializeField] InteractionPuzzle puzzleController;
-    [SerializeField] GameObject icon;
+    [SerializeField] AudioData audioData;
+    AudioClip clip;
+    
     public bool isInteractable;
+
+    private void Awake()
+    {
+        clip = audioData.sfx_interactSound;
+    }
 
     private void OnEnable()
     {
@@ -25,27 +32,25 @@ public class Room4PuzzleObject : MonoBehaviour, IInteractable
     private void Start()
     {
         isInteractable = true;
-        icon.SetActive(false);
+        
     }
     public void Interact()
     {
         puzzleController.InteractWithObject(this.gameObject);
         isInteractable = false;
+        AudioManager.instance.PlaySFX(clip);
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.TryGetComponent<IInteractor>(out _) && isInteractable) { icon.SetActive(true); } else { icon.SetActive(false); }
+        
         if (other.TryGetComponent<IInteractor>(out _) && InputManager.IsTryingToInteract() && isInteractable)
         {
             Interact();
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.TryGetComponent<IInteractor>(out _)) { icon.SetActive(false); }
-    }
+    
 
     void ResetPuzzle()
     {

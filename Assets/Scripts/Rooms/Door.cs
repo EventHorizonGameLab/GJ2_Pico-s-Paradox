@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
     [SerializeField] Animator anim;
     [SerializeField] Key key;
     [SerializeField] bool isFirstDoor;
+    [SerializeField] AudioData audioData;
     bool isLocked = true;
 
     private void OnEnable()
@@ -51,7 +52,7 @@ public class Door : MonoBehaviour
         {
             if (key.hasKey)
             {
-
+                AudioManager.instance.PlaySFX(audioData.sfx_openingDoor);
                 anim.SetBool("isOpeningDoor", true);
                 key.hasKey = false;
                 key.keySprite.SetActive(false);

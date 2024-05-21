@@ -3,14 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionPuzzle : MonoBehaviour
+public class InteractionPuzzle : MonoBehaviour, IInteractable
 {
     //Events
     public Action OnWrongInteraction;
 
     [SerializeField] List<GameObject> correctOrder = new();
-
+    [SerializeField] AudioData audioData;
+    
     int interactionIndex;
+
+    
 
     private void Start()
     {
@@ -23,23 +26,26 @@ public class InteractionPuzzle : MonoBehaviour
         {
             Debug.Log("Hai interagito con l'oggetto numero:" +  interactionIndex );
             interactionIndex++;
-            //TODO:play interaction sound
+            
             if (interactionIndex >= correctOrder.Count) 
             {
-            //TODO: play clear puzzle sound
-            //TODO: obtain key && show in HUD
-            correctOrder.Clear();
-            Debug.Log("Puzzle Risolto");
+                AudioManager.instance.PlaySFX(audioData.sfx_puzzleSolved);
+                GameManager.OnKeyObtained?.Invoke();
+                correctOrder.Clear();
+                Debug.Log("Puzzle Risolto");
             }
         }
         else
         {
-            //TODO: play wrong order sound
+            AudioManager.instance.PlaySFX(audioData.sfx_puzzleWrong);
             interactionIndex = 0;
             OnWrongInteraction();
             Debug.Log("devi ricominciare");
         }
     }
 
-    
+    public void Interact()
+    {
+        
+    }
 }

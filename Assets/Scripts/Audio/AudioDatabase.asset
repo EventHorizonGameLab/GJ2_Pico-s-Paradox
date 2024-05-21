@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf0a20047b780974eab33e98c456be25, type: 3}
+  m_Name: AudioDatabase
+  m_EditorClassIdentifier: 
+  music_BGM: {fileID: 8300000, guid: 02e46f78984a65a46aa985e4479323dc, type: 3}
+  sfx_ObjectMoving: {fileID: 8300000, guid: 8add3d261d2f1154f91fbb3c24a1c93d, type: 3}
+  sfx_keyInKeyhole: {fileID: 0}
+  sfx_looseScreen: {fileID: 8300000, guid: 51b711e9c192f3b47b007e080ae2ad2b, type: 3}
+  sfx_menuButton: {fileID: 8300000, guid: d6e05fa5e24d9a04a8bf297a67c01ce5, type: 3}
+  sfx_monstearRoar: {fileID: 8300000, guid: b5ed1f07d81cd8b4287306ca6691f4d8, type: 3}
+  sfx_openingDoor: {fileID: 8300000, guid: 070d89d90fbdd0e4094812c16fd43834, type: 3}
+  sfx_paperInteraction: {fileID: 8300000, guid: d8c281cb28746c540a007dd7879c408a, type: 3}
+  sfx_puzzleSolved: {fileID: 8300000, guid: 91e04b0714910304c9257bca0eae18bd, type: 3}
+  sfx_puzzleWrong: {fileID: 8300000, guid: c06fccced83557049b1aca3bdfcf1d68, type: 3}
+  sfx_interactSound: {fileID: 8300000, guid: ecdf05c8ef3c3f74f9fe55711df002f4, type: 3}
+  sfx_victorySound: {fileID: 8300000, guid: db9c41aaf262b804baf5406a79e5f352, type: 3}
