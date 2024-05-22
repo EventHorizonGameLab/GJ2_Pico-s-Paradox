@@ -3,7 +3,22 @@ guid: 9ff5a7fd8d6f249498d7d8bd2e3a629a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: camioncino_standardSurface1_BaseColor
+    second: {fileID: 2800000, guid: 5ff019cd201a25249a4713d3a867a079, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: camioncino_standardSurface1_Metallic
+    second: {fileID: 2800000, guid: 66590971fb9042e478f4c82da5652b4a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: camioncino_standardSurface1_Roughness
+    second: {fileID: 2800000, guid: 9702402bbde99cc488067d1cc861b28f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,12 @@ guid: a038a268300d20a47a2b2f26831d7a1f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sedia_standardSurface1_BaseColor
+    second: {fileID: 2800000, guid: 7989acaaf9c73eb4096ce19e6d568192, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

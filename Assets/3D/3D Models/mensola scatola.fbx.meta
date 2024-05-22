@@ -3,7 +3,12 @@ guid: fbac3dfd72479da468df2a7e41cd4ee9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mensola scatola_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 5f3640e4904ac7a42b2d44cff9f79d42, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

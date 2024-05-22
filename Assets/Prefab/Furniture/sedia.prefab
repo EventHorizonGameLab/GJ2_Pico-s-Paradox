@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sedia
       objectReference: {fileID: 0}
+    - target: {fileID: 4253280567622488715, guid: a038a268300d20a47a2b2f26831d7a1f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64d5164e23dda3a41ae6d185c44b04a1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

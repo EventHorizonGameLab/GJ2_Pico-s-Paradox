@@ -3,7 +3,12 @@ guid: bd5849ad288162740a5dc088ac4bf943
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tucano texture
+    second: {fileID: 2800000, guid: 2a3645cf6a32f254dbd7bf7b900cd9e9, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

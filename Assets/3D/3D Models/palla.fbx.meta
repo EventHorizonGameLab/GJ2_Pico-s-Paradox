@@ -3,7 +3,12 @@ guid: 757a32cf38895654882a00eb832c726f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: palla_standardSurface1_BaseColor
+    second: {fileID: 2800000, guid: 11255c63bee3de94d8eeb70637b17961, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

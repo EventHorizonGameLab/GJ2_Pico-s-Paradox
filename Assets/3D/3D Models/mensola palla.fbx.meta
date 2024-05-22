@@ -3,7 +3,12 @@ guid: d9b03ee846d76bf4ea1953a4ccc1224f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mensola palla_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 1ac18726f84477d4883ca080310c4469, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

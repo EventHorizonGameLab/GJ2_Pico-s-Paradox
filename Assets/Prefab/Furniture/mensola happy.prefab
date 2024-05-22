@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mensola happy
       objectReference: {fileID: 0}
+    - target: {fileID: 1170970068873931921, guid: 85eb7488f00c57c4aad16b4ac33e9b1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f511e91185008a14d80809ee8036f0eb, type: 2}
     - target: {fileID: 5898855749840620490, guid: 85eb7488f00c57c4aad16b4ac33e9b1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

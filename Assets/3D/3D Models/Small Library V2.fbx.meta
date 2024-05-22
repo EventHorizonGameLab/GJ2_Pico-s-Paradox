@@ -3,7 +3,12 @@ guid: 48d6d7b2aa5299547a364d9c0b9c76eb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prova_txtr_3
+    second: {fileID: 2800000, guid: 3ead272222867b947a998d7e38aa7c6d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

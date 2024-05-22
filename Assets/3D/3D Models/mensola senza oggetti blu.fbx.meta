@@ -3,7 +3,12 @@ guid: 576171ff0d20ab341a1ac2c07ede9be7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mensola razzo_lambert1_BaseColor
+    second: {fileID: 2800000, guid: cf4a0de15a4608844ba2d6c8472fbcb3, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,12 @@ guid: 4b0b5f4d2581e204f91a44082fdf0093
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mensola radio_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 79e8dfe59e81edf4ebc0ebc6e6d862c6, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

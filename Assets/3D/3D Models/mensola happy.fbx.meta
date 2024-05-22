@@ -3,7 +3,12 @@ guid: 85eb7488f00c57c4aad16b4ac33e9b1e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mensola happy_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 4f0d5634077152047983641d223e6e01, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

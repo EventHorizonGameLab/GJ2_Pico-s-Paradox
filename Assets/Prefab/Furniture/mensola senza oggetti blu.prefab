@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mensola senza oggetti blu
       objectReference: {fileID: 0}
+    - target: {fileID: 9017039656552682866, guid: 576171ff0d20ab341a1ac2c07ede9be7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fdaac34ce22e95f48a86b6a141f3f516, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -3,7 +3,12 @@ guid: 32fed942f0593624390521dafca36a17
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: letto_standardSurface1_BaseColor
+    second: {fileID: 2800000, guid: 8775e035cb9ef0248afde6efb20c744f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

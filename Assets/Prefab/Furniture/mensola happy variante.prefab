@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3901992563441801604, guid: 83b0f808b0df47c4bb64f85c09c8c8cb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c8d59e46e926c67459d152e875e880a6, type: 2}
     - target: {fileID: 919132149155446097, guid: 83b0f808b0df47c4bb64f85c09c8c8cb, type: 3}
       propertyPath: m_Name
       value: mensola happy variante

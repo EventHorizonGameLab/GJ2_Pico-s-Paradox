@@ -3,7 +3,12 @@ guid: 38d1db50bbd0ae74f851e7d20a1d82f0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: texture tappeto 2 pixel
+    second: {fileID: 2800000, guid: 70228c81bf563764e98fa22aa2232852, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3334479249560807378, guid: fbac3dfd72479da468df2a7e41cd4ee9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 405ddeadb4cad6f4086c044a450ec260, type: 2}
     - target: {fileID: 919132149155446097, guid: fbac3dfd72479da468df2a7e41cd4ee9, type: 3}
       propertyPath: m_Name
       value: mensola scatola
