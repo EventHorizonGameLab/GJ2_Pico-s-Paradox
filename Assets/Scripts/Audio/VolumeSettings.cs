@@ -50,4 +50,6 @@ public class VolumeSettings : MonoBehaviour
         PlayerPrefs.SetFloat(AudioManager.MUSIC_KEY, MusicSlider.value);
         PlayerPrefs.SetFloat(AudioManager.SFX_KEY, SFXSlider.value);
     }
+
+    
 }
