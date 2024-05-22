@@ -12,6 +12,7 @@ public class Furniture : MonoBehaviour, IInteractable
     [SerializeField] bool isInteractable; // Serializzato per debug
     [SerializeField] bool isHolded; // Serializzato per debug
     AudioClip clip;
+    bool readyForSound;
 
     
     Transform playerHolder;
@@ -28,11 +29,15 @@ public class Furniture : MonoBehaviour, IInteractable
     private void OnEnable()
     {
         InputManager.ActionMap.Player.Hold.performed += HoldingBool;
+        InputManager.ActionMap.Player.Movement.started += CanPlaySound;
+        InputManager.ActionMap.Player.Movement.canceled += CanNotPlaySound;
     }
 
     private void OnDisable()
     {
         InputManager.ActionMap.Player.Hold.performed -= HoldingBool;
+        InputManager.ActionMap.Player.Movement.started -= CanPlaySound;
+        InputManager.ActionMap.Player.Movement.canceled -= CanNotPlaySound;
     }
 
     private void Start()
@@ -136,18 +141,22 @@ public class Furniture : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        
+        // no need implementation
     }
 
     void PlaySound()
     {
         if (!GameManager.isHoldingAnObject) return;
-        else if (GameManager.isHoldingAnObject && InputManager.IsMoving(out _)) AudioManager.instance.PlayInLoop(clip);
+        else if (GameManager.isHoldingAnObject && readyForSound ) { AudioManager.instance.PlayInLoop(clip); }
     }
-}
-   
 
-    
+    void CanPlaySound(InputAction.CallbackContext context) => readyForSound = true;
+    void CanNotPlaySound(InputAction.CallbackContext context) => readyForSound = false;
+
+}
+
+
+
 
 
 

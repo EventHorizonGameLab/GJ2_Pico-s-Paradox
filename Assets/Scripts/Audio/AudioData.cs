@@ -5,8 +5,8 @@ using UnityEngine;
 public class AudioData : ScriptableObject
 {
     [SerializeField] public AudioClip music_BGM;
+    [SerializeField] public AudioClip music_Gustavo;
     [SerializeField] public AudioClip sfx_ObjectMoving;
-    [SerializeField] public AudioClip sfx_keyInKeyhole;
     [SerializeField] public AudioClip sfx_looseScreen;
     [SerializeField] public AudioClip sfx_menuButton;
     [SerializeField] public AudioClip sfx_monstearRoar;
