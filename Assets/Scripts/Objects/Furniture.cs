@@ -55,6 +55,7 @@ public class Furniture : MonoBehaviour, IInteractable
         {
             isInteractable = true;
         }
+        else if (collision.gameObject.CompareTag("Spot")) GameManager.OnObjectInCorrectPos?.Invoke(true);
     }
 
     private void OnTriggerStay(Collider collision)
@@ -71,10 +72,7 @@ public class Furniture : MonoBehaviour, IInteractable
             }
             
             
-            //else if (!FurnitureIsOnGrid())
-            //{
-            //    isHolded = true;
-            //}
+            
             else
             {
                 isHolded = false;
@@ -83,27 +81,50 @@ public class Furniture : MonoBehaviour, IInteractable
             }
         }
     }
-                
-                
-
-
-
-
-
     private void OnTriggerExit(Collider collision)
     {
         if (collision.TryGetComponent<IInteractor>(out _))
         {
             isInteractable = false;
         }
+        else if (collision.gameObject.CompareTag("Spot")) GameManager.OnObjectInCorrectPos?.Invoke(false);
     }
-
     private void Update()
     {
-        GameManager.isHoldingAnObject = isHolded;
         HoldingLogic();
         PlaySound();
     }
+        
+    void HoldingLogic()
+    {
+        if (isHolded && playerHolder != null)
+        {
+            transform.position = new Vector3(playerHolder.position.x, transform.position.y, playerHolder.position.z);
+        }
+    }
+    void HoldingBool(InputAction.CallbackContext context)
+    {
+        if(isInteractable) { tryingToHold = !tryingToHold; }
+        if(tryingToHold == false && transform.position != lastPosition) { GameManager.OnTemporaryOffInputs?.Invoke(0.2f); }
+    }
+    void PlaySound()
+    {
+        if (!GameManager.isHoldingAnObject) return;
+        else if (GameManager.isHoldingAnObject && readyForSound ) { AudioManager.instance.PlayInLoop(clip); }
+    }
+
+    void CanPlaySound(InputAction.CallbackContext context) => readyForSound = true;
+    void CanNotPlaySound(InputAction.CallbackContext context) => readyForSound = false;
+                
+                
+
+    
+    /////////////////////////// discarded code below //////////////////////////////////
+    
+    
+
+
+
         
         
 
@@ -125,33 +146,13 @@ public class Furniture : MonoBehaviour, IInteractable
         return isOnGrid;
     }
 
-    void HoldingLogic()
-    {
-        if (isHolded && playerHolder != null)
-        {
-            transform.position = new Vector3(playerHolder.position.x, transform.position.y, playerHolder.position.z);
-        }
-    }
 
-    void HoldingBool(InputAction.CallbackContext context)
-    {
-        if(isInteractable) { tryingToHold = !tryingToHold; }
-        if(tryingToHold == false && transform.position != lastPosition) { GameManager.OnTemporaryOffInputs?.Invoke(0.2f); }
-    }
 
     public void Interact()
     {
         // no need implementation
     }
 
-    void PlaySound()
-    {
-        if (!GameManager.isHoldingAnObject) return;
-        else if (GameManager.isHoldingAnObject && readyForSound ) { AudioManager.instance.PlayInLoop(clip); }
-    }
-
-    void CanPlaySound(InputAction.CallbackContext context) => readyForSound = true;
-    void CanNotPlaySound(InputAction.CallbackContext context) => readyForSound = false;
 
 }
 
