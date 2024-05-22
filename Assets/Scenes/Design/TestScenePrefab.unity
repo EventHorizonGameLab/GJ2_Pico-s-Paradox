@@ -3102,10 +3102,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1207056381}
     m_Modifications:
+    - target: {fileID: 1684595442199790042, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d8b6e03162445a64d9be4be0131ab327, type: 2}
     - target: {fileID: 1876988571579355650, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d0797e75927e7a7408356c794c684595, type: 2}
+      objectReference: {fileID: 2100000, guid: d8b6e03162445a64d9be4be0131ab327, type: 2}
     - target: {fileID: 7256357732362266636, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.6365123
@@ -3146,6 +3150,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7390602711421892857, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d8b6e03162445a64d9be4be0131ab327, type: 2}
+    - target: {fileID: 7520949372314632102, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d8b6e03162445a64d9be4be0131ab327, type: 2}
     - target: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
       propertyPath: m_Name
       value: Bedside Table (3)
@@ -3480,9 +3492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5d85ed148384c48bb6f309b824a171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioData: {fileID: 0}
   isInteractable: 0
   isHolded: 0
-  icon: {fileID: 2004188954}
   tryingToHold: 0
 --- !u!54 &1759933809
 Rigidbody:
@@ -3830,6 +3842,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1207056381}
     m_Modifications:
+    - target: {fileID: 64575876921494935, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e3728fb04c8fc3b4282efc9e38dec0ef, type: 2}
     - target: {fileID: 282466359734315461, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.213488
@@ -3873,7 +3889,7 @@ PrefabInstance:
     - target: {fileID: 310634286908628565, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c09d4d255697ab840869d070b9537c84, type: 2}
+      objectReference: {fileID: 2100000, guid: e3728fb04c8fc3b4282efc9e38dec0ef, type: 2}
     - target: {fileID: 621590227504755583, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
       propertyPath: m_Name
       value: Tv Table (1)
@@ -4109,11 +4125,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98afbfdcd1fa81d468207f153b7585cd, type: 3}
---- !u!1 &2004188954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 747821837414361163, guid: 56356ac2b03a75040ab89405d919e45c, type: 3}
-  m_PrefabInstance: {fileID: 420271197}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2004188957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2706195750279474851, guid: 56356ac2b03a75040ab89405d919e45c, type: 3}
