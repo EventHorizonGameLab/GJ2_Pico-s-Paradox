@@ -5,10 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Scenes/Elo Tests Scenes/Men\xF9.unity"
     guid: 6c6c8d1404a81334a9f4be863ed84f78
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scena Marco.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/Elo Tests Scenes/hehehhee.unity
+    guid: 60a1ac959899b7246b6fd5727d481204
+  - enabled: 1
+    path: Assets/Scenes/Elo Tests Scenes/Elo Test Scene.unity
+    guid: 05292c547253d964ebc7701ffd2ece17
   m_configObjects: {}

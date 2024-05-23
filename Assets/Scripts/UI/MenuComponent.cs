@@ -11,6 +11,7 @@ public class MenuComponent : MonoBehaviour
     public GameObject settingsPanel;
     public GameObject showControlsPanel;
     public GameObject creditsPanel;
+    public GameObject UIPanel;
 
     public int playSceneNumber;
 
@@ -22,10 +23,30 @@ public class MenuComponent : MonoBehaviour
     private Resolution[] resolutions;
     private List<Resolution> filteredResolutions;
 
-    
+
     private int currentResolutionIndex = 0;
     [HideInInspector] public Resolution resolution;
 
+    [SerializeField] GameObject pausePanel;
+    bool isPause;
+    [SerializeField] GameObject showControlPanel;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
+    private void OnDisable()
+    {
+        try
+        {
+            InputManager.ActionMap.AlwaysOn.Pause.performed -= ActivatePause;
+        }
+        finally
+        {
+
+        }
+    }
     private void Start()
     {
         PlayerPrefs.SetInt("ScreenMode", 0);
@@ -33,7 +54,7 @@ public class MenuComponent : MonoBehaviour
         filteredResolutions = new List<Resolution>();
 
         resolutionDropDown.ClearOptions();
-        
+
 
         for (int i = 0; i < resolutions.Length; i++)
         {
@@ -60,7 +81,10 @@ public class MenuComponent : MonoBehaviour
     }
     public void OnPlayButton()
     {
+        InputManager.ActionMap.AlwaysOn.Pause.performed += ActivatePause;
         SceneManager.LoadScene(playSceneNumber);
+        UIPanel.SetActive(false);
+        
     }
 
     public void OnSettingsButton()
@@ -120,6 +144,40 @@ public class MenuComponent : MonoBehaviour
     public void OnQuitGame()
     {
         Application.Quit();
+    }
+    private void ActivatePause(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    {
+        if (pausePanel == null)
+        {
+            return;
+        }
+        Debug.Log("tua zia");
+        isPause = !isPause;
+        Debug.Log(isPause);
+
+        if (isPause)
+        {
+            GameManager.TimeScale(0);
+            InputManager.SwitchToUI();
+        }
+
+        else
+        {
+            GameManager.TimeScale(1);
+            InputManager.SwitchToPlayer();
+        }
+
+        pausePanel.SetActive(isPause);
+    }
+
+    public void OnReturnToMain()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void OnCLoseShowControl()
+    {
+        showControlPanel.SetActive(false);
     }
 }
 

@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1503487545}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseUIComponent, Assembly-CSharp
         m_MethodName: OnReturnToMain
         m_Mode: 1
@@ -3356,7 +3356,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1503487544}
-  - component: {fileID: 1503487545}
   - component: {fileID: 1503487546}
   m_Layer: 0
   m_Name: --UI--
@@ -3381,20 +3380,6 @@ Transform:
   - {fileID: 833164327}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1503487545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503487543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4e87a42c2d4aa440bdbfbefd6e235ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pausePanel: {fileID: 1646641505}
-  showControlPanel: {fileID: 561612385}
 --- !u!114 &1503487546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3409,8 +3394,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 0}
   showControlsPanel: {fileID: 561612385}
+  creditsPanel: {fileID: 0}
   playSceneNumber: 0
   resolutionDropDown: {fileID: 413507810}
+  pausePanel: {fileID: 0}
+  showControlPanel: {fileID: 0}
 --- !u!1 &1530961218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,7 +3669,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1503487545}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseUIComponent, Assembly-CSharp
         m_MethodName: OnCLoseShowControl
         m_Mode: 1
