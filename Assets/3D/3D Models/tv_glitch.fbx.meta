@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: glitch_colorato
-    second: {fileID: 2800000, guid: ee678b418c8b3e947bae7e531bef66b1, type: 3}
+    second: {fileID: 2800000, guid: a821ebbfb1c53a649a08388afc605167, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: pulsanti_definitivo_pixel
-    second: {fileID: 2800000, guid: 4ce47704486cd414a9d13df35ea9def1, type: 3}
+    second: {fileID: 2800000, guid: 8e7b574e4a82c03488f7343b49b88eab, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tucanotv_pixel
-    second: {fileID: 2800000, guid: 58c1e5c1403fe4b43adf0aa5e0f1d0fa, type: 3}
+    second: {fileID: 2800000, guid: fd053e173323d58459aa13ed9cb7f397, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tv_definitivo_pixel
-    second: {fileID: 2800000, guid: c453f0c95852f8c4c8ccd8101f933aa0, type: 3}
+    second: {fileID: 2800000, guid: ed36d4d3a1ceabf4d998d0f4faecc7af, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
