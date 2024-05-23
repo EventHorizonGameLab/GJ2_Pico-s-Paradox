@@ -687,7 +687,7 @@ GameObject:
   - component: {fileID: 348461691}
   - component: {fileID: 348461692}
   m_Layer: 0
-  m_Name: Slider sfx (1)
+  m_Name: Slider master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -923,6 +923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mixer: {fileID: 24100000, guid: 6e6f89448c81b5647b9420b85b95337d, type: 2}
+  AudioData: {fileID: 0}
 --- !u!4 &361528944
 Transform:
   m_ObjectHideFlags: 0
@@ -5823,7 +5824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: sfx
+  m_text: master
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

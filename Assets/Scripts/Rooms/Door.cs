@@ -50,11 +50,11 @@ public class Door : MonoBehaviour
         }
         else
         {
-            if (key.hasKey)
+            if (GameManager.playerHasKey)
             {
-                AudioManager.instance.PlaySFX(audioData.sfx_openingDoor);
+                AudioManager.instance.PlaySFX(audioData.sfx_openingDoor);  //null reference
                 anim.SetBool("isOpeningDoor", true);
-                key.hasKey = false;
+                GameManager.OnKeyUsed?.Invoke();
                 key.keySprite.SetActive(false);
             }
 

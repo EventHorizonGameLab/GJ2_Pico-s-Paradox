@@ -22,6 +22,7 @@ public class RoomTrigger : MonoBehaviour
     {
         if(other.TryGetComponent<ITeleportable>(out _))
         {
+            Debug.Log(targetPos);
             player = other.gameObject;
             OnChangingRoom(transitionTime);
             StartCoroutine(Delay(transitionTime/4));

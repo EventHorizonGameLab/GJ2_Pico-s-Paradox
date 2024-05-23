@@ -21,11 +21,13 @@ public class UIManager : MonoBehaviour
     private void Lose()
     {
         losePanel.SetActive(true);
+        GameManager.TimeScale(0);
     }
 
     private void Win()
     {
         winPanel.SetActive(true);
+        GameManager.TimeScale(0);
     }
     
 }

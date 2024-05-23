@@ -13,6 +13,7 @@ public class PagesNotesComponent : MonoBehaviour
     [SerializeField] Image newPage; //immagine che sostituisce quella in scena
     [SerializeField] bool isLast;
     public static Action lastPageBubble;
+    public static bool isPanelActive;
     private void Awake()
     {
         pagePanel = lastPagePanel.GetComponent<Image>();
@@ -34,9 +35,13 @@ public class PagesNotesComponent : MonoBehaviour
         {
             return;
         }
-        
+
         if (isReading == false)
         {
+            if (isLast)
+            {
+                isPanelActive = true;
+            }
             //Debug.Log("gogogoogog " + isReading);
             isReading = true;
             InputManager.ActionMap.Player.Movement.Disable();
@@ -48,15 +53,16 @@ public class PagesNotesComponent : MonoBehaviour
 
         else
         {
-            if (isLast)
-            {
-                lastPageBubble?.Invoke();
-            }
 
             Debug.Log("no " + isReading);
             isReading = false;
             InputManager.ActionMap.Player.Movement.Enable();
             lastPagePanel.transform.parent.gameObject.SetActive(false);
+            if (isLast)
+            {
+                InputManager.ActionMap.Player.Interact.started -= OnInteraction;
+                lastPageBubble?.Invoke();
+            }
         }
     }
     private void OnTriggerEnter(Collider other)

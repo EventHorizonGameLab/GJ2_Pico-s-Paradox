@@ -10,6 +10,7 @@ public class MenuComponent : MonoBehaviour
 
     public GameObject settingsPanel;
     public GameObject showControlsPanel;
+    public GameObject creditsPanel;
 
     public int playSceneNumber;
 
@@ -72,10 +73,16 @@ public class MenuComponent : MonoBehaviour
     {
         showControlsPanel.SetActive(true);
     }
+
+    public void OnCredits()
+    {
+        creditsPanel.SetActive(true);
+    }
     public void OnGoBackToMenu()
     {
         settingsPanel.SetActive(false);
         showControlsPanel.SetActive(false);
+        creditsPanel.SetActive(false);
     }
 
     public void OnFullScreen()

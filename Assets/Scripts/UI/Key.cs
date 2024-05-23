@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class Key : MonoBehaviour
 {
     [SerializeField] public GameObject keySprite;
-    [HideInInspector] public bool hasKey;
     bool isInteracting;
 
     private void OnEnable()
@@ -28,12 +27,12 @@ public class Key : MonoBehaviour
 
         else
         {
-            if (hasKey)
+            if (GameManager.playerHasKey)
             {
                 return;
             }
-            
-            hasKey = true;
+
+            GameManager.OnKeyObtained?.Invoke();
             keySprite.SetActive(true);
         }
     }

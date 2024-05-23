@@ -40,25 +40,28 @@ public class ThoughtPanelsComponent : MonoBehaviour
     }
     private void OnEnable()
     {
-        if (isTriggered == false)
+        if (isLastBubble)
+        {
+            PagesNotesComponent.lastPageBubble += ShowLastMessage;
+        }
+        else if (isTriggered == false)
         {
             InputManager.ActionMap.Player.Interact.started += OnInteraction;
         }
+
         else
         {
             roomTrigger.OnDialogue += ShowDialogue;
             InputManager.ActionMap.Player.Interact.started += HideDialogue;
         }
-
-        if (isLastBubble)
-        {
-            PagesNotesComponent.lastPageBubble += ShowLastMessage;
-        }
     }
 
     private void ShowLastMessage()
     {
+
         ShowDialogue();
+        InputManager.ActionMap.Player.Interact.started += OnInteraction;
+        PagesNotesComponent.lastPageBubble -= ShowLastMessage;
     }
 
     private void HideDialogue(UnityEngine.InputSystem.InputAction.CallbackContext context)
@@ -83,8 +86,9 @@ public class ThoughtPanelsComponent : MonoBehaviour
     void HideLastBubble()
     {
         InputManager.ActionMap.Player.Enable();
-        dialogueCanvas.SetActive(false); 
+        dialogueCanvas.SetActive(false);
         Room5.gustavo?.Invoke();
+        InputManager.ActionMap.Player.Interact.started -= OnInteraction;
     }
 
     private void OnInteraction(UnityEngine.InputSystem.InputAction.CallbackContext context)
@@ -93,16 +97,11 @@ public class ThoughtPanelsComponent : MonoBehaviour
         {
             return;
         }
-
-        if (isLastBubble && isFirstTime)
-        {
-            isFirstTime = false;
-            return;
-        }
         ShowDialogue();
     }
     private void ShowDialogue()
     {
+
         //Debug.LogWarning("showdialogue");
         if (dialogues[dialogueCounter].lineCounter < dialogues[dialogueCounter].lines.Length)
         {
@@ -121,7 +120,7 @@ public class ThoughtPanelsComponent : MonoBehaviour
             }
             else
             {
-                //Debug.Log("TUO PADRE");
+                Debug.Log("TUO PADRE");
                 lineCounter++;
                 ShowDialogue();
             }

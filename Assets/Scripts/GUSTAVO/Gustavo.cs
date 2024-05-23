@@ -10,21 +10,26 @@ public class Gustavo : MonoBehaviour
     [SerializeField] float cooldownBetweenRooms;
     public static Action lose;
     [SerializeField] float gustavoSize;
+    Transform playerTransform;
 
+    private void Awake()
+    {
+        playerTransform = FindObjectOfType<PlayerControllerV2>().transform;
+    }
     private void OnEnable()
     {
         StartCoroutine(Movement());
 
-        //evento marco += changeroom;
+        MovePoint.OnChanginRoom += ChangeRoom;
     }
 
     private void OnDisable()
     {
-        //evento marco -= changeroom;
+        MovePoint.OnChanginRoom -= ChangeRoom;
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == 8)
+        if (other.gameObject.layer == 8)
         {
             StopAllCoroutines();
             lose?.Invoke();
@@ -32,30 +37,37 @@ public class Gustavo : MonoBehaviour
     }
     IEnumerator Movement()
     {
+        if (transform.position.x < playerTransform.position.x)
+        {
+            lose?.Invoke();
+            StopAllCoroutines();
+        }
         Vector3 pos = transform.position;
         yield return new WaitForSeconds(movementCooldown);
-        pos.x += movementDistance;
-        
-        if (Physics.Raycast(transform.position + Vector3.left * gustavoSize, Vector3.left, out RaycastHit hit ,movementDistance))
+
+        if (Physics.Raycast(transform.position, Vector3.left, out RaycastHit hit, movementDistance))
         {
-            pos.x = gustavoSize + (hit.collider.bounds.extents.x * 2) + hit.point.x; 
+            pos += Vector3.left * (gustavoSize + (hit.collider.bounds.extents.x * 2) + hit.point.x);
+        }
+        else
+        {
+            pos += Vector3.left * movementDistance;
         }
         transform.position = pos;
         StartCoroutine(Movement());
     }
-    
+
     void ChangeRoom(Vector3 newRoomPos)
     {
         StopAllCoroutines();
         StartCoroutine(WaitCooldown(newRoomPos));
-        
+
     }
 
     IEnumerator WaitCooldown(Vector3 newRoomPos)
     {
-        Vector3 pos;
+        Vector3 pos = transform.position;
         yield return new WaitForSeconds(cooldownBetweenRooms);
-        pos = transform.position;
         pos.x = newRoomPos.x;
         transform.position = pos;
         StartCoroutine(Movement());

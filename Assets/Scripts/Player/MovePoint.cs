@@ -10,7 +10,6 @@ public class MovePoint : MonoBehaviour
     float roundedZ;
     Vector3 correctPosition;
 
-
     private void OnEnable()
     {
         OnChanginRoom += TpOnPlayer;
