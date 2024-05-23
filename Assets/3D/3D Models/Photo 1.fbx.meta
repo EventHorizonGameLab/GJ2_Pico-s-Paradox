@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 581bffb571b3f1f4cb4bc3bc78d03009
+guid: 863032096006c8945ab19923cef8cfb0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,53 +7,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Library
-    second: {fileID: 2100000, guid: 7005a7675cb8d0247a2eca434a6bc901, type: 2}
+      name: CHURRO
+    second: {fileID: 2100000, guid: 55daf36e59e1bd4478926439cb4f908c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Libri1
-    second: {fileID: 2100000, guid: 429e5e1bec081184aafa68698be87030, type: 2}
+      name: Cornice1
+    second: {fileID: 2100000, guid: 74250f9380737d64187aeba043d4cbe3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Objects
-    second: {fileID: 2100000, guid: 785cac32010107c4aab3e3e1f0dfd698, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: TUCANO1
-    second: {fileID: 2100000, guid: 1675689b96e6e8046ba714fd94d45e8f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 0736171cefdc9cc4eaceaeb2e2284fc0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert9
-    second: {fileID: 2100000, guid: f32214a87e50d9546bf3e2ae65d1f442, type: 2}
+      name: Piede_cornice
+    second: {fileID: 2100000, guid: ddc09b817fd82294a860fe49d80bb39d, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Library
-    second: {fileID: 2800000, guid: 2939b0b6702aa1f4e8f2745f9dc46044, type: 3}
+      name: Photo_lambert1_BaseColor.1001
+    second: {fileID: 2800000, guid: 553eea0809f5819458b6371d39053c79, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: image
-    second: {fileID: 2800000, guid: 05dea11054d60bd40921811678719f3a, type: 3}
+      name: Photo_standardSurface1_BaseColor.1001 (2)
+    second: {fileID: 2800000, guid: b5f2db7274280e148888ee72598ccefe, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: image (1)
-    second: {fileID: 2800000, guid: c7515aab3aa4b5f42a337ba954556245, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: prova_txtr_3
-    second: {fileID: 2800000, guid: 144932ca9b2445341bf2a0fe8f9db06a, type: 3}
+      name: image (2)
+    second: {fileID: 2800000, guid: 193db445451503347bb9278ea6171846, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

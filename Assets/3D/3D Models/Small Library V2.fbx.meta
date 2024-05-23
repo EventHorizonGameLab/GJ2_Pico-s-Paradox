@@ -1,14 +1,24 @@
 fileFormatVersion: 2
-guid: 48d6d7b2aa5299547a364d9c0b9c76eb
+guid: 9b6f6954b2b9afb48a6c5d02dee38fc0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects:
   - first:
-      type: UnityEngine:Texture2D
+      type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: prova_txtr_3
-    second: {fileID: 2800000, guid: 3ead272222867b947a998d7e38aa7c6d, type: 3}
+      name: Library
+    second: {fileID: 2100000, guid: 84f3ec2f17bd0b34dbb343aeba5209fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Libri1
+    second: {fileID: 2100000, guid: 24021d8b379139649b8902d0d0f75599, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TUCANO1
+    second: {fileID: 2100000, guid: ccf8347a2ff0a6443939f14183060c83, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
