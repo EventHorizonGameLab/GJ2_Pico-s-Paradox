@@ -3,7 +3,12 @@ guid: 3044d0bb9ee967d46bd0b0bde395f00a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: scrivania1_Base_color
+    second: {fileID: 2800000, guid: 782eda4b499701842b5226519e11cd7d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

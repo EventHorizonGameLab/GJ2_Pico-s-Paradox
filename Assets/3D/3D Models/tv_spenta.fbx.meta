@@ -3,7 +3,22 @@ guid: 29ab9971570bb9146996f73ae21b3d77
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pulsanti_definitivo_pixel
+    second: {fileID: 2800000, guid: 0816e882c56b3184d837f4cc8ed02c9d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tucanotv_pixel
+    second: {fileID: 2800000, guid: 8d14c451961bf07438918f938e95819a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_definitivo_pixel
+    second: {fileID: 2800000, guid: 7a3d56779dba00043b44c9dfb939a7d3, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

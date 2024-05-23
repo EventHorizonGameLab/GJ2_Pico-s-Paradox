@@ -3,7 +3,17 @@ guid: 42967ac348370f447863999d3fbf8df9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: aaaaa
+    second: {fileID: 2800000, guid: cd3fd919ea0cd7246b370dace3467ea2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lampada_cilindro1_Base_color
+    second: {fileID: 2800000, guid: d8cc8fdb1050b2743aa193522c8e940d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

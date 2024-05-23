@@ -3,7 +3,12 @@ guid: 82ac75224f97a4948b360cacd2b54180
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: texture_puff_blu_pixel
+    second: {fileID: 2800000, guid: 8f305b855e601b84694dc45a329427ae, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,17 @@ guid: 980d5f6d90f1a58489544fab27bc9b4b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LAMPADA_QUADRATO_Base_color
+    second: {fileID: 2800000, guid: 3a92fa08a8b7e4b4c9472083b8c441c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lampada_quadrata_pixel
+    second: {fileID: 2800000, guid: 6f560a515150de548bd87022f3771f85, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
