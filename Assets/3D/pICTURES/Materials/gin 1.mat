@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CF3032D9-622F-4C6F-A9A8-D6D95DFCBD0C
+  m_Name: gin 1
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -41,12 +41,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 0.97, y: 0.96}
-        m_Offset: {x: 1.03, y: 0.05}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f22cb15f7ef4ece448c0cfd459ebaccf, type: 3}
-        m_Scale: {x: 0.97, y: 0.96}
-        m_Offset: {x: 1.03, y: 0.05}
+        m_Texture: {fileID: 2800000, guid: 79241c98cd399464d994929d2dfacab0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
