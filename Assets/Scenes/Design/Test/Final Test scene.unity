@@ -6814,6 +6814,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 598228753}
+    - targetCorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 598228754}
   m_SourcePrefab: {fileID: 100100000, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
 --- !u!1 &598228752 stripped
 GameObject:
@@ -6835,6 +6838,33 @@ MonoBehaviour:
   puzzleController: {fileID: 1412925709}
   audioData: {fileID: 0}
   isInteractable: 0
+--- !u!114 &598228754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598228752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: My bed
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines: []
+    lineCounter: 0
+  - lines: []
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &607624930
 PrefabInstance:
   m_ObjectHideFlags: 0
