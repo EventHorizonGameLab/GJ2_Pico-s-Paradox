@@ -159,7 +159,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.70428145, y: 0.026116071, z: -0.026899897, w: 0.70893025}
   m_LocalPosition: {x: 2.0100021, y: -5.67, z: 4.9500003}
-  m_LocalScale: {x: -0.14921765, y: 0.14921768, z: 0.1043261}
+  m_LocalScale: {x: 0.1492177, y: 0.14921768, z: 0.1043261}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814666704}
@@ -251,7 +251,15 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: My favourite tv show is Korby and the Seven Seas .
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: My favourite tv show is Korby and the Seven Seas .
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!65 &4297952
@@ -351,7 +359,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.27
+      value: 1.93
       objectReference: {fileID: 0}
     - target: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalPosition.y
@@ -359,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.76
+      value: 5.68
       objectReference: {fileID: 0}
     - target: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalRotation.w
@@ -407,19 +415,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1731446914770641078, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_Center.x
-      value: 0.0002959197
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 1731446914770641078, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_Center.z
-      value: -0.00027039688
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: 1894234080323624648, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00052
+      value: 0.00119
       objectReference: {fileID: 0}
     - target: {fileID: 1894234080323624648, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00054
+      value: 0.0164
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1182,15 +1190,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.119003
+      value: 42.91
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.272294
+      value: 1.283
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.16
+      value: 4.09
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1351,6 +1359,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 595486113825432632, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.91251
+      objectReference: {fileID: 0}
     - target: {fileID: 983217010273462565, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1431,6 +1443,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2975095999309825273, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975095999309825273, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 67255f1521fd96e4a99149a1e43589ab, type: 3}
+    - target: {fileID: 2975095999309825273, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975095999309825273, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975095999309825273, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101816209710873395, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.91251
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101816209710873395, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -766.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101816209710873395, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -431
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330684488705716622, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.91251
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330684488705716622, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -702.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330684488705716622, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -400
+      objectReference: {fileID: 0}
     - target: {fileID: 8858704264188681708, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
       propertyPath: m_Name
       value: Dialogue Canvas
@@ -1438,6 +1494,18 @@ PrefabInstance:
     - target: {fileID: 8858704264188681708, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926705508291749102, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_margin.w
+      value: -67.68637
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926705508291749102, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_margin.x
+      value: 94.91742
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926705508291749102, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_margin.z
+      value: -1525.2805
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1790,6 +1858,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 587297511}
     m_Modifications:
+    - target: {fileID: 2704014612228901837, guid: eb4305771d9d9de4690ec2b575d84c99, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -534
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704014612228901837, guid: eb4305771d9d9de4690ec2b575d84c99, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3033
+      objectReference: {fileID: 0}
     - target: {fileID: 7423285250726214512, guid: eb4305771d9d9de4690ec2b575d84c99, type: 3}
       propertyPath: m_Name
       value: sedia
@@ -1929,6 +2005,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d935e4b4cc08a064dac34091deffdf2c, type: 3}
+--- !u!1 &68732559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+  m_PrefabInstance: {fileID: 678909217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &78977991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2401,6 +2482,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
   m_PrefabInstance: {fileID: 678909217}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &117811689
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68732559}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &117811690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68732559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea4ca164894d144b00587a327b75ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  key: {fileID: 0}
+  isFirstDoor: 1
+  audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
 --- !u!1001 &121629896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2603,11 +2721,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4402486482403966712, guid: b8651f7cf91f5ec48a2af22e9cf9ba76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.02
+      value: -27.86
       objectReference: {fileID: 0}
     - target: {fileID: 4402486482403966712, guid: b8651f7cf91f5ec48a2af22e9cf9ba76, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.56
+      value: -0.29
       objectReference: {fileID: 0}
     - target: {fileID: 4990623101403978436, guid: b8651f7cf91f5ec48a2af22e9cf9ba76, type: 3}
       propertyPath: m_Name
@@ -2840,6 +2958,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142707400}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &144971770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 144971771}
+  - component: {fileID: 144971773}
+  - component: {fileID: 144971772}
+  m_Layer: 5
+  m_Name: key sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &144971771
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144971770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1581287595}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &144971772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144971770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &144971773
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144971770}
+  m_CullTransparentMesh: 1
 --- !u!4 &145334892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 282466359734315461, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
@@ -3447,7 +3640,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1042344251}
+      addedObject: {fileID: 1042344253}
   m_SourcePrefab: {fileID: 100100000, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
 --- !u!1 &210624016 stripped
 GameObject:
@@ -3955,43 +4148,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.979004
+      value: -30.29
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.86429405
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.977001
+      value: -3.12
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5480685875422735795, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_Name
@@ -4160,9 +4353,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1057639093}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 594004735}
+    - targetCorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 594004736}
   m_SourcePrefab: {fileID: 100100000, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+--- !u!1 &272839414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+  m_PrefabInstance: {fileID: 272839413}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &277094662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
@@ -4173,6 +4380,97 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3680854407387984225, guid: d9375b92e879c714a918e88df7f95f69, type: 3}
   m_PrefabInstance: {fileID: 110336215}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &282077475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 871864901}
+    m_Modifications:
+    - target: {fileID: 3218439970183174207, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_Name
+      value: Room Door (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.3010006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774306079621313576, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6115347958857772004, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 282077478}
+  m_SourcePrefab: {fileID: 100100000, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+--- !u!4 &282077476 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+  m_PrefabInstance: {fileID: 282077475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &282077477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6115347958857772004, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+  m_PrefabInstance: {fileID: 282077475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &282077478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282077477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a4f2816ee09f34fb79d871216e0ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gustavoPrefab: {fileID: 1028880344690048087, guid: 40a72bcbff5869149a62118b2c23de40, type: 3}
 --- !u!4 &289750659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
@@ -4184,7 +4482,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 871864901}
+    m_TransformParent: {fileID: 594004734}
     m_Modifications:
     - target: {fileID: 1980366139100677218, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4195,16 +4493,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 925b93679bd0545478f1248997611d03, type: 2}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.380005
+      value: 2514.0002
       objectReference: {fileID: 0}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.268
+      value: 3.300047
       objectReference: {fileID: 0}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.2835913
+      value: -199.20009
       objectReference: {fileID: 0}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4242,10 +4552,21 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1057639094}
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1057639095}
     - targetCorrespondingSourceObject: {fileID: 5218801100554693145, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2030811622}
   m_SourcePrefab: {fileID: 100100000, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+--- !u!1 &294081905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+  m_PrefabInstance: {fileID: 294081904}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &295728666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7256357732362266636, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
@@ -4384,7 +4705,12 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: My favourite tv show is Korby and the Seven Seas .
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!65 &308960710
@@ -4430,52 +4756,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.951998
+      value: 4.952446
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.764
+      value: -5.7311764
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.091
+      value: -3.0711746
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0711241
+      value: -0.45014364
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7020662
+      value: -0.53730834
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.074389786
+      value: 0.55460095
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7046352
+      value: 0.44842872
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -168.188
+      value: -179.217
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 1530.184
+      value: 1518.896
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.24699402
+      value: 91.17
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
       value: Photo 1 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3965568722551902004, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+      propertyPath: m_Size.z
+      value: 37.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8139651160685201732, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 821a891a0edc60c4a98caba8509c42bb, type: 2}
+      objectReference: {fileID: 2100000, guid: bc2b2d90cea6f83489f3999dbfeac488, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 9073373382265537066, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
@@ -4690,7 +5020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.17
+      value: -1.22
       objectReference: {fileID: 0}
     - target: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4698,7 +5028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.55
+      value: 1.24
       objectReference: {fileID: 0}
     - target: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4736,6 +5066,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: adcba65878ba5334ea8efbe70128b2f7, type: 2}
+    - target: {fileID: 1894234080323624648, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00037
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894234080323624648, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00046
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5414,7 +5752,24 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: This no longer, looks like my room.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I have to be brave, for Nick
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: If only he was here...
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Pico, don't give up!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The exit must be near.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &408104864 stripped
@@ -5952,7 +6307,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Strange, its empty now
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'There is a strange black goo on the wheels '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &509531041
@@ -6568,7 +6933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4764366843262581949, guid: e4c197d8208f87048a84cb862085c432, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.14948797
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4764366843262581949, guid: e4c197d8208f87048a84cb862085c432, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6614,6 +6979,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5284339513166980615, guid: e4c197d8208f87048a84cb862085c432, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1930568795}
     - targetCorrespondingSourceObject: {fileID: 5889412266152580692, guid: e4c197d8208f87048a84cb862085c432, type: 3}
       insertIndex: -1
       addedObject: {fileID: 551979036}
@@ -6789,7 +7157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2232374918111254999, guid: b10071f00087aa84fb9fdcf4a77b531c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.57
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 2232374918111254999, guid: b10071f00087aa84fb9fdcf4a77b531c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6797,7 +7165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2232374918111254999, guid: b10071f00087aa84fb9fdcf4a77b531c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.81
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 2232374918111254999, guid: b10071f00087aa84fb9fdcf4a77b531c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6957,6 +7325,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
   m_PrefabInstance: {fileID: 1458847012}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &580878105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+  m_PrefabInstance: {fileID: 728176640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &582226977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
@@ -7037,7 +7410,6 @@ Transform:
   - {fileID: 1035380156}
   - {fileID: 772665272}
   - {fileID: 2012773325}
-  - {fileID: 1510740726}
   - {fileID: 408104864}
   - {fileID: 2112617033}
   - {fileID: 1426133779}
@@ -7048,6 +7420,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
   m_PrefabInstance: {fileID: 272839413}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &594004735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272839414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea4ca164894d144b00587a327b75ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  key: {fileID: 0}
+  isFirstDoor: 0
+  audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
+--- !u!95 &594004736
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272839414}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cdef62efe328a54ea2e94fca7522977, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &596865441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7231,7 +7640,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: My bed
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The smell of the fabric conditioner is gone
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There is a rotting smell coming from the cabinets under it
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &607624930
@@ -7422,11 +7846,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7984098673892148346, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
       propertyPath: m_Size.y
-      value: 1.5111814
+      value: 1.8717117
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984098673892148346, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
+      propertyPath: m_Size.z
+      value: 0.25558347
       objectReference: {fileID: 0}
     - target: {fileID: 7984098673892148346, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
       propertyPath: m_Center.y
-      value: 0.2444093
+      value: 0.38344443
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984098673892148346, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
+      propertyPath: m_Center.z
+      value: -0.02220828
       objectReference: {fileID: 0}
     - target: {fileID: 8327756105647816878, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
       propertyPath: m_LocalScale.x
@@ -7442,11 +7874,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8327756105647816878, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 84.13
+      value: -76.2
       objectReference: {fileID: 0}
     - target: {fileID: 8327756105647816878, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8327756105647816878, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7900,6 +8332,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 117811690}
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 117811689}
     - targetCorrespondingSourceObject: {fileID: 5218801100554693145, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 872251356}
@@ -8062,7 +8500,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: 'The cabinet door is locked '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'I can see some black goo stuck on the back '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The tv wont change channel
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &695588011 stripped
@@ -8082,6 +8535,7 @@ GameObject:
   - component: {fileID: 697427984}
   - component: {fileID: 697427983}
   - component: {fileID: 697427982}
+  - component: {fileID: 697427985}
   m_Layer: 0
   m_Name: Plane (6)
   m_TagString: Untagged
@@ -8176,6 +8630,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697427980}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &697427985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697427980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: El gobligno my fav anime protagonist
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Nick told me im very good at drawing.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &697917882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8149246183802759270, guid: ae3ce1a9416dcd741914fdc1a78413d9, type: 3}
@@ -8189,6 +8671,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 814666704}
     m_Modifications:
+    - target: {fileID: 1968685107330834823, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      propertyPath: m_Size.z
+      value: 3.7063189
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968685107330834823, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      propertyPath: m_Center.z
+      value: 0.009591579
+      objectReference: {fileID: 0}
     - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.023488
@@ -8261,7 +8751,27 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s bed "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'I can no longer smell the odour of the fabric conditioner '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Still untouched, like he left yesterday
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'There is mould under the sheets '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &712215760
@@ -8556,6 +9066,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1670017917}
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1670017916}
     - targetCorrespondingSourceObject: {fileID: 5218801100554693145, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1170412039}
@@ -9012,6 +9528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 757545364}
   - component: {fileID: 757545365}
+  - component: {fileID: 757545366}
   m_Layer: 0
   m_Name: tucano (1)
   m_TagString: Untagged
@@ -9058,104 +9575,38 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.014563661, y: 0.007870073, z: 0.015806086}
   m_Center: {x: 0.016881457, y: 0.018489104, z: -0.011467273}
+--- !u!114 &757545366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757545363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: This shouldn't be here
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: And neither shoul I....
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &767128870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
   m_PrefabInstance: {fileID: 57092971}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &769519496
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 508413603}
-    m_Modifications:
-    - target: {fileID: 726861255401089765, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3810d7a1a3f1a5a48985a38e777f3c31, type: 2}
-    - target: {fileID: 3935868452499449979, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_Name
-      value: Doll (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.6510963
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 72.79997
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.6936455
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.96719044
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.25405273
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -29.435
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5782900350964228732, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3810d7a1a3f1a5a48985a38e777f3c31, type: 2}
-    - target: {fileID: 5957273525972179897, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3810d7a1a3f1a5a48985a38e777f3c31, type: 2}
-    - target: {fileID: 6188682580489840679, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3810d7a1a3f1a5a48985a38e777f3c31, type: 2}
-    - target: {fileID: 7829459921221838109, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3810d7a1a3f1a5a48985a38e777f3c31, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
---- !u!4 &769519497 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4455418124746175169, guid: 1fc8ee8e0b4101b4b8fd46bf1b176b3b, type: 3}
-  m_PrefabInstance: {fileID: 769519496}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &772319796
 PrefabInstance:
@@ -9399,6 +9850,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 697238459106534859, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       insertIndex: -1
       addedObject: {fileID: 907960517}
+    - targetCorrespondingSourceObject: {fileID: 339848864464345792, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1717436841}
   m_SourcePrefab: {fileID: 100100000, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
 --- !u!4 &785171199 stripped
 Transform:
@@ -9413,6 +9867,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1231562587}
     m_Modifications:
+    - target: {fileID: 3090833919297300546, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      propertyPath: m_Size.x
+      value: 0.03708772
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090833919297300546, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090833919297300546, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0018350291
+      objectReference: {fileID: 0}
     - target: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
       propertyPath: m_Name
       value: scrivania
@@ -9469,10 +9935,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3090833919297300546, guid: 14a70decb45ad06499166107651b514f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856088833}
+    - targetCorrespondingSourceObject: {fileID: 239172437374649026, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2053237626}
   m_SourcePrefab: {fileID: 100100000, guid: 14a70decb45ad06499166107651b514f, type: 3}
 --- !u!4 &797675926 stripped
 Transform:
@@ -9564,6 +10037,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+--- !u!1 &810206764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
+  m_PrefabInstance: {fileID: 792584049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &813968038
 GameObject:
   m_ObjectHideFlags: 0
@@ -9744,6 +10222,7 @@ Transform:
   - {fileID: 277094662}
   - {fileID: 1670017915}
   - {fileID: 289750659}
+  - {fileID: 1510740726}
   - {fileID: 31652912}
   m_Father: {fileID: 623236951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10076,6 +10555,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2232374918111254999, guid: b10071f00087aa84fb9fdcf4a77b531c, type: 3}
   m_PrefabInstance: {fileID: 1141334199}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &821831173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 239172437374649026, guid: 14a70decb45ad06499166107651b514f, type: 3}
+  m_PrefabInstance: {fileID: 1965364398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &821831175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821831173}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.03779599, y: 0.0133930845, z: 0.012754273}
+  m_Center: {x: 0.0014809131, y: -0.00012, z: -0.006137469}
 --- !u!1 &821950386
 GameObject:
   m_ObjectHideFlags: 0
@@ -10321,7 +10826,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Just a flimsy chair
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There is some balck goo con the legs
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &854745818 stripped
@@ -10333,6 +10848,39 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6654945767012424074, guid: 14a70decb45ad06499166107651b514f, type: 3}
   m_PrefabInstance: {fileID: 792584049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &856088833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810206764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: All the stationary its now gone
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There are dust bunnies in the cabinets
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
+--- !u!1 &856229332 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+  m_PrefabInstance: {fileID: 1804315560}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &864040222
 PrefabInstance:
@@ -10488,7 +11036,27 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s bed "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Still untouched, like he left yesterday
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'I can no longer smell the odour of the fabric conditioner '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I wonder if he have a comfy bed while serving oversea
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &871864900
@@ -10520,6 +11088,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 282077476}
   - {fileID: 756545108}
   - {fileID: 821267130}
   - {fileID: 757545364}
@@ -10538,7 +11107,6 @@ Transform:
   - {fileID: 1332874496}
   - {fileID: 1431050560}
   - {fileID: 2071697391}
-  - {fileID: 1057639093}
   - {fileID: 361083054}
   m_Father: {fileID: 623236951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10791,7 +11359,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1091498770}
   m_SourcePrefab: {fileID: 100100000, guid: 14a70decb45ad06499166107651b514f, type: 3}
 --- !u!1 &892690415
 GameObject:
@@ -11085,9 +11656,24 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: It's now empty
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I swear i saw some black goo moving in a corner
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Coco jr is gone again
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
-  isLastBubble: 0
+  isLastBubble: 1
 --- !u!1001 &902018918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11245,7 +11831,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: The patches are coming out
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The patches are coming loose
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Its no longer comfy, its hard like wood
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &910248645
@@ -11417,7 +12018,30 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: What? I could swear i exited the room
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Pico why you came back so soon?
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'Coco im scared '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Hey, don be afraid my  friend
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: We are gonna find our way out together
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Try looking around maybe we can find something useful
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'You are right Coco '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &916070931
@@ -11650,7 +12274,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1231562587}
+    m_TransformParent: {fileID: 408104864}
     m_Modifications:
     - target: {fileID: 1980366139100677218, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11661,16 +12285,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 925b93679bd0545478f1248997611d03, type: 2}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.466114
+      value: 2707.779
       objectReference: {fileID: 0}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.268
+      value: 3.300047
       objectReference: {fileID: 0}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.0835915
+      value: -191.31828
       objectReference: {fileID: 0}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11711,10 +12347,21 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1451579380}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1017131618}
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1017131617}
     - targetCorrespondingSourceObject: {fileID: 5218801100554693145, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1661875857}
   m_SourcePrefab: {fileID: 100100000, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+--- !u!1 &929027321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+  m_PrefabInstance: {fileID: 929027320}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &929968051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2137603811706598487, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
@@ -11735,7 +12382,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: The bin is empty.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Someone ate the leftovers.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &930051046
@@ -12163,9 +12820,29 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Nick's bedside table
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The cabinet is jammed
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There are some yellowed postcars under it.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Its dusty
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
-  isLastBubble: 0
+  isLastBubble: 1
 --- !u!1001 &1016826478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12240,6 +12917,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
   m_PrefabInstance: {fileID: 929027320}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1017131617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929027321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea4ca164894d144b00587a327b75ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  key: {fileID: 0}
+  isFirstDoor: 0
+  audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
+--- !u!95 &1017131618
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929027321}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cdef62efe328a54ea2e94fca7522977, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1020212286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12524,7 +13238,27 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: My bed
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The smell of the fabric conditioner is still strong
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Its funny how me and my brother have the same bedsheets
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I usually let coco sleep here while i'm at school
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &1035380155
@@ -12723,7 +13457,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
   m_PrefabInstance: {fileID: 210624015}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1042344251
+--- !u!114 &1042344253
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12738,7 +13472,27 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s bed "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Still untouched, like he left yesterday
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'I can no longer smell the odour of the fabric conditioner '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'There is mould under the sheets '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1046456949
@@ -12807,10 +13561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1044724709662681758, guid: d935e4b4cc08a064dac34091deffdf2c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 769519497}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 375007381680304164, guid: d935e4b4cc08a064dac34091deffdf2c, type: 3}
       insertIndex: -1
@@ -13007,6 +13758,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
   m_PrefabInstance: {fileID: 294081904}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1057639094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294081905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea4ca164894d144b00587a327b75ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  key: {fileID: 0}
+  isFirstDoor: 0
+  audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
+--- !u!95 &1057639095
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294081905}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cdef62efe328a54ea2e94fca7522977, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1060015906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13361,9 +14149,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1017131616}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1082939935}
+    - targetCorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1082939934}
   m_SourcePrefab: {fileID: 100100000, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+--- !u!1 &1082939933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+  m_PrefabInstance: {fileID: 1082939932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1082939934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082939933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea4ca164894d144b00587a327b75ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  key: {fileID: 0}
+  isFirstDoor: 0
+  audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
+--- !u!95 &1082939935
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082939933}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cdef62efe328a54ea2e94fca7522977, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1087346910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13374,7 +14213,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.013849154
+      value: 0.01384915
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalScale.y
@@ -13432,12 +14271,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d66459891e11da343960b9a01dfc0721, type: 2}
-    m_RemovedComponents:
-    - {fileID: 3965568722551902004, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 9073373382265537066, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520696319}
   m_SourcePrefab: {fileID: 100100000, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
 --- !u!1 &1088384589
 GameObject:
@@ -13533,6 +14374,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 871864901}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1091498767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
+  m_PrefabInstance: {fileID: 888678863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1091498770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091498767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s Desk "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The table is so big I have to put a pillow on the chair in order to write
+        on it.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Once we had a computer, but father sold it since Nick didn't use it much.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1105158507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13729,7 +14609,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: That's a picture of Mum and Dad celebrating with Nick on his 8th birthday
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'There are some words written on the back, '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "\u201CTo our dear son Nicholas\u201D happy birthday from mum and dad.
+        28/08/1991"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: This year he will turn 26
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1125579460
@@ -14025,9 +14920,19 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Pico, I have a bad feeling.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Be careful.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
-  isLastBubble: 0
+  isLastBubble: 1
 --- !u!1 &1145224199
 GameObject:
   m_ObjectHideFlags: 0
@@ -14986,7 +15891,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.031938177, y: -0.708638, z: 0.70407104, w: -0.03310702}
   m_LocalPosition: {x: 4.010002, y: -4.93, z: 4.9500003}
-  m_LocalScale: {x: -0.1258263, y: 0.14921762, z: 0.104326114}
+  m_LocalScale: {x: 0.1258263, y: 0.14921762, z: 0.104326114}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 814666704}
@@ -15078,7 +15983,12 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s poster, I still cannot understand what it's meant to be."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!65 &1223504385
@@ -15185,7 +16095,6 @@ Transform:
   - {fileID: 1149815186}
   - {fileID: 30905306}
   - {fileID: 438261145}
-  - {fileID: 1017131616}
   - {fileID: 594004734}
   - {fileID: 303125807}
   - {fileID: 133730884}
@@ -15714,7 +16623,27 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: This is not my trunk
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'My trunk shrunk it''s now small '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'Its empty '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: This is not my trunk
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &1285641097
@@ -15916,7 +16845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2137603811706598487, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.63
+      value: -5.53
       objectReference: {fileID: 0}
     - target: {fileID: 2137603811706598487, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15924,7 +16853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2137603811706598487, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.25
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 2137603811706598487, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16035,7 +16964,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "It\u2019s mostly empty"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I think i saw some leftovers on the bottom
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1302855992
@@ -16175,7 +17114,23 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: 'It''s empty '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There is a small tag on the side, it reads Gustavo Rodriguez, its dads
+        name
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'It reads Gustavo Rodriguez, its dads name. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1304053467
@@ -16341,7 +17296,25 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Pico? Aww man!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: You made it! You found the super duper secret art gallery!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Take a look around, isn't it marvellus?
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Make sure to take a look at the credits
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: So you will see all the wonderful artist that wanted to collaboarte to
+        this project!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &1315426197
@@ -16765,7 +17738,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: I really miss Churro.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: When will this nightmare ends?
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1334299949 stripped
@@ -16836,7 +17819,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: I's a Shpere!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: It's balck and blue.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1342626426
@@ -16989,10 +17982,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueCanvas: {fileID: 0}
-  textObject: {fileID: 0}
-  imageObjectChanger: {fileID: 0}
-  dialogues: []
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: 'A trash bin '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Smells like tuna
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1355516010 stripped
@@ -17144,6 +18147,39 @@ LightingSettings:
   m_PVRTiledBaking: 0
   m_NumRaysToShootPerTexel: -1
   m_RespectSceneVisibilityWhenBakingGI: 0
+--- !u!1 &1371063724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+  m_PrefabInstance: {fileID: 1525964895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1371063725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371063724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: Nick's first halloween
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Last year he made me use his old costume
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1 &1375143669
 GameObject:
   m_ObjectHideFlags: 0
@@ -17313,7 +18349,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "\u201CYou search in the trash and find the key to your room\u201D"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'Its now empty '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &1377001845 stripped
@@ -18010,7 +19056,28 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s lamp"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'It belonged to dad '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The light bulb is very hot
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I always turn it on too before going to bed, i don't want the room to
+        be dark.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &1424202747
@@ -18155,6 +19222,7 @@ GameObject:
   - component: {fileID: 1428427094}
   - component: {fileID: 1428427093}
   - component: {fileID: 1428427096}
+  - component: {fileID: 1428427097}
   m_Layer: 0
   m_Name: Plane (27)
   m_TagString: Untagged
@@ -18270,6 +19338,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000001, y: 0.00000064697815, z: 10.000002}
   m_Center: {x: -0.0000023841858, y: 0.000061035156, z: -0.000038146973}
+--- !u!114 &1428427097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428427091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: Where is gone my Korby post
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Eww, what is that ?
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &1431050560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8092999247086786665, guid: 84ab885a80fa78e4e98bcdf2a4750090, type: 3}
@@ -18311,7 +19407,12 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Oh i finally found Coco jr!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &1434615051
@@ -18420,6 +19521,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434615051}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1436215961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+  m_PrefabInstance: {fileID: 7275091713476218836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1441537292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1415911767191279228, guid: 324e3f13eed18464eb87c17c2682b10b, type: 3}
@@ -18514,6 +19620,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 697238459106534859, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1458652247}
+    - targetCorrespondingSourceObject: {fileID: 697238459106534859, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1458652248}
   m_SourcePrefab: {fileID: 100100000, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
 --- !u!1 &1458652246 stripped
 GameObject:
@@ -18535,9 +19644,63 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Hey Coco, can you help me?
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I cant sleep, im so exited for tomottow!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Im gonna turn 8
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: And my big bro promised me a very special gift
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Hey Pico, I too cannot fall asleep.
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
+      hasBeenRead: 0
+    - text: Hey why dont you go and grab a glass of milk?
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
+      hasBeenRead: 0
+    - text: But Father locked me in the room
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: How will i be able to exit?
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Don't worry i got you.
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
+      hasBeenRead: 0
+    - text: 'I have a spare key made with crakers. '
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
+      hasBeenRead: 0
+    - text: Probably its gona breack after one use.
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
+      hasBeenRead: 0
+    - text: 'But hey, it''s better than nothing '
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
+      hasBeenRead: 0
+    - text: Thanks, i can always count on you Coco!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
+--- !u!114 &1458652248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458652246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475de56867b3966429eab09930fcec66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySprite: {fileID: 0}
 --- !u!1001 &1458847012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18687,7 +19850,42 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s bed "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Still untouched, like he left yesterday
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Still untouched, like he left yesterday
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: It's full of mould under the sheets
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I wonder if he have a comfy bed while serving oversea
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There is a note under the pillow
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: '*My dear Nicholas, please take good care of your brother'
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "If something bad happens to me make sure he\u2019s loved like i loved
+        you. Mum* "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1464068876 stripped
@@ -18753,7 +19951,27 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Me and Coco\u2019s favourite spot to nap."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Nick told me he got those in a garage sale years ago
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: A little worn out but still comfy
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'I think this one needs another patch, there is stuffing coming out  '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1472242284 stripped
@@ -18850,7 +20068,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: My lamp
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Nick told me it was mum's
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The light bulb is very hot
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1484197370
@@ -19041,7 +20274,12 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: This is a picture of Nick's first Halloween; he was 6 at the time.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &1491700611
@@ -19312,7 +20550,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: A ball
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: It's white
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1499892512 stripped
@@ -19351,7 +20599,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.070487894, y: -0.7047624, z: 0.70358473, w: 0.057533566}
   m_LocalPosition: {x: 3.4399986, y: -5.68, z: 4.95}
-  m_LocalScale: {x: -0.1492177, y: 0.14921768, z: 0.1043261}
+  m_LocalScale: {x: 0.1492177, y: 0.14921768, z: 0.1043261}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1231562587}
@@ -19440,10 +20688,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueCanvas: {fileID: 0}
-  textObject: {fileID: 0}
-  imageObjectChanger: {fileID: 0}
-  dialogues: []
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: 'It looks like some modern art pieces '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: This one is giving me chills
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!65 &1504527091
@@ -19631,6 +20889,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
   m_PrefabInstance: {fileID: 1804315560}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1510740727
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856229332}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cdef62efe328a54ea2e94fca7522977, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1510740728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856229332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea4ca164894d144b00587a327b75ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  key: {fileID: 0}
+  isFirstDoor: 0
+  audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
 --- !u!1001 &1511232042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19809,6 +21104,34 @@ MonoBehaviour:
   dialogues: []
   isTriggered: 0
   isLastBubble: 0
+--- !u!1 &1520696318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+  m_PrefabInstance: {fileID: 1087346910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1520696319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520696318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: This is a picture of Nick's first Halloween; he was 6 at the time.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1522212628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19893,7 +21216,29 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: The is a note under the lamp
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: '*My dear Nicholas, i''m sorry i cannot tell you this in person'
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "When you\u2019ll read this i sadly will be no longer with you"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "Your father is a good person, but he\u2019s stuck in his old ways"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "He doesn\u2019t know better "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'Please take care of Pico without me, my dear star. Mum* '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1522338320
@@ -20034,7 +21379,28 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s trunk "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: "it\u2019s mostly empty except for some used military gear"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Its very old
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The sides are covered in stickers with counties and cities from around
+        the world
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1523571853 stripped
@@ -20110,12 +21476,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d66459891e11da343960b9a01dfc0721, type: 2}
-    m_RemovedComponents:
-    - {fileID: 3965568722551902004, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 9073373382265537066, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1371063725}
   m_SourcePrefab: {fileID: 100100000, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
 --- !u!4 &1526407360 stripped
 Transform:
@@ -20355,7 +21723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.157
+      value: 0.006996155
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20521,9 +21889,126 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Dust bunnies have now taken over the cupboards
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'I can no longer change channel '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: "It\u2019s broken "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
+--- !u!1 &1581287591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581287595}
+  - component: {fileID: 1581287594}
+  - component: {fileID: 1581287593}
+  - component: {fileID: 1581287592}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1581287592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581287591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1581287593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581287591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1581287594
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581287591}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1581287595
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581287591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 144971771}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!4 &1582887857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
@@ -20666,7 +22151,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: This is not my trunk
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Look how small it is.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Better be careful to not trip on it
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1601535143
@@ -20950,7 +22450,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Its a globe!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'It''s gold and white '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &1640879057 stripped
@@ -21016,7 +22526,30 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: I should have stayed in bed
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: This is getting scary
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Maybe i can find a way out by myself
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: after all i have Coco with me
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Pico it seems we are stuck in some sort of loop
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Pico it seems we are stuck in some sort of loop
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I think those spot lights maybe hint at something to find a key
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1640892020 stripped
@@ -21158,7 +22691,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1975729691}
+    - targetCorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1975729690}
   m_SourcePrefab: {fileID: 100100000, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
 --- !u!1 &1661875855 stripped
 GameObject:
@@ -21191,6 +22730,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
   m_PrefabInstance: {fileID: 728176640}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1670017916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580878105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea4ca164894d144b00587a327b75ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  key: {fileID: 0}
+  isFirstDoor: 0
+  audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
+--- !u!95 &1670017917
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580878105}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1674883817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
@@ -21590,6 +23166,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
   m_PrefabInstance: {fileID: 1040693048}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1717436837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 339848864464345792, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+  m_PrefabInstance: {fileID: 780815602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1717436841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717436837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: The inside its now hard as wood
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The goo is now drenching the carpetThe goo is now drenching the carpet
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1721947173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21600,7 +23207,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.11148822
+      value: -0.038002133
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21667,7 +23274,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: It looks like my bed, but it feels different
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The smell of the fabric conditioner is less strong
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The mattress it's more hard then i remember
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1722426117 stripped
@@ -22037,7 +23659,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: My lamp
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: "Nick told me it was mum\u2019s."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'The light bulb is very hot '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1747501062 stripped
@@ -22103,7 +23740,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: This smells like mold
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I thought it was orange
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: It' heavier than i remember
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1747668717 stripped
@@ -22396,7 +24048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044724709662681758, guid: d935e4b4cc08a064dac34091deffdf2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.27
+      value: -0.41949034
       objectReference: {fileID: 0}
     - target: {fileID: 1044724709662681758, guid: d935e4b4cc08a064dac34091deffdf2c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22586,7 +24238,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Wait wasn't this a diffet colour?
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I swear i had a blue one.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!183 &1775189158
@@ -22696,7 +24358,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: There is a small piece of paper you never noticed
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There is a small piece of paper you never noticed
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There is a small piece of paper you never noticed
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1778609939 stripped
@@ -23091,7 +24768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1978048062914261492, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.68
+      value: -5.47
       objectReference: {fileID: 0}
     - target: {fileID: 1978048062914261492, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23334,7 +25011,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 587297511}
+    m_TransformParent: {fileID: 814666704}
     m_Modifications:
     - target: {fileID: 1980366139100677218, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -23345,16 +25022,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 925b93679bd0545478f1248997611d03, type: 2}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.480005
+      value: 33.119995
       objectReference: {fileID: 0}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.268
+      value: -4.2679996
       objectReference: {fileID: 0}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.15
+      value: -2.1500015
       objectReference: {fileID: 0}
     - target: {fileID: 4794649498762425438, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23392,6 +25081,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1510740728}
+    - targetCorrespondingSourceObject: {fileID: 5314763216193941220, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1510740727}
     - targetCorrespondingSourceObject: {fileID: 5218801100554693145, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 554430249}
@@ -23406,7 +25101,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.014054195
+      value: 0.0140542
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalScale.y
@@ -23418,47 +25113,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.2299957
+      value: -6.208359
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.38
+      value: -5.4212866
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.98
+      value: 0.84720993
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.4537432
+      value: 0.5472876
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.54943514
+      value: -0.44526622
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.5429642
+      value: 0.4438806
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.4443288
+      value: -0.5524349
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -180.922
+      value: 0.175
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 1518.849
+      value: 77.912
       objectReference: {fileID: 0}
     - target: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90.079
+      value: -90.395
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
       value: Photo 1 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965568722551902004, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+      propertyPath: m_Size.x
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965568722551902004, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+      propertyPath: m_Size.y
+      value: 100.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965568722551902004, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+      propertyPath: m_Size.z
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 8139651160685201732, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -23908,12 +25615,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueCanvas: {fileID: 0}
-  textObject: {fileID: 0}
-  imageObjectChanger: {fileID: 0}
-  dialogues: []
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: Here is where we store the Painstation father gifted us.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The screen is displaying static
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'There are some dust bunnies under it '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
+--- !u!1 &1845857371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5284339513166980615, guid: e4c197d8208f87048a84cb862085c432, type: 3}
+  m_PrefabInstance: {fileID: 551979033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1853779580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24046,7 +25773,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: It's a trunk shaped like a truck!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: This is where I keep Nick's old toys.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: "This was Nick\u2019s, but he gave it to me"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1864890588 stripped
@@ -24112,7 +25854,62 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: I really like bean bags, soo comfy
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: This one have some stuffing coming out from the bottom
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: "Oh there is a stain on the carpet i hope father won\u2019t notice"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
+--- !u!1 &1869832820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
+  m_PrefabInstance: {fileID: 1965364398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1869832821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869832820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: "This is Nick\u2019s desk, he let me use it to draw, write letters and
+        do my homework ."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The table is so big I have to put a pillow on the chair in order to write
+        on it.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Once we had a computer, but father sold it since Nick didn't use it much.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1870383729
@@ -24170,6 +25967,10 @@ PrefabInstance:
     - target: {fileID: 621590227504755583, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
       propertyPath: m_Name
       value: Tv Table (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 621590227504755583, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24245,7 +26046,15 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: A wooden chair
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'It''s pretty flimsy '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1880230889
@@ -24577,7 +26386,37 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: A small library
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: "It's full of Nick\u2019s text books and mangas. "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I think I saw some Punpun and the first volume of Cat Diary
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: ' Nick told me not to read those. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: It's very dusty. I should clean it.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There is a miniature of a toucan, his name his Coco jr
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1928193472
@@ -24721,7 +26560,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: 'It''s a wooden chair '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Its a bit flimsy
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Once nick broke it by just sitting on it
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1930568793 stripped
@@ -24729,6 +26583,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4764366843262581949, guid: e4c197d8208f87048a84cb862085c432, type: 3}
   m_PrefabInstance: {fileID: 551979033}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1930568795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845857371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: All the book have changed, now all pages are blank
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There are some dust bunnies hiding behind the books
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The book positions changed again
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Oh Coco jr came back
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1 &1930675061
 GameObject:
   m_ObjectHideFlags: 0
@@ -24988,6 +26880,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1207056381}
     m_Modifications:
+    - target: {fileID: 3090833919297300546, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
       propertyPath: m_Name
       value: scrivania
@@ -25047,7 +26943,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1869832821}
+    - targetCorrespondingSourceObject: {fileID: 239172437374649026, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 821831175}
   m_SourcePrefab: {fileID: 100100000, guid: 14a70decb45ad06499166107651b514f, type: 3}
 --- !u!1001 &1967257959
 PrefabInstance:
@@ -25216,6 +27118,48 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+--- !u!1 &1975729688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+  m_PrefabInstance: {fileID: 1658251446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1975729690
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975729688}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cdef62efe328a54ea2e94fca7522977, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1975729691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975729688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea4ca164894d144b00587a327b75ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  key: {fileID: 0}
+  isFirstDoor: 0
+  audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
 --- !u!4 &1977797273 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
@@ -25233,10 +27177,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueCanvas: {fileID: 0}
-  textObject: {fileID: 0}
-  imageObjectChanger: {fileID: 0}
-  dialogues: []
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s poster, cryptic as usual."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &1978579895
@@ -25323,7 +27272,34 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: 'Here is where we store the Painstation father gifted us. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Nick and I played Korby and the seven seas so much that we had to buy
+        another copy
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The last one melted...
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'Here is where we store the Painstation father gifted us. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Nick told me our parents gifted him this tv when he was my age.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The Tv is a bit old but it still works surprisingly well.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &1981005885 stripped
@@ -25459,7 +27435,27 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s trunk"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: "it\u2019s now empty"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: "It\u2019s very old"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The sides are covered with faded stickers
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!4 &1991127947 stripped
@@ -25799,10 +27795,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueCanvas: {fileID: 0}
-  textObject: {fileID: 0}
-  imageObjectChanger: {fileID: 0}
-  dialogues: []
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: Nick and my parents went on vacation to Hawaii yeas ago.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!224 &2014026615 stripped
@@ -26040,7 +28041,27 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Its empty
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'It very old, i wonder if it was mum''s '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I never met her
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Nick told me she passed after i was born
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &2030811620 stripped
@@ -26321,7 +28342,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: My lamp
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: "Nick told me it was mum\u2019s."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'The light bulb is very hot '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &2046461353
@@ -26413,7 +28449,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: This doesn't fell like my bed.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I think a saw a roach coming out of the pillow.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There is goounder it
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &2052845003
@@ -26500,9 +28551,61 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s lamp"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'It belonged to dad '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The light bulb is very hot
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: I always turn it on too before going to bed, i don't want the room to
+        be dark.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The cupboard is full of old Postcards Nick sent.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
+--- !u!1 &2053237622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 239172437374649026, guid: 14a70decb45ad06499166107651b514f, type: 3}
+  m_PrefabInstance: {fileID: 792584049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2053237626
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053237622}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.03708772, y: 0.0133930845, z: 0.012754273}
+  m_Center: {x: 0.0018350291, y: 0.002, z: -0.006137469}
 --- !u!1001 &2058338828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26814,7 +28917,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: The air here is so heavy.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Even the dool cannot stand it!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1 &2084121430
@@ -26940,7 +29053,12 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s poster, I still cannot understand what it's meant to be."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!65 &2084121436
@@ -27032,7 +29150,17 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: 'A ball '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: It's yellow
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &2094704980
@@ -27249,10 +29377,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueCanvas: {fileID: 0}
-  textObject: {fileID: 0}
-  imageObjectChanger: {fileID: 0}
-  dialogues: []
+  dialogueCanvas: {fileID: 1412064511}
+  textObject: {fileID: 43004170}
+  imageObjectChanger: {fileID: 43004169}
+  dialogues:
+  - lines:
+    - text: Stange i could have sworn that there were Punpun manga here
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'but now there is something called Tokyo Ghouls. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'It''s very dusty '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Wait, where is Coco jr?
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: 'There is a framed picture on top '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: The animal in the photo is Churro, it was our pet
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: He passed away a couple of years ago.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &2108781530
@@ -27309,31 +29472,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3289948
+      value: 5.92
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.98429394
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.604
+      value: 4.982
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -27345,7 +29508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5480685875422735795, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
       propertyPath: m_Name
@@ -27633,7 +29796,22 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: Oh there is some stuffing coming out
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: Those patches are not gonna hold for long
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines:
+    - text: There is a rancid smell coming out of it
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &2120255572
@@ -28057,7 +30235,15 @@ MonoBehaviour:
   dialogueCanvas: {fileID: 1412064511}
   textObject: {fileID: 43004170}
   imageObjectChanger: {fileID: 43004169}
-  dialogues: []
+  dialogues:
+  - lines:
+    - text: That's a picture of Mum and Dad celebrating with Nick on his 8th birthday.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Father is still very sad after mum's death
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
   isTriggered: 0
   isLastBubble: 0
 --- !u!1001 &4775600861897672805
@@ -28317,13 +30503,56 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7275091713476218840}
+    - targetCorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7275091713476218839}
   m_SourcePrefab: {fileID: 100100000, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
 --- !u!4 &7275091713476218837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6789448236112770467, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
   m_PrefabInstance: {fileID: 7275091713476218836}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7275091713476218839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436215961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ea4ca164894d144b00587a327b75ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  key: {fileID: 0}
+  isFirstDoor: 0
+  audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
+--- !u!95 &7275091713476218840
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436215961}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -28340,4 +30569,5 @@ SceneRoots:
   - {fileID: 41012335}
   - {fileID: 1020212286}
   - {fileID: 520699595}
+  - {fileID: 1581287595}
   - {fileID: 43004168}
