@@ -289,8 +289,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1648770444187840237, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 192919780}
   m_SourcePrefab: {fileID: 100100000, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
+--- !u!1 &5749171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1648770444187840237, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
+  m_PrefabInstance: {fileID: 5749170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &13814403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -749,7 +757,7 @@ GameObject:
   - component: {fileID: 28555771}
   - component: {fileID: 28555770}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Plane 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3163,6 +3171,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2137603811706598487, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
   m_PrefabInstance: {fileID: 5749170}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &192919780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5749171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: "It\u2019s mostly empty"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I think i saw some leftovers on the bottom
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &198756192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9186507443389398242, guid: ad56a0da10a9beb46b6baa79517d8b50, type: 3}
@@ -4093,7 +4127,7 @@ GameObject:
   - component: {fileID: 308960707}
   - component: {fileID: 308960706}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: Plane 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4510,8 +4544,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 697238459106534859, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1747501063}
   m_SourcePrefab: {fileID: 100100000, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+--- !u!1 &341851735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 697238459106534859, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+  m_PrefabInstance: {fileID: 341851734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &353147533 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9186507443389398242, guid: ad56a0da10a9beb46b6baa79517d8b50, type: 3}
@@ -5658,7 +5700,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375007381680304164, guid: d935e4b4cc08a064dac34091deffdf2c, type: 3}
       propertyPath: m_Name
-      value: camioncino
+      value: camioncino 1
       objectReference: {fileID: 0}
     - target: {fileID: 1044724709662681758, guid: d935e4b4cc08a064dac34091deffdf2c, type: 3}
       propertyPath: m_LocalScale.x
@@ -6182,8 +6224,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5284339513166980615, guid: e4c197d8208f87048a84cb862085c432, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1930568794}
   m_SourcePrefab: {fileID: 100100000, guid: e4c197d8208f87048a84cb862085c432, type: 3}
+--- !u!1 &551979034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5284339513166980615, guid: e4c197d8208f87048a84cb862085c432, type: 3}
+  m_PrefabInstance: {fileID: 551979033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &554430247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5218801100554693145, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
@@ -7354,13 +7404,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
       propertyPath: m_Name
-      value: letto (2)
+      value: letto nick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 968673167}
   m_SourcePrefab: {fileID: 100100000, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+--- !u!1 &666450982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+  m_PrefabInstance: {fileID: 666450981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &675071893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7423,7 +7481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
-      value: Photo 1 (26)
+      value: Photo 8
       objectReference: {fileID: 0}
     - target: {fileID: 8139651160685201732, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7637,8 +7695,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 621590227504755583, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 685204692}
   m_SourcePrefab: {fileID: 100100000, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+--- !u!1 &685204691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 621590227504755583, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+  m_PrefabInstance: {fileID: 685204690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &685204692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685204691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: 'The cabinet door is locked '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I can see some black goo stuck on the back
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &695588011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
@@ -7943,7 +8035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
-      value: Photo 1 (25)
+      value: Photo 10
       objectReference: {fileID: 0}
     - target: {fileID: 8139651160685201732, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8250,8 +8342,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1168860674509974350, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1445945847}
   m_SourcePrefab: {fileID: 100100000, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
+--- !u!1 &736269725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1168860674509974350, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
+  m_PrefabInstance: {fileID: 736269724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &742098426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9924,13 +10024,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
       propertyPath: m_Name
-      value: letto (3)
+      value: letto pico
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 868982704}
   m_SourcePrefab: {fileID: 100100000, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+--- !u!1 &868982703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+  m_PrefabInstance: {fileID: 868982702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &868982704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868982703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: My bed
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'The smell of the fabric conditioner is still strong '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Its funny how me and my brother have the same bedsheets
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I usually let coco sleep here while i'm at school
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1 &871864900
 GameObject:
   m_ObjectHideFlags: 0
@@ -10299,8 +10439,46 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 888678865}
   m_SourcePrefab: {fileID: 100100000, guid: 14a70decb45ad06499166107651b514f, type: 3}
+--- !u!1 &888678864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6273739985500996400, guid: 14a70decb45ad06499166107651b514f, type: 3}
+  m_PrefabInstance: {fileID: 888678863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &888678865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888678864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: nick's desk
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'The table is so big I have to put a pillow on the chair in order to
+        write on it. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Once we had a computer, but father sold it since Nick didn't use it much.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1 &892690415
 GameObject:
   m_ObjectHideFlags: 0
@@ -10799,8 +10977,45 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       insertIndex: -1
       addedObject: {fileID: 460307430}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 697238459106534859, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 913851747}
   m_SourcePrefab: {fileID: 100100000, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+--- !u!1 &913851746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 697238459106534859, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+  m_PrefabInstance: {fileID: 913851745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &913851747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913851746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: I really like bean bags, soo comfy
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: This one have some stuffing coming out from the bottom
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "Oh there is a stain on the carpet i hope father won\u2019t notice"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &916070931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11255,6 +11470,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
   m_PrefabInstance: {fileID: 666450981}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &968673167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666450982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s bed "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Still untouched, like he left yesterday
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'I can no longer smell the odour of the fabric conditioner '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I wonder if he have a comfy bed while serving oversea
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &972362241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 392367778147896616, guid: 635381e64ce6d4c4ab9fe9bd2563920e, type: 3}
@@ -12767,7 +13014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
-      value: Photo 1 (24)
+      value: Photo 7
       objectReference: {fileID: 0}
     - target: {fileID: 8139651160685201732, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -12778,8 +13025,46 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 9073373382265537066, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1125024174}
   m_SourcePrefab: {fileID: 100100000, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+--- !u!1 &1125024173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+  m_PrefabInstance: {fileID: 1125024172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1125024174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125024173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: That's a picture of Mum and Dad celebrating with Nick on his 8th birthday
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "There are some words written on the back, \u201CTo our dear son Nicholas\u201D
+        happy birthday from mum and dad. 28/08/1991"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'This year he will turn 26 '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1125579460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13730,10 +14015,8 @@ Transform:
   - {fileID: 729466142}
   - {fileID: 1484197371}
   - {fileID: 925815391}
-  - {fileID: 1743408662}
   - {fileID: 1993544960}
   - {fileID: 1928193473}
-  - {fileID: 1991127947}
   - {fileID: 509531042}
   - {fileID: 1968897813}
   - {fileID: 1077276104}
@@ -14148,88 +14431,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad56a0da10a9beb46b6baa79517d8b50, type: 3}
---- !u!1001 &1251016114
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1207056381}
-    m_Modifications:
-    - target: {fileID: 234380308363509498, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1d3ccd7a9ea085d4095c7933447b4898, type: 2}
-    - target: {fileID: 1726591797348261625, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1d3ccd7a9ea085d4095c7933447b4898, type: 2}
-    - target: {fileID: 1726591797348261625, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7b0a8441e1d1f8142b16e4f88f6ebca3, type: 2}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.023488
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -7.283295
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.2864766
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_Name
-      value: letto (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8350569804406095615, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
 --- !u!1001 &1251607208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14346,8 +14547,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2043728276}
   m_SourcePrefab: {fileID: 100100000, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+--- !u!1 &1263862211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+  m_PrefabInstance: {fileID: 1263862210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1268716277
 GameObject:
   m_ObjectHideFlags: 0
@@ -14571,7 +14780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
-      value: Photo 1 (6)
+      value: Photo 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14932,7 +15141,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 375007381680304164, guid: d935e4b4cc08a064dac34091deffdf2c, type: 3}
       propertyPath: m_Name
-      value: camioncino (1)
+      value: camioncino 2
       objectReference: {fileID: 0}
     - target: {fileID: 1044724709662681758, guid: d935e4b4cc08a064dac34091deffdf2c, type: 3}
       propertyPath: m_LocalScale.x
@@ -16198,7 +16407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
-      value: Photo 1 (1)
+      value: Photo 2
       objectReference: {fileID: 0}
     - target: {fileID: 8139651160685201732, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16452,7 +16661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
-      value: Photo 1 (24)
+      value: Photo 9
       objectReference: {fileID: 0}
     - target: {fileID: 8139651160685201732, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16463,8 +16672,16 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 9073373382265537066, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1487005722}
   m_SourcePrefab: {fileID: 100100000, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+--- !u!1 &1412685752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
+  m_PrefabInstance: {fileID: 1412685751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1412925708
 GameObject:
   m_ObjectHideFlags: 0
@@ -16575,13 +16792,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
       propertyPath: m_Name
-      value: Bedside Table (2)
+      value: comodino pico
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1418781712}
   m_SourcePrefab: {fileID: 100100000, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+--- !u!1 &1418781711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+  m_PrefabInstance: {fileID: 1418781710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1418781712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418781711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: My lamp
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "Nick told me it was mum\u2019s."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The light bulb is very hot
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1 &1424202747
 GameObject:
   m_ObjectHideFlags: 0
@@ -16924,6 +17178,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1978048062914261492, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
   m_PrefabInstance: {fileID: 736269724}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1445945847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736269725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: This is where I keep Nick's old toys.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: It's a trunk shaped like a truck!
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "This was Nick\u2019s, but he gave it to me"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &1451579380 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3651895908506088121, guid: b8651f7cf91f5ec48a2af22e9cf9ba76, type: 3}
@@ -17004,8 +17287,48 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
       insertIndex: -1
       addedObject: {fileID: 649705089}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 697238459106534859, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1458652247}
   m_SourcePrefab: {fileID: 100100000, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+--- !u!1 &1458652246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 697238459106534859, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
+  m_PrefabInstance: {fileID: 1458652245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1458652247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458652246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: "Me and Coco\u2019s favourite spot to nap."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Nick told me he got those in a garage sale years ago.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: A little worn out but still comfy
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'I think this one needs another patch, there is stuffing coming out  '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1458847012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17068,7 +17391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
-      value: Photo 1 (7)
+      value: Photo 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17389,6 +17712,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
   m_PrefabInstance: {fileID: 1412685751}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1487005722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412685752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: This is a picture of Nick's first Halloween; he was 6 at the time.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1 &1491700611
 GameObject:
   m_ObjectHideFlags: 0
@@ -18842,13 +19188,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
       propertyPath: m_Name
-      value: Bedside Table (3)
+      value: comodino nick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1742722128}
   m_SourcePrefab: {fileID: 100100000, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+--- !u!1 &1629711344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+  m_PrefabInstance: {fileID: 1629711343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1640892020 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3142503329464286888, guid: cf92189562338af4fb8ce2c4ba052cef, type: 3}
@@ -18988,8 +19342,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1658251448}
   m_SourcePrefab: {fileID: 100100000, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+--- !u!1 &1658251447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6157308676258869017, guid: b711d5cd319426540901ad6e24b1db03, type: 3}
+  m_PrefabInstance: {fileID: 1658251446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1658251448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658251447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: is locked
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1 &1661875855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5218801100554693145, guid: 4cb9dcaf70a6b894cbf48e3d85b271c8, type: 3}
@@ -19295,7 +19680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
-      value: Photo 1 (9)
+      value: Photo 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19586,7 +19971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 726111745219340436, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
       propertyPath: m_Name
-      value: Photo 1 (8)
+      value: Photo 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19806,16 +20191,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7256357732362266636, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
   m_PrefabInstance: {fileID: 1629711343}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1743408662 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-  m_PrefabInstance: {fileID: 2132086200}
+--- !u!114 &1742722128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629711344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s lamp"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'It belonged to dad '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The light bulb is very hot
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I always turn it on too before going to bed, i don't want the room to
+        be dark.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &1747501062 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
   m_PrefabInstance: {fileID: 341851734}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1747501063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341851735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: 'No time to rest i have to find a way out '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: There is now strange goo leaking from the bottom
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The patches are very worn out
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &1747668717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 209072151800151921, guid: 69e9a119d85a2ef47b8e83f1546e7469, type: 3}
@@ -20664,8 +21106,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1168860674509974350, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1893007180}
   m_SourcePrefab: {fileID: 100100000, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
+--- !u!1 &1795879772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1168860674509974350, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
+  m_PrefabInstance: {fileID: 1795879771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1798949413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
@@ -20852,8 +21302,16 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 8350569804406095615, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1933846105}
   m_SourcePrefab: {fileID: 100100000, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+--- !u!1 &1799855727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+  m_PrefabInstance: {fileID: 1799855726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1801903226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6654945767012424074, guid: 14a70decb45ad06499166107651b514f, type: 3}
@@ -20939,8 +21397,54 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 8350569804406095615, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1803079043}
   m_SourcePrefab: {fileID: 100100000, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+--- !u!1 &1803079042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+  m_PrefabInstance: {fileID: 1803079041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1803079043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803079042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s bed"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'Still untouched, like he left yesterday '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I can no longer smell the odour of the fabric conditioner
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'There is mould under the sheets '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  - lines: []
+    lineCounter: 0
+  - lines: []
+    lineCounter: 0
+  - lines: []
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1804315560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21492,8 +21996,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 621590227504755583, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1841976152}
   m_SourcePrefab: {fileID: 100100000, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+--- !u!1 &1841976151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 621590227504755583, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+  m_PrefabInstance: {fileID: 1841976150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1841976152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841976151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: 'Here is where we store the Painstation father gifted us. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The screen is displaying static
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: There are some dust bunnies under it
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1853779580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21801,6 +22342,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1978048062914261492, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
   m_PrefabInstance: {fileID: 1795879771}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1893007180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795879772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: This is not my trunk
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'My trunk shrunk it''s now small '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Its empty
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: There is a nametag on the side that reads Koko R. Ito, its mum name
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I never met my mum
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Nick told me she passed after i was born
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1912910907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21864,8 +22443,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1168860674509974350, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1912910909}
   m_SourcePrefab: {fileID: 100100000, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
+--- !u!1 &1912910908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1168860674509974350, guid: ab47fc03a8e3adc4e83ec2704bcaa23e, type: 3}
+  m_PrefabInstance: {fileID: 1912910907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1912910909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912910908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: Strange, its empty now
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'There is a strange black goo on the wheels '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &1924717878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 96961968811405870, guid: 0d93904cd8f47e84d94cae4089a75404, type: 3}
@@ -21929,8 +22542,52 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1415911767191279228, guid: 324e3f13eed18464eb87c17c2682b10b, type: 3}
       insertIndex: 0
       addedObject: {fileID: 634883112}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 665014210814870639, guid: 324e3f13eed18464eb87c17c2682b10b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1925931885}
   m_SourcePrefab: {fileID: 100100000, guid: 324e3f13eed18464eb87c17c2682b10b, type: 3}
+--- !u!1 &1925931884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 665014210814870639, guid: 324e3f13eed18464eb87c17c2682b10b, type: 3}
+  m_PrefabInstance: {fileID: 1925931883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1925931885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925931884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: a small library
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "It's full of Nick\u2019s text books and mangas. "
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I think I saw some Punpun and the first volume of Cat Diary but Nick
+        told me not to read those.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: It's very dusty. I should clean it.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: There is a miniature of a toucan, his name his Coco jr
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1928193472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21998,18 +22655,89 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7423285250726214512, guid: eb4305771d9d9de4690ec2b575d84c99, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1928193475}
   m_SourcePrefab: {fileID: 100100000, guid: eb4305771d9d9de4690ec2b575d84c99, type: 3}
 --- !u!4 &1928193473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7804489898301252042, guid: eb4305771d9d9de4690ec2b575d84c99, type: 3}
   m_PrefabInstance: {fileID: 1928193472}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1928193474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7423285250726214512, guid: eb4305771d9d9de4690ec2b575d84c99, type: 3}
+  m_PrefabInstance: {fileID: 1928193472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1928193475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928193474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: "This is Nick\u2019s desk, he let me use it to draw, write letters and
+        do my homework ."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The table is so big I have to put a pillow on the chair in order to write
+        on it.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Once we had a computer, but father sold it since Nick didn't use it much.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!4 &1930568793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4764366843262581949, guid: e4c197d8208f87048a84cb862085c432, type: 3}
   m_PrefabInstance: {fileID: 551979033}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1930568794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551979034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: 'All the books have changed, all the pages are now empty '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'There are dust bunnies hiding behind the books. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'The books position changed again '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'Oh Coco jr came  is back '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1 &1930675061
 GameObject:
   m_ObjectHideFlags: 0
@@ -22121,6 +22849,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
   m_PrefabInstance: {fileID: 1799855726}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1933846105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799855727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: It looks like my bed, but it feels different
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The smell of the fabric conditioner is less strong
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'The mattress it''s more hard then i remember '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &1938109699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22561,8 +23318,46 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 621590227504755583, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1978579897}
   m_SourcePrefab: {fileID: 100100000, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+--- !u!1 &1978579896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 621590227504755583, guid: 6f8e13c887cb38943b0d89c69e8fa635, type: 3}
+  m_PrefabInstance: {fileID: 1978579895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1978579897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978579896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: 'Here is where we store the Painstation father gifted us.  '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'Nick and I played Korby and the seven seas so much that we had to buy
+        another copy since the last one broke. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'Nick told me our parents gifted him this tv when he was my age. '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1 &1981005885 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5466016146641365606, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
@@ -22633,11 +23428,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!4 &1991127947 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-  m_PrefabInstance: {fileID: 1251016114}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1993544959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22873,8 +23663,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1648770444187840237, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2004643982}
   m_SourcePrefab: {fileID: 100100000, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
+--- !u!1 &2004643981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1648770444187840237, guid: 1e6ce0209a128d943ab765c30ef3db75, type: 3}
+  m_PrefabInstance: {fileID: 2004643980}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2004643982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004643981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: "\u201CYou search in the trash and find the key to your room\u201D"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &2009647521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23379,6 +24200,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7256357732362266636, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
   m_PrefabInstance: {fileID: 1263862210}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2043728276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263862211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: "Nick\u2019s lamp"
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: It belonged to dad
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'The light bulb is very hot '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: I always turn it on too before going to bed, i don't want the room to
+        be dark.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The cupboard is full of old Postcards Nick sent.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &2046461353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23512,8 +24369,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2052845005}
   m_SourcePrefab: {fileID: 100100000, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+--- !u!1 &2052845004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8068218824059318966, guid: fe00df38ccc61834884cf3b7f8c6760b, type: 3}
+  m_PrefabInstance: {fileID: 2052845003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2052845005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052845004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: my lamp
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: "Nick told me it was mum\u2019s."
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'The light bulb is very hot '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &2058338828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23780,7 +24674,7 @@ GameObject:
   - component: {fileID: 2084121433}
   - component: {fileID: 2084121432}
   m_Layer: 0
-  m_Name: Plane (2)
+  m_Name: Plane 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24075,8 +24969,55 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 665014210814870639, guid: 324e3f13eed18464eb87c17c2682b10b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2105625145}
   m_SourcePrefab: {fileID: 100100000, guid: 324e3f13eed18464eb87c17c2682b10b, type: 3}
+--- !u!1 &2105625144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 665014210814870639, guid: 324e3f13eed18464eb87c17c2682b10b, type: 3}
+  m_PrefabInstance: {fileID: 2105625143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2105625145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105625144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd7635276e6ed64e80aab912ab2e838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textObject: {fileID: 0}
+  imageObjectChanger: {fileID: 0}
+  dialogues:
+  - lines:
+    - text: 'Stange i could have sworn that there were Punpun manga here, but now
+        there is something called Tokyo Ghouls.  '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: 'It''s very dusty '
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: Wait, where is Coco jr?
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: There is a framed picture on top
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: The animal in the photo is Churro, it was our pet
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    - text: He passed away a couple of years ago.
+      Ted: {fileID: 0}
+      hasBeenRead: 0
+    lineCounter: 0
+  isTriggered: 0
+  isLastBubble: 0
 --- !u!1001 &2108781530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24597,88 +25538,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf92189562338af4fb8ce2c4ba052cef, type: 3}
---- !u!1001 &2132086200
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1207056381}
-    m_Modifications:
-    - target: {fileID: 234380308363509498, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1d3ccd7a9ea085d4095c7933447b4898, type: 2}
-    - target: {fileID: 1726591797348261625, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1d3ccd7a9ea085d4095c7933447b4898, type: 2}
-    - target: {fileID: 1726591797348261625, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7b0a8441e1d1f8142b16e4f88f6ebca3, type: 2}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.266512
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -7.283295
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.2864766
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-      propertyPath: m_Name
-      value: letto (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8350569804406095615, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
 --- !u!1001 &2137982739
 PrefabInstance:
   m_ObjectHideFlags: 0
