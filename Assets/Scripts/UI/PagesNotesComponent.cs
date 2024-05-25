@@ -10,7 +10,7 @@ public class PagesNotesComponent : MonoBehaviour
     bool isReading;
     [SerializeField] GameObject lastPagePanel;
     bool isInteracting;
-    [SerializeField] Image newPage; //immagine che sostituisce quella in scena
+    [SerializeField] Sprite newPage; //immagine che sostituisce quella in scena 
     [SerializeField] bool isLast;
     public static Action lastPageBubble;
     public static bool isPanelActive;
@@ -45,8 +45,8 @@ public class PagesNotesComponent : MonoBehaviour
             //Debug.Log("gogogoogog " + isReading);
             isReading = true;
             InputManager.ActionMap.Player.Movement.Disable();
-            pagePanel.sprite = newPage.sprite;
-            pagePanel.color = newPage.color;
+            pagePanel.sprite = newPage;
+            //pagePanel.color = newPage.texture.
             lastPagePanel.transform.parent.gameObject.SetActive(true);
             //pagePanel.rectTransform.parent.gameObject.SetActive(true);
         }

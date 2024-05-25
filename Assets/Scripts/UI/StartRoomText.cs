@@ -56,8 +56,8 @@ public class StartRoomText : MonoBehaviour
             {
                 InputManager.ActionMap.Player.Movement.Disable();
                 text.text = currentLine.text;
-                image.sprite = currentLine.Ted.sprite;
-                image.color = currentLine.Ted.color;
+                image.sprite = currentLine.Ted;
+                
                 lastLineCounter = lineCounter;
                 dialogueCanvas.SetActive(true);
             }

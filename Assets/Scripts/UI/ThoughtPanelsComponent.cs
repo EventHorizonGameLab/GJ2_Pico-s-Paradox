@@ -112,8 +112,7 @@ public class ThoughtPanelsComponent : MonoBehaviour
                 Debug.LogWarning("second if");
                 InputManager.ActionMap.Player.Movement.Disable();
                 text.text = currentLine.text;
-                image.sprite = currentLine.Ted.sprite;
-                image.color = currentLine.Ted.color;
+                image.sprite = currentLine.Ted;
                 lastLineCounter = lineCounter;
                 dialogueCanvas.SetActive(true);
 
@@ -191,7 +190,7 @@ public class Lines
     public string text;
 
     [Tooltip("the sprite of the one saying this line")]
-    public Image Ted; //https://static.wikia.nocookie.net/eallafinearrivamamma/images/a/a3/Ted_profile.jpg/revision/latest?cb=20120810080952&path-prefix=it
+    public Sprite Ted; //https://static.wikia.nocookie.net/eallafinearrivamamma/images/a/a3/Ted_profile.jpg/revision/latest?cb=20120810080952&path-prefix=it
     //its an inside joke im sorry if you read it venice or marco <3
     [HideInInspector] public bool hasBeenRead;
 }
