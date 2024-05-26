@@ -49,7 +49,8 @@ public class PlayerControllerV2 : MonoBehaviour, ITeleportable
 
     private void Update()
     {
-        GameManager.playerIsOnTargertPoint = Vector3.Distance(transform.position, targetMovePoint.position) <= 0.1;
+        GameManager.playerIsOnTargertPoint = Vector3.Distance(transform.position, targetMovePoint.position) <= 0.01f;
+        
         
         if (GameManager.isHoldingAnObject) { speed = holdingSpeed;  } else { speed = basePlayerSpeed; }
 
