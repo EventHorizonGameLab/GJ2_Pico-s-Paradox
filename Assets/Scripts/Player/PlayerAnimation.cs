@@ -77,12 +77,12 @@ public class PlayerAnimation : MonoBehaviour
         {
             if (lastDirection != Vector3.zero )
             {
-                if (transform.position == targetMovePoint.position && !GameManager.isHoldingAnObject)
+                if (GameManager.playerIsOnTargertPoint && !GameManager.isHoldingAnObject)
                 {
                     spriteRenderer.sprite = directionToIdle[CalculateIdle(holdPoint)];
                     anim.enabled = false;
                 }
-                else if(transform.position == targetMovePoint.position && GameManager.isHoldingAnObject)
+                else if(GameManager.playerIsOnTargertPoint && GameManager.isHoldingAnObject)
                 {
                     spriteRenderer.sprite = directionToIdle[CalculateIdle(holdPoint)];
                     anim.enabled = false;
