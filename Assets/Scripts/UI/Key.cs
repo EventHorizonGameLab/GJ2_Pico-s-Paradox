@@ -31,7 +31,7 @@ public class Key : MonoBehaviour
             {
                 return;
             }
-
+            
             GameManager.OnKeyObtained?.Invoke();
             keySprite.SetActive(true);
         }

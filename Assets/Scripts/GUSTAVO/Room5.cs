@@ -20,6 +20,7 @@ public class Room5 : MonoBehaviour
     }
     private void SpawnGustavo()
     {
+        BGM.OnGustavo?.Invoke();
         Instantiate(gustavoPrefab, transform.position, Quaternion.identity);
         changeLights?.Invoke();
     }

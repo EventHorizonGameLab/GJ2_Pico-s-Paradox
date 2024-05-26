@@ -20,12 +20,14 @@ public class UIManager : MonoBehaviour
     }
     private void Lose()
     {
+        BGM.OnEndGame?.Invoke();
         losePanel.SetActive(true);
         GameManager.TimeScale(0);
     }
 
     private void Win()
     {
+        BGM.OnEndGame?.Invoke();
         winPanel.SetActive(true);
         GameManager.TimeScale(0);
     }

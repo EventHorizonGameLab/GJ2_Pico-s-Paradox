@@ -41,6 +41,8 @@ public static class InputManager
         ActionMap.Player.Enable();
     }
 
+
+
     public static void Initialize()
     {
         ActionMap = new ActionMap();
