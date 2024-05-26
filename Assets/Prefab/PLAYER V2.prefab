@@ -293,10 +293,10 @@ MonoBehaviour:
   targetMovePoint: {fileID: 1092241944077563161}
   holdPoint: {fileID: 4856604171981786918}
   idleSprites:
-  - {fileID: 1061655928, guid: 8d6301ea47a058f40b6c93e277ae870e, type: 3}
-  - {fileID: -985949368, guid: 8d6301ea47a058f40b6c93e277ae870e, type: 3}
-  - {fileID: 69049245, guid: 8d6301ea47a058f40b6c93e277ae870e, type: 3}
-  - {fileID: 1728733859, guid: 8d6301ea47a058f40b6c93e277ae870e, type: 3}
+  - {fileID: -529802170, guid: 1c5c814b283a39b42adb2148c9c4868e, type: 3}
+  - {fileID: -1602609148, guid: 1c5c814b283a39b42adb2148c9c4868e, type: 3}
+  - {fileID: -2133498543, guid: 1c5c814b283a39b42adb2148c9c4868e, type: 3}
+  - {fileID: 82717225, guid: 1c5c814b283a39b42adb2148c9c4868e, type: 3}
 --- !u!1 &5466016146641365606
 GameObject:
   m_ObjectHideFlags: 0
