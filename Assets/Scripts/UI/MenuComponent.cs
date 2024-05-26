@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class MenuComponent : MonoBehaviour
@@ -12,8 +13,11 @@ public class MenuComponent : MonoBehaviour
     public GameObject showControlsPanel;
     public GameObject creditsPanel;
     public GameObject UIPanel;
-
     public int playSceneNumber;
+
+    [Header("Buttons Refs")]
+    [SerializeField] GameObject playButton;
+
 
     //[HideInInspector] public bool isFullScreen = false;
 
@@ -51,6 +55,7 @@ public class MenuComponent : MonoBehaviour
     }
     private void Start()
     {
+        EventSystem.current.SetSelectedGameObject(playButton);
         PlayerPrefs.SetInt("ScreenMode", 0);
         resolutions = Screen.resolutions;
         filteredResolutions = new List<Resolution>();
@@ -160,13 +165,13 @@ public class MenuComponent : MonoBehaviour
         if (isPause)
         {
             GameManager.TimeScale(0);
-            InputManager.SwitchToUI();
+            InputManager.SwitchToUIInput();
         }
 
         else
         {
             GameManager.TimeScale(1);
-            InputManager.SwitchToPlayer();
+            InputManager.SwitchToPlayerInput();
         }
 
         pausePanel.SetActive(isPause);

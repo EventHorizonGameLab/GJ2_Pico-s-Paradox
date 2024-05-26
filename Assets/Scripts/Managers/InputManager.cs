@@ -12,6 +12,7 @@ public static class InputManager
     {
         ActionMap = new ActionMap();
         ActionMap.Enable();
+        SwitchToUIInput();
     }
 
     public static Vector3 Movement => ActionMap.Player.Movement.ReadValue<Vector3>(); // Vettore già normalizzato
@@ -31,14 +32,16 @@ public static class InputManager
         return InteractButtonIsPressed > 0;
     }
     
-    public static void SwitchToUI()
+    public static void SwitchToUIInput()
     {
         ActionMap.Player.Disable();
+        ActionMap.UIControl.Enable();
     }
 
-    public static void SwitchToPlayer()
+    public static void SwitchToPlayerInput()
     {
         ActionMap.Player.Enable();
+        ActionMap.UIControl.Disable();
     }
 
 
