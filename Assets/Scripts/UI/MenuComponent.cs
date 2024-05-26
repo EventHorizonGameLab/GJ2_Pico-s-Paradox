@@ -30,6 +30,8 @@ public class MenuComponent : MonoBehaviour
     [SerializeField] GameObject pausePanel;
     bool isPause;
     [SerializeField] GameObject showControlPanel;
+    
+    [SerializeField] AudioData audioData;
 
     private void Awake()
     {
@@ -81,6 +83,7 @@ public class MenuComponent : MonoBehaviour
     }
     public void OnPlayButton()
     {
+
         InputManager.ActionMap.AlwaysOn.Pause.performed += ActivatePause;
         SceneManager.LoadScene(playSceneNumber);
         UIPanel.SetActive(false);
@@ -178,6 +181,11 @@ public class MenuComponent : MonoBehaviour
     public void OnCLoseShowControl()
     {
         showControlPanel.SetActive(false);
+    }
+
+    public void playButtonSound()
+    {
+        AudioManager.instance.PlaySFX(audioData.sfx_menuButton);
     }
 }
 

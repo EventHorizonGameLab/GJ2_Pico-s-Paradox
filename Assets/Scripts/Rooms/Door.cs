@@ -12,6 +12,7 @@ public class Door : MonoBehaviour
     [SerializeField] AudioData audioData;
     bool isLocked = true;
 
+
     private void OnEnable()
     {
         InputManager.ActionMap.Player.Interact.started += OnInteraction;
@@ -52,7 +53,7 @@ public class Door : MonoBehaviour
         {
             if (GameManager.playerHasKey)
             {
-                AudioManager.instance.PlaySFX(audioData.sfx_openingDoor);  //null reference
+                AudioManager.instance.PlaySFX(audioData.sfx_openingDoor);
                 anim.SetBool("isOpeningDoor", true);
                 GameManager.OnKeyUsed?.Invoke();
                 key.keySprite.SetActive(false);

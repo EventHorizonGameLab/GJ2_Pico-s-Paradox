@@ -6,6 +6,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] GameObject winPanel;
     [SerializeField] GameObject losePanel;
+    [SerializeField] AudioData audioData;
 
     private void OnEnable()
     {
@@ -20,14 +21,18 @@ public class UIManager : MonoBehaviour
     }
     private void Lose()
     {
+        BGM.OnEndGame?.Invoke();
         losePanel.SetActive(true);
         GameManager.TimeScale(0);
+        AudioManager.instance.PlaySFX(audioData.sfx_looseScreen);
     }
 
     private void Win()
     {
+        BGM.OnEndGame?.Invoke();
         winPanel.SetActive(true);
         GameManager.TimeScale(0);
+        AudioManager.instance.PlaySFX(audioData.sfx_victorySound);
     }
     
 }

@@ -14,6 +14,7 @@ public class PagesNotesComponent : MonoBehaviour
     [SerializeField] bool isLast;
     public static Action lastPageBubble;
     public static bool isPanelActive;
+    [SerializeField] AudioData audioData;
     private void Awake()
     {
         pagePanel = lastPagePanel.GetComponent<Image>();
@@ -48,6 +49,7 @@ public class PagesNotesComponent : MonoBehaviour
             pagePanel.sprite = newPage;
             //pagePanel.color = newPage.texture.
             lastPagePanel.transform.parent.gameObject.SetActive(true);
+            AudioManager.instance.PlaySFX(audioData.sfx_paperInteraction);
             //pagePanel.rectTransform.parent.gameObject.SetActive(true);
         }
 
@@ -61,6 +63,7 @@ public class PagesNotesComponent : MonoBehaviour
             if (isLast)
             {
                 InputManager.ActionMap.Player.Interact.started -= OnInteraction;
+                AudioManager.instance.PlaySFX(audioData.sfx_paperInteraction);
                 lastPageBubble?.Invoke();
             }
         }

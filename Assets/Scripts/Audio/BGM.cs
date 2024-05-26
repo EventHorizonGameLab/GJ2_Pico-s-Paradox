@@ -8,6 +8,8 @@ public class BGM : MonoBehaviour
     //Events
     public static Action OnGustavo;
     public static Action OnEntertingLastRoom;
+    public static Action OnEndGame;
+
 
     [SerializeField] AudioData audioData;
     AudioClip base_BGM;
@@ -26,12 +28,14 @@ public class BGM : MonoBehaviour
     {
         OnGustavo += ChangeBGM;
         OnEntertingLastRoom += StopBGM;
+        OnEndGame += StopBGM;
     }
 
     private void OnDisable()
     {
         OnGustavo -= ChangeBGM;
         OnEntertingLastRoom -= StopBGM;
+        OnEndGame -= StopBGM;
     }
 
     private void Start()
@@ -51,5 +55,4 @@ public class BGM : MonoBehaviour
     {
         AudioSource.Stop();
     }
-
 }
