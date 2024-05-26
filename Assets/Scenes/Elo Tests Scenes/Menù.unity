@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &47188821
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1893,10 +1893,15 @@ MonoBehaviour:
   settingsPanel: {fileID: 217875231}
   showControlsPanel: {fileID: 1104234569}
   creditsPanel: {fileID: 1790771807}
-  UIPanel: {fileID: 158952158}
+  UIPanel: {fileID: 1756701784}
+  menuPanel: {fileID: 158952158}
   playSceneNumber: 1
-  playButton: {fileID: 1041922452}
   resolutionDropDown: {fileID: 1644276047}
+  playButton: {fileID: 1041922452}
+  creditsFirstButton: {fileID: 1053548039}
+  controlFirstButton: {fileID: 1665092891}
+  settingFirstButton: {fileID: 1839797093}
+  pauseButton: {fileID: 1367065747}
   pausePanel: {fileID: 554371101}
   showControlPanel: {fileID: 93689742}
   audioData: {fileID: 11400000, guid: 0ca0b24a1c2cb864185f5a64e0c5d940, type: 2}
@@ -7510,9 +7515,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 396809645}
         m_TargetAssemblyTypeName: MenuComponent, Assembly-CSharp
-        m_MethodName: OnShowControlsButton
+        m_MethodName: OnGoBackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

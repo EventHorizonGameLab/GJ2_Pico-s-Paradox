@@ -12,7 +12,7 @@ public static class InputManager
     {
         ActionMap = new ActionMap();
         ActionMap.Enable();
-        SwitchToUIInput();
+        //SwitchToUIInput();
     }
 
     public static Vector3 Movement => ActionMap.Player.Movement.ReadValue<Vector3>(); // Vettore già normalizzato

@@ -3215,6 +3215,7 @@ MonoBehaviour:
   lastPagePanel: {fileID: 1557536928}
   newPage: {fileID: 21300000, guid: 7becfaefcd641c44eaf360e71a4c924c, type: 3}
   isLast: 0
+  audioData: {fileID: 0}
 --- !u!4 &174227589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
@@ -4155,6 +4156,7 @@ MonoBehaviour:
   lastPagePanel: {fileID: 1557536928}
   newPage: {fileID: 21300000, guid: 88f5c6daf19d9ab4d854729ec7b0a0ee, type: 3}
   isLast: 0
+  audioData: {fileID: 0}
 --- !u!4 &263049703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
@@ -8095,7 +8097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8327756105647816878, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -97.8
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: 8327756105647816878, guid: 413c0b741a4a08342a87362d3afeafc8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23889,6 +23891,7 @@ MonoBehaviour:
   lastPagePanel: {fileID: 1557536928}
   newPage: {fileID: 21300000, guid: 48594b9f69508b74fb00a5ab31b81626, type: 3}
   isLast: 1
+  audioData: {fileID: 0}
 --- !u!114 &1704440213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29538,6 +29541,7 @@ MonoBehaviour:
   lastPagePanel: {fileID: 1557536928}
   newPage: {fileID: 21300000, guid: f9f032603ff3f11449cc09280b035039, type: 3}
   isLast: 0
+  audioData: {fileID: 0}
 --- !u!4 &2058338833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}
@@ -30368,6 +30372,7 @@ MonoBehaviour:
   lastPagePanel: {fileID: 1557536928}
   newPage: {fileID: 21300000, guid: 23b001081fc03b8498a3d12a22225eb8, type: 3}
   isLast: 0
+  audioData: {fileID: 0}
 --- !u!4 &2108781534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5135403647049594633, guid: 8fe024b87c77c304da4116379ee95e99, type: 3}

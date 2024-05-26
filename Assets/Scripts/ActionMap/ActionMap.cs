@@ -123,6 +123,17 @@ public partial class @ActionMap: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""right"",
+                    ""id"": ""3c1dca4e-cb8b-4670-b126-5732ceaa4ef1"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": ""forward"",
                     ""id"": ""c87f02c9-7483-4409-8ad2-e5a6ec0c787b"",
                     ""path"": ""<Keyboard>/w"",

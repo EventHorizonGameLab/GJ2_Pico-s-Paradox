@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public static bool playerHasKey;
     int objectsInCorrectPos;
 
+    public static GameObject keySprite;
+
     private void Awake()
     {
         isHoldingAnObject = false;
@@ -80,10 +82,13 @@ public class GameManager : MonoBehaviour
     void KeyObtained()
     {
         playerHasKey = true;
+        keySprite.SetActive(true);
+
     }
 
     void KeyUsed()
     {
         playerHasKey = false;
+        keySprite.SetActive(false);
     }
 }

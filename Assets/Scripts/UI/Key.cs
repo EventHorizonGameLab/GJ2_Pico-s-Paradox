@@ -6,9 +6,13 @@ using UnityEngine.UI;
 
 public class Key : MonoBehaviour
 {
-    [SerializeField] public GameObject keySprite;
+    [SerializeField] GameObject keySprite;
     bool isInteracting;
 
+    private void Awake()
+    {
+        GameManager.keySprite = keySprite;
+    }
     private void OnEnable()
     {
         InputManager.ActionMap.Player.Interact.started += OnInteraction;
@@ -33,7 +37,7 @@ public class Key : MonoBehaviour
             }
             
             GameManager.OnKeyObtained?.Invoke();
-            keySprite.SetActive(true);
+            
         }
     }
 

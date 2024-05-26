@@ -55,7 +55,7 @@ public class Door : MonoBehaviour
                 AudioManager.instance.PlaySFX(audioData.sfx_openingDoor);  //null reference
                 anim.SetBool("isOpeningDoor", true);
                 GameManager.OnKeyUsed?.Invoke();
-                key.keySprite.SetActive(false);
+                
             }
 
             else

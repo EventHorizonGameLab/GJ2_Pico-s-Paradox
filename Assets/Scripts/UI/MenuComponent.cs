@@ -13,16 +13,20 @@ public class MenuComponent : MonoBehaviour
     public GameObject showControlsPanel;
     public GameObject creditsPanel;
     public GameObject UIPanel;
+    public GameObject menuPanel;
     public int playSceneNumber;
+    [SerializeField] private TMPro.TMP_Dropdown resolutionDropDown;
 
     [Header("Buttons Refs")]
     [SerializeField] GameObject playButton;
-
+    [SerializeField] GameObject creditsFirstButton;
+    [SerializeField] GameObject controlFirstButton;
+    [SerializeField] GameObject settingFirstButton;
+    [SerializeField] GameObject pauseButton;
 
     //[HideInInspector] public bool isFullScreen = false;
 
 
-    [SerializeField] private TMPro.TMP_Dropdown resolutionDropDown;
 
     private Resolution[] resolutions;
     private List<Resolution> filteredResolutions;
@@ -31,10 +35,12 @@ public class MenuComponent : MonoBehaviour
     private int currentResolutionIndex = 0;
     [HideInInspector] public Resolution resolution;
 
+    [Header("pause panel")]
     [SerializeField] GameObject pausePanel;
     bool isPause;
     [SerializeField] GameObject showControlPanel;
 
+    [Header("audio")]
     [SerializeField] AudioData audioData;
 
     private void Awake()
@@ -90,27 +96,35 @@ public class MenuComponent : MonoBehaviour
     {
         InputManager.ActionMap.AlwaysOn.Pause.performed += ActivatePause;
         SceneManager.LoadScene(playSceneNumber);
+        InputManager.SwitchToPlayerInput();
         UIPanel.SetActive(false);
         
     }
 
     public void OnSettingsButton()
     {
+        EventSystem.current.SetSelectedGameObject(settingFirstButton);
+        menuPanel.SetActive(false);
         settingsPanel.SetActive(true);
 
     }
 
     public void OnShowControlsButton()
     {
+        EventSystem.current.SetSelectedGameObject(controlFirstButton);
+        menuPanel.SetActive(false);
         showControlsPanel.SetActive(true);
     }
 
     public void OnCredits()
     {
+        EventSystem.current.SetSelectedGameObject(creditsFirstButton);
+        menuPanel.SetActive(false);
         creditsPanel.SetActive(true);
     }
     public void OnGoBackToMenu()
     {
+        EventSystem.current.SetSelectedGameObject(playButton);
         settingsPanel.SetActive(false);
         showControlsPanel.SetActive(false);
         creditsPanel.SetActive(false);
@@ -164,6 +178,7 @@ public class MenuComponent : MonoBehaviour
 
         if (isPause)
         {
+            EventSystem.current.SetSelectedGameObject(pauseButton);
             GameManager.TimeScale(0);
             InputManager.SwitchToUIInput();
         }
@@ -184,6 +199,7 @@ public class MenuComponent : MonoBehaviour
 
     public void OnCLoseShowControl()
     {
+        EventSystem.current.SetSelectedGameObject(playButton);
         showControlPanel.SetActive(false);
     }
 
