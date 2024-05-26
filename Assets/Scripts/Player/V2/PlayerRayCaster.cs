@@ -1,28 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using Color = UnityEngine.Color;
+using System.Drawing;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using static UnityEngine.UI.Image;
+
 
 public class PlayerRayCaster : MonoBehaviour
 {
-    
+    public static Action<GameObject> OnObjectHeld;
+
     [SerializeField] LayerMask layerToIgnore;
     float rayLenght;
     bool isColliding;
-   
 
+    GameObject heldObj;
+
+    private void OnEnable()
+    {
+        OnObjectHeld += GetObjectHeld;
+    }
+    private void OnDisable()
+    {
+        OnObjectHeld -= GetObjectHeld;
+    }
 
     private void Start()
     {
-        rayLenght = 0.6f;
+        rayLenght = 0.65f;
     }
     private void Update()
     {
-        if (GameManager.isHoldingAnObject) { rayLenght = 0; } else { rayLenght = 0.6f; }
+        
         if (InputManager.Movement != Vector3.zero)
         {
-            isColliding = CollisionCheck(InputManager.Movement);
+            isColliding = CollisionCheck(InputManager.Movement) || ObjectCollision(heldObj, InputManager.Movement);
             GameManager.isColliding = isColliding;
         }
     }
@@ -37,6 +47,27 @@ public class PlayerRayCaster : MonoBehaviour
 
         return  hitCenter || hitLeft || hitRight;
     }
+
+    void GetObjectHeld(GameObject obj)
+    {
+        
+        heldObj = obj;
+    }
+
+    bool ObjectCollision(GameObject obj,Vector3 direction)
+    {
+        if(obj == null) return false;
+        Collider collider = obj.GetComponent<Collider>();
+        Vector3 bounds = collider.bounds.extents;
+        float distance = direction.x > direction.z ? bounds.x : bounds.z;
+        distance += 0.2f;
+
+        bool isHitting = Physics.Raycast(obj.transform.position, direction, distance, ~layerToIgnore);
+        Debug.DrawRay(obj.transform.position, direction * distance ,Color.green);
+        return isHitting;
+    }
+
+
         
         
     private void OnDrawGizmos()
