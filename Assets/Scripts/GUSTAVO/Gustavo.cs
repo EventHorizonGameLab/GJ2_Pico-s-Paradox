@@ -45,14 +45,7 @@ public class Gustavo : MonoBehaviour
         Vector3 pos = transform.position;
         yield return new WaitForSeconds(movementCooldown);
 
-        if (Physics.Raycast(transform.position, Vector3.left, out RaycastHit hit, movementDistance))
-        {
-            pos += Vector3.left * (gustavoSize + (hit.collider.bounds.extents.x * 2) + hit.point.x);
-        }
-        else
-        {
-            pos += Vector3.left * movementDistance;
-        }
+        pos += Vector3.left * movementDistance;
         transform.position = pos;
         StartCoroutine(Movement());
     }
@@ -77,7 +70,7 @@ public class Gustavo : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawRay(transform.position + Vector3.left * gustavoSize, Vector3.left * movementDistance);
+        Gizmos.DrawRay(transform.position, Vector3.left * movementDistance);
     }
 #endif
 }
