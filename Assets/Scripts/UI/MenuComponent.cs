@@ -138,6 +138,7 @@ public class MenuComponent : MonoBehaviour
         settingsPanel.SetActive(false);
         showControlsPanel.SetActive(false);
         creditsPanel.SetActive(false);
+        menuPanel.SetActive(true);
     }
 
     public void OnFullScreen()
