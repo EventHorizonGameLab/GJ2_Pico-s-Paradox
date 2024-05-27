@@ -13864,6 +13864,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1207056381}
     m_Modifications:
+    - target: {fileID: 1152564299741174695, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      propertyPath: textObject
+      value: 
+      objectReference: {fileID: 43004170}
+    - target: {fileID: 1152564299741174695, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 1412064511}
+    - target: {fileID: 1152564299741174695, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
+      propertyPath: imageObjectChanger
+      value: 
+      objectReference: {fileID: 43004169}
     - target: {fileID: 5018124227373285537, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.33
@@ -13908,13 +13920,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: letto (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7239939200269251283, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1027261938}
+      addedObject: {fileID: 1027261941}
   m_SourcePrefab: {fileID: 100100000, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
 --- !u!4 &1027261936 stripped
 Transform:
@@ -13926,7 +13939,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5685836076148431387, guid: 71ced174a10f7cb419e62f67d79ba5dc, type: 3}
   m_PrefabInstance: {fileID: 1027261935}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1027261938
+--- !u!114 &1027261941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13953,12 +13966,12 @@ MonoBehaviour:
       hasBeenRead: 0
     lineCounter: 0
   - lines:
-    - text: Its funny how me and my brother have the same bedsheets
+    - text: It's funny how me and my brother have the same bedsheets
       Ted: {fileID: 0}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
-    - text: I usually let coco sleep here while i'm at school
+    - text: I usually let Coco sleep here while i'm at  school
       Ted: {fileID: 0}
       hasBeenRead: 0
     lineCounter: 0
