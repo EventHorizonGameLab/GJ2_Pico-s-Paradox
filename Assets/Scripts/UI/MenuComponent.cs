@@ -204,7 +204,7 @@ public class MenuComponent : MonoBehaviour
 
     public void OnReturnToMain()
     {
-        SceneManager.LoadScene(0); // questo è un errore!!!!
+        SceneManager.LoadScene(0); 
     }
 
     public void OnCLoseShowControl()

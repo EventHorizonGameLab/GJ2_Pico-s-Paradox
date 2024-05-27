@@ -30,7 +30,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        //LoadVolumes();
+        LoadVolumes();
     }
 
     private void OnEnable()

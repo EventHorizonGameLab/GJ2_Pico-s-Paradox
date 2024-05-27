@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -18,9 +20,9 @@ public class VolumeSettings : MonoBehaviour
 
     private void Awake()
     {
-        //MasterSlider.onValueChanged.AddListener(SetMasterVolume);
-        //MusicSlider.onValueChanged.AddListener(SetMusicVolume);
-        //SFXSlider.onValueChanged.AddListener(SetSFXVolume);
+        MasterSlider.onValueChanged.AddListener(SetMasterVolume);
+        MusicSlider.onValueChanged.AddListener(SetMusicVolume);
+        SFXSlider.onValueChanged.AddListener(SetSFXVolume);
     }
 
     private void OnEnable()
@@ -28,6 +30,12 @@ public class VolumeSettings : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        MasterSlider.value = PlayerPrefs.GetFloat(AudioManager.MASTER_KEY, 0.5f);
+        MusicSlider.value = PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 0.5f);
+        SFXSlider.value = PlayerPrefs.GetFloat(AudioManager.SFX_KEY, 0.5f);
+    }
 
     private void Start()
     {
@@ -58,14 +66,9 @@ public class VolumeSettings : MonoBehaviour
         PlayerPrefs.SetFloat(AudioManager.SFX_KEY, SFXSlider.value);
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
+        
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        MasterSlider.onValueChanged.AddListener(SetMasterVolume);
-        MusicSlider.onValueChanged.AddListener(SetMusicVolume);
-        SFXSlider.onValueChanged.AddListener(SetSFXVolume);
-        Start();
-    }
+  
 
     
 }
