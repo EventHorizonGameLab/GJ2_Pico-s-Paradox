@@ -19,12 +19,15 @@ public class MenuComponent : MonoBehaviour
     public int playSceneNumber;
     [SerializeField] private TMPro.TMP_Dropdown resolutionDropDown;
 
+    private GameObject lastPanel;
+
     [Header("Buttons Refs")]
     [SerializeField] GameObject playButton;
     [SerializeField] GameObject creditsFirstButton;
     [SerializeField] GameObject controlFirstButton;
     [SerializeField] GameObject settingFirstButton;
-    [SerializeField] GameObject pauseButton;
+
+
 
     //[HideInInspector] public bool isFullScreen = false;
 
@@ -40,7 +43,6 @@ public class MenuComponent : MonoBehaviour
     [Header("pause panel")]
     [SerializeField] GameObject pausePanel;
     bool isPause;
-    [SerializeField] GameObject showControlPanel;
 
     [Header("audio")]
     [SerializeField] AudioData audioData;
@@ -105,14 +107,21 @@ public class MenuComponent : MonoBehaviour
     public void OnPlayButton()
     {
         InputManager.ActionMap.AlwaysOn.Pause.performed += ActivatePause;
-        SceneManager.LoadScene(playSceneNumber);
+        lastPanel = null;
         InputManager.SwitchToPlayerInput();
-        UIPanel.SetActive(false);
+        menuPanel.SetActive(false);
+        backPanel.SetActive(false);
+        SceneManager.LoadScene(playSceneNumber);
     }
-        
+
 
     public void OnSettingsButton()
     {
+        if (lastPanel == null)
+        {
+            lastPanel = settingsPanel;
+        }
+
         EventSystem.current.SetSelectedGameObject(settingFirstButton);
         menuPanel.SetActive(false);
         settingsPanel.SetActive(true);
@@ -122,23 +131,32 @@ public class MenuComponent : MonoBehaviour
     public void OnShowControlsButton()
     {
         EventSystem.current.SetSelectedGameObject(controlFirstButton);
-        menuPanel.SetActive(false);
+        if (lastPanel == null)
+        {
+            lastPanel = showControlsPanel;
+        }
+        UIPanel.SetActive(true);
         showControlsPanel.SetActive(true);
+        menuPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        pausePanel.SetActive(false);
     }
 
     public void OnCredits()
     {
         EventSystem.current.SetSelectedGameObject(creditsFirstButton);
+        if (lastPanel == null)
+        {
+            lastPanel = creditsPanel;
+        }
         menuPanel.SetActive(false);
         creditsPanel.SetActive(true);
+        settingsPanel.SetActive(false);
     }
     public void OnGoBackToMenu()
     {
         EventSystem.current.SetSelectedGameObject(playButton);
-        settingsPanel.SetActive(false);
-        showControlsPanel.SetActive(false);
-        creditsPanel.SetActive(false);
-        menuPanel.SetActive(true);
+        ReturnToLastPanel();
     }
 
     public void OnFullScreen()
@@ -189,15 +207,17 @@ public class MenuComponent : MonoBehaviour
 
         if (isPause)
         {
-            EventSystem.current.SetSelectedGameObject(pauseButton);
+
             GameManager.TimeScale(0);
             InputManager.SwitchToUIInput();
+            lastPanel = pausePanel;
         }
 
         else
         {
             GameManager.TimeScale(1);
             InputManager.SwitchToPlayerInput();
+            lastPanel = null;
         }
 
         pausePanel.SetActive(isPause);
@@ -205,18 +225,33 @@ public class MenuComponent : MonoBehaviour
 
     public void OnReturnToMain()
     {
-        SceneManager.LoadScene(0); 
+        SceneManager.LoadScene(0);
+        lastPanel = menuPanel;
+        ReturnToLastPanel();
+        backPanel.SetActive(true);
     }
 
     public void OnCLoseShowControl()
     {
         EventSystem.current.SetSelectedGameObject(playButton);
-        showControlPanel.SetActive(false);
+
+        showControlsPanel.SetActive(false);
+        ReturnToLastPanel();
     }
 
     public void PlayButtonSound()
     {
         AudioManager.instance.PlaySFX(audioData.sfx_menuButton);
+    }
+
+    public void ReturnToLastPanel()
+    {
+        settingsPanel.SetActive(false);
+        showControlsPanel.SetActive(false);
+        creditsPanel.SetActive(false);
+        menuPanel.SetActive(false);
+        pausePanel.SetActive(false);
+        lastPanel.SetActive(true);
     }
 }
 
