@@ -13205,7 +13205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936705706}
   - component: {fileID: 936705707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (1)
   m_TagString: Spot
   m_Icon: {fileID: 0}
@@ -14732,7 +14732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1070958135}
   - component: {fileID: 1070958136}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (3)
   m_TagString: Spot
   m_Icon: {fileID: 0}
@@ -16377,7 +16377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1190578637}
   - component: {fileID: 1190578638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Spot
   m_Icon: {fileID: 0}
@@ -21586,7 +21586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507676052}
   - component: {fileID: 1507676053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (2)
   m_TagString: Spot
   m_Icon: {fileID: 0}
