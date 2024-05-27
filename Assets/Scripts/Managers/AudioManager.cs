@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Pool;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
@@ -29,7 +30,17 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        LoadVolumes();
+        //LoadVolumes();
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
 
@@ -90,7 +101,10 @@ public class AudioManager : MonoBehaviour
     }
 
     
-
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        LoadVolumes();
+    }
 
 
 

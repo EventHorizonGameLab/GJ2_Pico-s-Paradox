@@ -8,12 +8,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuComponent : MonoBehaviour
 {
+    public static MenuComponent instance;
 
     public GameObject settingsPanel;
     public GameObject showControlsPanel;
     public GameObject creditsPanel;
     public GameObject UIPanel;
     public GameObject menuPanel;
+    public GameObject backPanel;
     public int playSceneNumber;
     [SerializeField] private TMPro.TMP_Dropdown resolutionDropDown;
 
@@ -43,9 +45,17 @@ public class MenuComponent : MonoBehaviour
     [Header("audio")]
     [SerializeField] AudioData audioData;
 
-    private void Awake()
+    private void Awake()  // non avevi messo il singleton
     {
-        DontDestroyOnLoad(this);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnDisable()
@@ -98,8 +108,8 @@ public class MenuComponent : MonoBehaviour
         SceneManager.LoadScene(playSceneNumber);
         InputManager.SwitchToPlayerInput();
         UIPanel.SetActive(false);
-        
     }
+        
 
     public void OnSettingsButton()
     {
@@ -194,7 +204,7 @@ public class MenuComponent : MonoBehaviour
 
     public void OnReturnToMain()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0); // questo è un errore!!!!
     }
 
     public void OnCLoseShowControl()

@@ -11,10 +11,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Scena Marco.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Elo Tests Scenes/hehehhee.unity
     guid: 60a1ac959899b7246b6fd5727d481204
   - enabled: 0
     path: Assets/Scenes/Elo Tests Scenes/Elo Test Scene.unity
     guid: 05292c547253d964ebc7701ffd2ece17
+  - enabled: 1
+    path: Assets/Scenes/Design/Final Test scene Bulba do Not touch.unity
+    guid: 8889a128027a5cc448a6081c0e5b7c63
   m_configObjects: {}
