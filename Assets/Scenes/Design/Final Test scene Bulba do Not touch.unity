@@ -24670,7 +24670,7 @@ MonoBehaviour:
       Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Pico it seems we are stuck in some sort of loop
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: I think those spot lights maybe hint at something to find a key
       Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
