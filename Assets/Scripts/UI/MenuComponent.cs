@@ -18,6 +18,8 @@ public class MenuComponent : MonoBehaviour
     public GameObject backPanel;
     public int playSceneNumber;
     public GameObject resumeButton;
+    public GameObject losepanel;
+    public GameObject winpanel;
     [SerializeField] private TMPro.TMP_Dropdown resolutionDropDown;
 
     private GameObject lastPanel;
@@ -237,6 +239,9 @@ public class MenuComponent : MonoBehaviour
         lastPanel = menuPanel;
         ReturnToLastPanel();
         backPanel.SetActive(true);
+        losepanel.SetActive(false);
+        winpanel.SetActive(false);
+        
     }
 
     public void OnCLoseShowControl()
