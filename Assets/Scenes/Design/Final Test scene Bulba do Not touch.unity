@@ -6138,7 +6138,7 @@ MonoBehaviour:
   imageObjectChanger: {fileID: 43004169}
   dialogues:
   - lines:
-    - text: This no longer, looks like my room.
+    - text: This no longer looks like my room.
       Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: I have to be brave, for Nick
@@ -9431,12 +9431,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: El gobligno my fav anime protagonist
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Nick told me im very good at drawing.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -13381,7 +13381,7 @@ MonoBehaviour:
     - text: 'Coco im scared '
       Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
-    - text: Hey, don be afraid my  friend
+    - text: Hey, don't  be afraid my  friend
       Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: We are gonna find our way out together
@@ -21281,7 +21281,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Where is gone my Korby post
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
@@ -21290,7 +21290,7 @@ MonoBehaviour:
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
-  isLastBubble: 0
+  isLastBubble: 1
 --- !u!4 &1431050560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8092999247086786665, guid: 84ab885a80fa78e4e98bcdf2a4750090, type: 3}
@@ -21584,10 +21584,10 @@ MonoBehaviour:
     - text: Hey Coco, can you help me?
       Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
-    - text: I cant sleep, im so exited for tomorrow!
+    - text: I can't sleep, im so excited for tomorrow!
       Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
-    - text: Im finally gonna turn 8
+    - text: I'm finally gonna turn eight!
       Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: And my big bro promised me a very special gift
@@ -21602,7 +21602,7 @@ MonoBehaviour:
     - text: But Father locked me in the room
       Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
-    - text: How will i be able to exit?
+    - text: How will I be able to exit?
       Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Don't worry i got you.
@@ -21611,7 +21611,7 @@ MonoBehaviour:
     - text: 'I have a spare key made with crakers. '
       Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
-    - text: Probably its gona breack after one use.
+    - text: Probably its gona break after one use.
       Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: 'But hey, it''s better than nothing '
@@ -21828,19 +21828,19 @@ MonoBehaviour:
     lineCounter: 0
   - lines:
     - text: I wonder if he have a comfy bed while serving oversea
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There is a note under the pillow
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: '*My dear Nicholas, please take good care of your brother'
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: "If something bad happens to me make sure he\u2019s loved like i loved
         you. Mum* "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -22762,7 +22762,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: 'It looks like some modern art pieces '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
@@ -24670,7 +24670,7 @@ MonoBehaviour:
       Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Pico it seems we are stuck in some sort of loop
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: I think those spot lights maybe hint at something to find a key
       Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
@@ -25989,7 +25989,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: This smells like mold
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
@@ -28518,10 +28518,10 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: A wooden chair
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: 'It''s pretty flimsy '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -33344,6 +33344,18 @@ PrefabInstance:
       value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 4933835795323834249, guid: c86374a762c99f5478f697a8d26d05c0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933835795323834249, guid: c86374a762c99f5478f697a8d26d05c0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933835795323834249, guid: c86374a762c99f5478f697a8d26d05c0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933835795323834249, guid: c86374a762c99f5478f697a8d26d05c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -33390,6 +33402,10 @@ PrefabInstance:
     - target: {fileID: 4933835795323834249, guid: c86374a762c99f5478f697a8d26d05c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933835795323834249, guid: c86374a762c99f5478f697a8d26d05c0, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7866825424954940292, guid: c86374a762c99f5478f697a8d26d05c0, type: 3}
       propertyPath: m_Name
@@ -33591,9 +33607,9 @@ SceneRoots:
   - {fileID: 474022831}
   - {fileID: 1536377738}
   - {fileID: 626406124}
-  - {fileID: 623236951}
   - {fileID: 520699595}
   - {fileID: 43004168}
   - {fileID: 719476928}
   - {fileID: 353370437}
   - {fileID: 1357287676}
+  - {fileID: 623236951}
