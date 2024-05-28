@@ -258,15 +258,5 @@ public class MenuComponent : MonoBehaviour
         pausePanel.SetActive(false);
         lastPanel.SetActive(true);
     }
-
-    public void OnReturnToPause()
-    {
-        isPause = !isPause;
-        resumeButton.SetActive(true);
-        showControlsPanel.SetActive(false);
-        pausePanel.SetActive(true);
-        InputManager.SwitchToPlayerInput();
-
-    }
 }
 
