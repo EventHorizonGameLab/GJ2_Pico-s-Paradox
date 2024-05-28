@@ -178,14 +178,17 @@ public class MenuComponent : MonoBehaviour
 
     public void SetResolution()
     {
+        
         resolution = filteredResolutions[resolutionDropDown.value];
         if (PlayerPrefs.GetInt("ScreenMode") == 0)
         {
+            
             Screen.SetResolution(resolution.width, resolution.height, true);
             Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
         }
         if (PlayerPrefs.GetInt("ScreenMode") == 1)
         {
+            
             Screen.SetResolution(resolution.width, resolution.height, false);
             Screen.fullScreenMode = FullScreenMode.Windowed;
         }
