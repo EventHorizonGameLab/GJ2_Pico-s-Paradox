@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: --UI--
       objectReference: {fileID: 0}
+    - target: {fileID: 7306698688377589659, guid: 8addba8366f72584d8b0f244adc97af2, type: 3}
+      propertyPath: resumeButton
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -17,6 +17,7 @@ public class MenuComponent : MonoBehaviour
     public GameObject menuPanel;
     public GameObject backPanel;
     public int playSceneNumber;
+    public GameObject resumeButton;
     [SerializeField] private TMPro.TMP_Dropdown resolutionDropDown;
 
     private GameObject lastPanel;
@@ -155,8 +156,8 @@ public class MenuComponent : MonoBehaviour
     }
     public void OnGoBackToMenu()
     {
-        ReturnToLastPanel();
         EventSystem.current.SetSelectedGameObject(playButton);
+        ReturnToLastPanel();
     }
 
     public void OnFullScreen()
@@ -210,7 +211,6 @@ public class MenuComponent : MonoBehaviour
 
             GameManager.TimeScale(0);
             InputManager.SwitchToUIInput();
-            lastPanel = pausePanel;
         }
 
         else
@@ -218,6 +218,11 @@ public class MenuComponent : MonoBehaviour
             GameManager.TimeScale(1);
             InputManager.SwitchToPlayerInput();
             lastPanel = null;
+            settingsPanel.SetActive(false);
+            showControlsPanel.SetActive(false);
+            creditsPanel.SetActive(false);
+            menuPanel.SetActive(false);
+            pausePanel.SetActive(false);
         }
 
         pausePanel.SetActive(isPause);
@@ -252,6 +257,16 @@ public class MenuComponent : MonoBehaviour
         menuPanel.SetActive(false);
         pausePanel.SetActive(false);
         lastPanel.SetActive(true);
+    }
+
+    public void OnReturnToPause()
+    {
+        isPause = !isPause;
+        resumeButton.SetActive(true);
+        showControlsPanel.SetActive(false);
+        pausePanel.SetActive(true);
+        InputManager.SwitchToPlayerInput();
+
     }
 }
 
