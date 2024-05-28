@@ -155,8 +155,8 @@ public class MenuComponent : MonoBehaviour
     }
     public void OnGoBackToMenu()
     {
-        EventSystem.current.SetSelectedGameObject(playButton);
         ReturnToLastPanel();
+        EventSystem.current.SetSelectedGameObject(playButton);
     }
 
     public void OnFullScreen()

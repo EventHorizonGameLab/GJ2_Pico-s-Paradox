@@ -27,7 +27,7 @@ public class VolumeSettings : MonoBehaviour
 
     private void OnEnable()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        //SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
@@ -64,7 +64,7 @@ public class VolumeSettings : MonoBehaviour
         PlayerPrefs.SetFloat(AudioManager.MASTER_KEY, MasterSlider.value);
         PlayerPrefs.SetFloat(AudioManager.MUSIC_KEY, MusicSlider.value);
         PlayerPrefs.SetFloat(AudioManager.SFX_KEY, SFXSlider.value);
-        SceneManager.sceneLoaded -= OnSceneLoaded;
+        //SceneManager.sceneLoaded -= OnSceneLoaded;
     }
         
 

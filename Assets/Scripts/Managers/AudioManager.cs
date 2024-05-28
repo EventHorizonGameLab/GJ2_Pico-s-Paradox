@@ -30,18 +30,15 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        
+    }
+
+    private void Start()
+    {
         LoadVolumes();
     }
 
-    private void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
+    
 
 
     void LoadVolumes() // Volumes saved in VolumeSettings.cs
@@ -101,11 +98,8 @@ public class AudioManager : MonoBehaviour
     }
 
     
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        LoadVolumes();
-    }
-
+    
+    
 
 
 

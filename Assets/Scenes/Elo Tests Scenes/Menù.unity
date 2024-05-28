@@ -175,18 +175,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: --UI--
       objectReference: {fileID: 0}
-    - target: {fileID: 7306698688377589659, guid: 8addba8366f72584d8b0f244adc97af2, type: 3}
-      propertyPath: creditsPanel
-      value: 
-      objectReference: {fileID: 1942430935}
-    - target: {fileID: 7306698688377589659, guid: 8addba8366f72584d8b0f244adc97af2, type: 3}
-      propertyPath: creditsFirstButton
-      value: 
-      objectReference: {fileID: 1578466780}
-    - target: {fileID: 7701066094377397543, guid: 8addba8366f72584d8b0f244adc97af2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -542,7 +530,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -2061408273093878308, guid: 6e6f89448c81b5647b9420b85b95337d, type: 2}
   m_audioClip: {fileID: 8300000, guid: 138568d4e890caf47b21ef364d78c2c4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.518
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -641,16 +629,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1578466780 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6645941504801155358, guid: 8addba8366f72584d8b0f244adc97af2, type: 3}
-  m_PrefabInstance: {fileID: 88644086}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1942430935 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7581114407752143782, guid: 8addba8366f72584d8b0f244adc97af2, type: 3}
-  m_PrefabInstance: {fileID: 88644086}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

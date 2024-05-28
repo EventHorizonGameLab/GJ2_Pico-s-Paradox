@@ -1639,7 +1639,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7306698688377589659}
         m_TargetAssemblyTypeName: MenuComponent, Assembly-CSharp
-        m_MethodName: OnGoBackToMenu
+        m_MethodName: OnReturnToMain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2494,14 +2494,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 8669324042888479007}
   showControlsPanel: {fileID: 3250200566067562043}
-  creditsPanel: {fileID: 3559219067294651234}
+  creditsPanel: {fileID: 7581114407752143782}
   UIPanel: {fileID: 3753403895284819514}
   menuPanel: {fileID: 2899494254255252426}
   backPanel: {fileID: 7701066094377397543}
   playSceneNumber: 1
   resolutionDropDown: {fileID: 6672535528403401166}
   playButton: {fileID: 1036946509214504179}
-  creditsFirstButton: {fileID: 0}
+  creditsFirstButton: {fileID: 6645941504801155358}
   controlFirstButton: {fileID: 3314205938287156953}
   settingFirstButton: {fileID: 6769861545857234273}
   pausePanel: {fileID: 8669324042888479007}
@@ -5402,8 +5402,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8bd10d1ccff17c4aa20af15ba1bb9cd, type: 3}
+--- !u!1 &6645941504801155358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2150065934350892555, guid: d8bd10d1ccff17c4aa20af15ba1bb9cd, type: 3}
+  m_PrefabInstance: {fileID: 4750647818506835733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7099824200212106629 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2551875756989405840, guid: d8bd10d1ccff17c4aa20af15ba1bb9cd, type: 3}
+  m_PrefabInstance: {fileID: 4750647818506835733}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7581114407752143782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2943162170092553395, guid: d8bd10d1ccff17c4aa20af15ba1bb9cd, type: 3}
   m_PrefabInstance: {fileID: 4750647818506835733}
   m_PrefabAsset: {fileID: 0}
