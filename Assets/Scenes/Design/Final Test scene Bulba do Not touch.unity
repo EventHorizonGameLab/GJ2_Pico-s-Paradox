@@ -254,10 +254,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: My favourite tv show is Korby and the Seven Seas .
-      Ted: {fileID: 0}
-      hasBeenRead: 0
-    - text: My favourite tv show is Korby and the Seven Seas .
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -1194,6 +1191,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 386505600554037965, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 983217010273462565, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1273,6 +1274,14 @@ PrefabInstance:
     - target: {fileID: 983217010273462565, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684784746930035106, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814839738761185857, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8858704264188681708, guid: afc34c3f496f9b9498d8ad73746725df, type: 3}
       propertyPath: m_Name
@@ -4885,7 +4894,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: My favourite tv show is Korby and the Seven Seas .
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -6130,19 +6139,19 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: This no longer, looks like my room.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: I have to be brave, for Nick
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: If only he was here...
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Pico, don't give up!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: The exit must be near.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -6963,12 +6972,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Strange, its empty now
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'There is a strange black goo on the wheels '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -8277,17 +8286,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: My bed
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The smell of the fabric conditioner is gone
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There is a rotting smell coming from the cabinets under it
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -9233,22 +9242,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: 'The cabinet door is locked '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'I can see some black goo stuck on the back '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The tv wont change channel
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "Oh no my Gattobardo\xA9 figure is chipped!"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -9534,22 +9543,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s bed "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'I can no longer smell the odour of the fabric conditioner '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Still untouched, like he left yesterday
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'There is mould under the sheets '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -10661,12 +10670,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: This shouldn't be here
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: And neither shoul I....
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -12022,12 +12031,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Just a flimsy chair
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There is some balck goo con the legs
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -12055,12 +12064,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: All the stationary its now gone
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There are dust bunnies in the cabinets
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -12228,22 +12237,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s bed "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Still untouched, like he left yesterday
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'I can no longer smell the odour of the fabric conditioner '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I wonder if he have a comfy bed while serving oversea
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -12874,17 +12883,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: It's now empty
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I swear i saw some black goo moving in a corner
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Coco jr is gone again
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -12956,17 +12965,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Oh there is some stuffing coming out
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Those patches are not gonna hold for long
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There is a rancid smell coming out of it
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -13174,17 +13183,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: The patches are coming out
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The patches are coming loose
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Its no longer comfy, its hard like wood
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -13364,25 +13373,25 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: What? I could swear i exited the room
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Pico why you came back so soon?
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: 'Coco im scared '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Hey, don be afraid my  friend
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: We are gonna find our way out together
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: Try looking around maybe we can find something useful
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: 'You are right Coco '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -13760,12 +13769,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: The bin is empty.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Someone ate the leftovers.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -14378,22 +14387,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Nick's bedside table
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The cabinet is jammed
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There are some yellowed postcars under it.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Its dusty
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -14835,22 +14844,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: My bed
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The smell of the fabric conditioner is still strong
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: It's funny how me and my brother have the same bedsheets
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I usually let Coco sleep here while i'm at  school
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -15112,22 +15121,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s bed "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Still untouched, like he left yesterday
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'I can no longer smell the odour of the fabric conditioner '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'There is mould under the sheets '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -16121,18 +16130,18 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s Desk "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The table is so big I have to put a pillow on the chair in order to write
         on it.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Once we had a computer, but father sold it since Nick didn't use it much.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -16385,17 +16394,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: That's a picture of Mum and Dad celebrating with Nick on his 8th birthday
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: 'There are some words written on the back, '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: "\u201CTo our dear son Nicholas\u201D happy birthday from mum and dad.
         28/08/1991"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: This year he will turn 26
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -16739,12 +16748,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Pico, I have a bad feeling.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Be careful.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -17826,7 +17835,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s poster, I still cannot understand what it's meant to be."
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -18404,22 +18413,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: This is not my trunk
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'My trunk shrunk it''s now small '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'Its empty '
-      Ted: {fileID: 0}
-      hasBeenRead: 0
-    lineCounter: 0
-  - lines:
-    - text: This is not my trunk
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -18745,12 +18749,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "It\u2019s mostly empty"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I think i saw some leftovers on the bottom
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -18895,18 +18899,18 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: 'It''s empty '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There is a small tag on the side, it reads Gustavo Rodriguez, its dads
         name
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'It reads Gustavo Rodriguez, its dads name. '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -19077,20 +19081,20 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Pico? Aww man!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: You made it! You found the super duper secret art gallery!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Take a look around, isn't it marvellus?
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Make sure to take a look at the credits
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: So you will see all the wonderful artist that wanted to collaboarte to
         this project!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -19519,12 +19523,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: I really miss Churro.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: When will this nightmare ends?
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -19600,12 +19604,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: I's a Shpere!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: It's balck and blue.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -19766,12 +19770,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: 'A trash bin '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Smells like tuna
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -20018,12 +20022,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Nick's first halloween
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Last year he made me use his old costume
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -20200,12 +20204,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "\u201CYou search in the trash and find the key to your room\u201D"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'Its now empty '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -20289,10 +20293,10 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: A wooden chair
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: 'It''s pretty flimsy '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -20927,23 +20931,23 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s lamp"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'It belonged to dad '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The light bulb is very hot
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I always turn it on too before going to bed, i don't want the room to
         be dark.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -21282,7 +21286,7 @@ MonoBehaviour:
     lineCounter: 0
   - lines:
     - text: Eww, what is that ?
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -21331,7 +21335,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Oh i finally found Coco jr!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -21578,16 +21582,16 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Hey Coco, can you help me?
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: I cant sleep, im so exited for tomorrow!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Im finally gonna turn 8
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: And my big bro promised me a very special gift
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Hey Pico, I too cannot fall asleep.
       Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
@@ -21596,10 +21600,10 @@ MonoBehaviour:
       Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: But Father locked me in the room
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: How will i be able to exit?
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Don't worry i got you.
       Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
@@ -21614,7 +21618,7 @@ MonoBehaviour:
       Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     - text: Thanks, i can always count on you Coco!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -21806,20 +21810,20 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s bed "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Still untouched, like he left yesterday
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Still untouched, like he left yesterday
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: It's full of mould under the sheets
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
@@ -21946,22 +21950,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Me and Coco\u2019s favourite spot to nap."
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Nick told me he got those in a garage sale years ago
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: A little worn out but still comfy
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'I think this one needs another patch, there is stuffing coming out  '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -22063,17 +22067,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: My lamp
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Nick told me it was mum's
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The light bulb is very hot
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -22322,7 +22326,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: This is a picture of Nick's first Halloween; he was 6 at the time.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -22617,12 +22621,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: A ball
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: It's white
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -22763,7 +22767,7 @@ MonoBehaviour:
     lineCounter: 0
   - lines:
     - text: This one is giving me chills
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -23176,7 +23180,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: This is a picture of Nick's first Halloween; he was 6 at the time.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -23268,21 +23272,21 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: The is a note under the lamp
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: '*My dear Nicholas, i''m sorry i cannot tell you this in person'
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: "When you\u2019ll read this i sadly will be no longer with you"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: "Your father is a good person, but he\u2019s stuck in his old ways"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: "He doesn\u2019t know better "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: 'Please take care of Pico without me, my dear star. Mum* '
       Ted: {fileID: 0}
@@ -23435,23 +23439,23 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s trunk "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "it\u2019s mostly empty except for some used military gear"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Its very old
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The sides are covered in stickers with counties and cities from around
         the world
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -24040,17 +24044,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Dust bunnies have now taken over the cupboards
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'I can no longer change channel '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "It\u2019s broken "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -24578,12 +24582,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Its a globe!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'It''s gold and white '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -24654,25 +24658,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: I should have stayed in bed
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: This is getting scary
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Maybe i can find a way out by myself
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: after all i have Coco with me
-      Ted: {fileID: 0}
-      hasBeenRead: 0
-    - text: Pico it seems we are stuck in some sort of loop
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Pico it seems we are stuck in some sort of loop
       Ted: {fileID: 0}
       hasBeenRead: 0
     - text: I think those spot lights maybe hint at something to find a key
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 13d5d8fedd8974a4e97ecab66bfbacf8, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -25267,7 +25268,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: You hear a door in the distance opening
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -25432,17 +25433,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: It looks like my bed, but it feels different
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The smell of the fabric conditioner is less strong
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The mattress it's more hard then i remember
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -25868,17 +25869,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: My lamp
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "Nick told me it was mum\u2019s."
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'The light bulb is very hot '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -26562,12 +26563,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Wait wasn't this a diffet colour?
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I swear i had a blue one.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -26682,17 +26683,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: There is a small piece of paper you never noticed
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There is a small piece of paper you never noticed
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There is a small piece of paper you never noticed
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -28045,22 +28046,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Here is where we store the Painstation father gifted us.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The screen is displaying static
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'There are some dust bunnies under it '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "There is a Gattobardo\xA9 figure"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -28244,17 +28245,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: It's a trunk shaped like a truck!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: This is where I keep Nick's old toys.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "This was Nick\u2019s, but he gave it to me"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -28325,17 +28326,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: I really like bean bags, soo comfy
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: This one have some stuffing coming out from the bottom
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "Oh there is a stain on the carpet i hope father won\u2019t notice"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -28364,18 +28365,18 @@ MonoBehaviour:
   - lines:
     - text: "This is Nick\u2019s desk, he let me use it to draw, write letters and
         do my homework ."
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The table is so big I have to put a pillow on the chair in order to write
         on it.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Once we had a computer, but father sold it since Nick didn't use it much.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -28866,32 +28867,32 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: A small library
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "It's full of Nick\u2019s text books and mangas. "
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I think I saw some Punpun and the first volume of Cat Diary
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: ' Nick told me not to read those. '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: It's very dusty. I should clean it.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There is a miniature of a toucan, his name his Coco jr
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -29079,17 +29080,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: 'It''s a wooden chair '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Its a bit flimsy
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Once nick broke it by just sitting on it
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -29117,22 +29118,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: All the book have changed, now all pages are blank
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There are some dust bunnies hiding behind the books
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The book positions changed again
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Oh Coco jr came back
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -29614,7 +29615,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s poster, cryptic as usual."
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -29751,34 +29752,34 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: 'Here is where we store the Painstation father gifted us. '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: Nick and I played Korby and the seven seas so much that we had to buy
         another copy
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: The last one melted...
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'Here is where we store the Painstation father gifted us. '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Nick told me our parents gifted him this tv when he was my age.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The Tv is a bit old but it still works surprisingly well.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "I really like my Gattobardo\xA9 figure"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -29958,22 +29959,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s trunk"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "it\u2019s now empty"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "It\u2019s very old"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The sides are covered with faded stickers
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -30446,10 +30447,10 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Gustavo Jr
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     - text: It's an inside joke
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -30520,7 +30521,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Nick and my parents went on vacation to Hawaii yeas ago.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -30816,22 +30817,22 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Its empty
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'It very old, i wonder if it was mum''s '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I never met her
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Nick told me she passed after i was born
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -31095,17 +31096,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: My lamp
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: "Nick told me it was mum\u2019s."
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'The light bulb is very hot '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -31241,17 +31242,17 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: This doesn't fell like my bed.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I think a saw a roach coming out of the pillow.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: There is goounder it
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -31388,28 +31389,28 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s lamp"
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'It belonged to dad '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The light bulb is very hot
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: I always turn it on too before going to bed, i don't want the room to
         be dark.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The cupboard is full of old Postcards Nick sent.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -31844,12 +31845,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: The air here is so heavy.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Even the dool cannot stand it!
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -31980,7 +31981,7 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: "Nick\u2019s poster, I still cannot understand what it's meant to be."
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -32082,12 +32083,12 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: 'A ball '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: It's yellow
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
@@ -32322,37 +32323,37 @@ MonoBehaviour:
   dialogues:
   - lines:
     - text: Stange i could have sworn that there were Punpun manga here
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'but now there is something called Tokyo Ghouls. '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'It''s very dusty '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: Wait, where is Coco jr?
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: 'There is a framed picture on top '
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: The animal in the photo is Churro, it was our pet
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   - lines:
     - text: He passed away a couple of years ago.
-      Ted: {fileID: 0}
+      Ted: {fileID: 21300000, guid: 096ee85a78e3b724f9b5726762c0ca5a, type: 3}
       hasBeenRead: 0
     lineCounter: 0
   isTriggered: 0
